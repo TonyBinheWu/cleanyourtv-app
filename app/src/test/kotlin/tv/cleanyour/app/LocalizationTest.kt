@@ -5,6 +5,7 @@ import android.content.res.Configuration
 import android.icu.text.MessageFormat
 import android.icu.text.MessagePattern
 import android.os.LocaleList
+import android.view.View
 import androidx.test.core.app.ApplicationProvider
 import java.io.File
 import java.util.Locale
@@ -26,6 +27,8 @@ class LocalizationTest {
         "en" to "values", "zh-Hant" to "values-b+zh+Hant", "ja" to "values-ja",
         "ko" to "values-ko", "zh-Hans" to "values-b+zh+Hans", "th" to "values-th",
         "vi" to "values-vi", "de" to "values-de",
+        "hi" to "values-hi", "es" to "values-es", "fr" to "values-fr", "ar" to "values-ar",
+        "bn" to "values-bn", "ru" to "values-ru", "pt" to "values-pt", "id" to "values-in",
     )
     private val modules = listOf("app", "ui/design", "feature/connect", "feature/setup",
         "feature/manage", "feature/backup", "feature/launcher", "feature/modules")
@@ -37,7 +40,7 @@ class LocalizationTest {
     )
 
     @Suppress("DiscouragedApi")
-    private fun id(name: String): Int = context.resources.getIdentifier(name, "string", context.packageName)
+    private fun id(name: String, type: String = "string"): Int = context.resources.getIdentifier(name, type, context.packageName)
         .also { assertTrue(it != 0, "Missing compiled resource: $name") }
 
     // MessageFormat.argumentNames includes only top-level arguments. Read all pattern parts so
@@ -71,7 +74,7 @@ class LocalizationTest {
                     val names = argumentNames(source)
                     assertEquals(names, argumentNames(text),
                         "$tag/$name changed an argument name")
-                    for (count in listOf(0, 1, 2, 5, 21)) {
+                    for (count in listOf(0, 1, 2, 3, 5, 11, 21, 101, 102, 1_000_000)) {
                         val args = names.associateWith<String, Any> { "Sample" }.toMutableMap()
                         // The source determines numeric argument types, including nested plural groups.
                         Regex("\\{(\\w+),\\s*(?:plural|selectordinal|spellout|number)").findAll(source).forEach {
@@ -89,9 +92,40 @@ class LocalizationTest {
     @Test fun regionalLocalesSelectTheExpectedChineseScriptAndEnglishIsTheFallback() {
         val welcome = id("welcome_title")
         for ((region, script) in mapOf("zh-TW" to "zh-Hant", "zh-HK" to "zh-Hant",
-            "zh-CN" to "zh-Hans", "zh-SG" to "zh-Hans", "en-GB" to "en", "fr-FR" to "en")) {
+            "zh-CN" to "zh-Hans", "zh-SG" to "zh-Hans", "en-GB" to "en", "fi-FI" to "en",
+            "hi-IN" to "hi", "es-MX" to "es", "fr-CA" to "fr", "ar-EG" to "ar",
+            "bn-BD" to "bn", "ru-RU" to "ru", "pt-BR" to "pt", "id-ID" to "id")) {
             assertEquals(localized(script).getString(welcome), localized(region).getString(welcome), region)
         }
         assertFalse(localized("zh-Hant").getString(welcome) == localized("zh-Hans").getString(welcome))
+    }
+
+    @Test fun modernStandardArabicUsesRightToLeftLayout() {
+        assertEquals(View.LAYOUT_DIRECTION_RTL, localized("ar").resources.configuration.layoutDirection)
+        assertEquals(View.LAYOUT_DIRECTION_LTR, localized("hi").resources.configuration.layoutDirection)
+        val welcome = localized("ar").getString(id("welcome_title"))
+        assertTrue(welcome.any { it in '\u0600'..'\u06ff' })
+    }
+
+    @Test fun arabicAndRussianQuantityResourcesSelectTheirOwnPluralCategories() {
+        val more = id("cyt_show_more", "plurals")
+        val ar = localized("ar").resources
+        val ru = localized("ru").resources
+        val arabic = mapOf(0 to "عرض %d من العناصر الإضافية", 1 to "عرض عنصر إضافي واحد",
+            2 to "عرض عنصرين إضافيين", 3 to "عرض %d عناصر إضافية", 11 to "عرض %d عنصرًا إضافيًا",
+            100 to "عرض %d عنصر إضافي")
+        for ((count, expected) in arabic) {
+            assertEquals(expected, ar.getQuantityString(more, count), "Arabic count=$count")
+            assertFalse("%d" in ar.getQuantityString(more, count, count))
+        }
+        for ((count, expected) in mapOf(1 to "Показать ещё %d элемент", 2 to "Показать ещё %d элемента",
+            5 to "Показать ещё %d элементов", 21 to "Показать ещё %d элемент")) {
+            assertEquals(expected, ru.getQuantityString(more, count), "Russian count=$count")
+        }
+        val found = id("welcome_found_many")
+        assertEquals("تم العثور على جهازَي تلفاز",
+            ResourceFlowCopy.format(localized("ar"), found, mapOf("count" to 2)))
+        assertEquals("Найден 21 телевизор",
+            ResourceFlowCopy.format(localized("ru"), found, mapOf("count" to 21)))
     }
 }

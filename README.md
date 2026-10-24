@@ -26,6 +26,8 @@
 
 English · 繁體中文 · 日本語 · 한국어 · 简体中文 · ไทย · Tiếng Việt · Deutsch
 
+हिन्दी · Español · Français · العربية الفصحى · বাংলা · Русский · Português · Bahasa Indonesia
+
 The app follows your phone's language. On Android 13 or newer you can choose an app language in
 **Settings > Apps > Clean Your TV > Language**. See [language support](docs/LOCALIZATION.md).
 
