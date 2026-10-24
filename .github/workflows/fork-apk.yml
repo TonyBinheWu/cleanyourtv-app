@@ -52,7 +52,9 @@ jobs:
           apk=app/build/outputs/apk/full/release/app-full-release.apk
           signer="$ANDROID_HOME/build-tools/36.0.0/apksigner"
           aapt="$ANDROID_HOME/build-tools/36.0.0/aapt2"
-          "$signer" verify --verbose --print-certs "$apk" > "$RUNNER_TEMP/signature.txt"
+          # minSdk 28 otherwise checks v3 only and reports the untested v2 scheme as false.
+          "$signer" verify --verbose --print-certs --min-sdk-version 24 "$apk" > "$RUNNER_TEMP/signature.txt"
+          cat "$RUNNER_TEMP/signature.txt"
           grep -F 'Verified using v2 scheme (APK Signature Scheme v2): true' "$RUNNER_TEMP/signature.txt"
           grep -F 'Verified using v3 scheme (APK Signature Scheme v3): true' "$RUNNER_TEMP/signature.txt"
           digest=$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' "$RUNNER_TEMP/signature.txt")
@@ -63,6 +65,7 @@ jobs:
             echo 'Release APK must not be debuggable'; exit 1
           fi
           "$aapt" dump configurations "$apk" > "$RUNNER_TEMP/configurations.txt"
+          cat "$RUNNER_TEMP/configurations.txt"
           python3 - <<'PY'
           import os
           from pathlib import Path
@@ -94,6 +97,9 @@ jobs:
           path: |
             **/build/reports/
             **/build/test-results/
+            ${{ runner.temp }}/signature.txt
+            ${{ runner.temp }}/badging.txt
+            ${{ runner.temp }}/configurations.txt
       - name: Remove temporary signing store
         if: always()
         run: rm -f "$RUNNER_TEMP/fork-signing.p12"
