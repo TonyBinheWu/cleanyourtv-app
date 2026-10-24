@@ -39,7 +39,7 @@ outside the bundled Outfit typeface.
 
 ## Coverage and review
 
-All 814 translatable resource entries in `app`, the six `feature` modules and `ui/design` have
+All 816 translatable resource entries in `app`, the six `feature` modules and `ui/design` have
 fifteen localized counterparts. This covers connection instructions, setup, management, backup and
 restore, add-ons, notifications and accessibility descriptions. English remains the source.
 The new translations were machine-assisted, with terminology and key interface text edited;

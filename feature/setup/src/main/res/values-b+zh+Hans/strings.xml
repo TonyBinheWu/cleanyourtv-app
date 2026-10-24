@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">撤消电视上的更改？</string>
     <string name="confirm_undo_body">我们恢复了此更改所做的所有内容，因此电视与以前一样。什么都没有被删除。</string>
     <string name="confirm_undo_button">撤消更改</string>
+    <string name="stop_plan_refused_title">无法为这台电视制定安全的操作方案</string>
+    <string name="stop_plan_refused_body">电视已响应，但读取到的状态无法应用我们能确定安全的方案，因此在执行前已停止。电视没有任何更改。报告问题会附上原因，帮助我们修复。</string>
 </resources>

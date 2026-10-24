@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">¿Deshacer los cambios en el televisor?</string>
     <string name="confirm_undo_body">Recuperamos todo lo que hizo este cambio, para que el televisor quede como antes. No se elimina nada.</string>
     <string name="confirm_undo_button">Deshacer los cambios</string>
+    <string name="stop_plan_refused_title">No pudimos crear un plan seguro para este televisor</string>
+    <string name="stop_plan_refused_body">El televisor respondió, pero su estado no encaja en un plan que podamos ejecutar con seguridad, así que nos detuvimos antes de hacer nada. No se ha cambiado nada. Al informar del problema se nos enviará el motivo para que podamos corregirlo.</string>
 </resources>

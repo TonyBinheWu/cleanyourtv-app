@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">TV의 변경사항을 취소하시겠습니까?</string>
     <string name="confirm_undo_body">이 변경으로 인해 발생한 모든 내용을 되돌려 TV가 이전과 동일해졌습니다. 아무것도 삭제되지 않습니다.</string>
     <string name="confirm_undo_button">변경 사항을 취소합니다.</string>
+    <string name="stop_plan_refused_title">이 TV에 안전한 작업 계획을 만들 수 없습니다</string>
+    <string name="stop_plan_refused_body">TV는 응답했지만 확인된 상태에서는 안전한 작업 계획을 만들 수 없어 변경 전에 중단했습니다. TV는 변경되지 않았습니다. 문제를 신고하면 원인이 함께 전달되어 개선에 도움이 됩니다.</string>
 </resources>

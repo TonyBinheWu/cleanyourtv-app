@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">Annuler les modifications sur le téléviseur ?</string>
     <string name="confirm_undo_body">Nous avons remis tout ce que ce changement a fait, donc le téléviseur est comme avant. Rien n\'est supprimé.</string>
     <string name="confirm_undo_button">Annuler les modifications</string>
+    <string name="stop_plan_refused_title">Impossible de créer un plan sûr pour ce téléviseur</string>
+    <string name="stop_plan_refused_body">Le téléviseur a répondu, mais son état ne correspond à aucun plan que nous puissions exécuter en toute sécurité. Nous nous sommes donc arrêtés avant toute action. Rien n’a été modifié. Le signalement du problème nous transmettra la raison pour nous aider à le corriger.</string>
 </resources>
