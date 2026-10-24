@@ -2,9 +2,9 @@
 
 This fork publishes the signed full-flavour Android APK at
 <https://github.com/TonyBinheWu/cleanyourtv-app/releases>.
-The first fork version is **0.3.3.1**, version code **7**, tag **multilingual-0.3.3.1**.
+The latest fork version is **0.3.4.1**, version code **8**, tag **multilingual-0.3.4.1**, based on the latest upstream 0.3.4 PR revision. The first fork release was 0.3.3.1 (7).
 It includes English, Traditional Chinese, Japanese, Korean, Simplified Chinese, Thai, Vietnamese
-and German. The full build's update check points to this fork's latest release.
+and German, plus Hindi, Spanish, French, Modern Standard Arabic, Bengali, Russian, Portuguese and Indonesian. The full build's update check points to this fork's latest release.
 
 ## Install and update
 

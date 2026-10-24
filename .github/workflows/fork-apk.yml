@@ -60,7 +60,7 @@ jobs:
           digest=$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' "$RUNNER_TEMP/signature.txt")
           test "$digest" = "$(tr -d '[:space:]' < docs/fork-release-signer.sha256)"
           "$aapt" dump badging "$apk" > "$RUNNER_TEMP/badging.txt"
-          grep -F "package: name='tv.cleanyour.app' versionCode='7' versionName='0.3.3.1'" "$RUNNER_TEMP/badging.txt"
+          grep -F "package: name='tv.cleanyour.app' versionCode='8' versionName='0.3.4.1'" "$RUNNER_TEMP/badging.txt"
           if grep -q '^application-debuggable' "$RUNNER_TEMP/badging.txt"; then
             echo 'Release APK must not be debuggable'; exit 1
           fi
@@ -70,18 +70,18 @@ jobs:
           import os
           from pathlib import Path
           text = (Path(os.environ['RUNNER_TEMP']) / 'configurations.txt').read_text()
-          for qualifier in ['b+zh+Hant', 'b+zh+Hans', 'ja', 'ko', 'th', 'vi', 'de']:
+          for qualifier in ['b+zh+Hant', 'b+zh+Hans', 'ja', 'ko', 'th', 'vi', 'de', 'hi', 'es', 'fr', 'ar', 'bn', 'ru', 'pt', 'in']:
               if not any(line.strip() == qualifier or line.strip().startswith(qualifier+'-') for line in text.splitlines()):
                   raise SystemExit('Missing packaged language: '+qualifier)
-          print('All seven non-English languages are packaged; English is the default resource set.')
+          print('All fifteen non-English languages are packaged; English is the default resource set.')
           PY
           mkdir -p dist/fork-release
-          cp "$apk" dist/fork-release/cleanyourtv-multilingual-0.3.3.1.apk
+          cp "$apk" dist/fork-release/cleanyourtv-multilingual-0.3.4.1.apk
           cp "$RUNNER_TEMP/signature.txt" dist/fork-release/signature.txt
           cp "$RUNNER_TEMP/badging.txt" dist/fork-release/apk-info.txt
           cp "$RUNNER_TEMP/configurations.txt" dist/fork-release/languages.txt
           cp docs/fork-release-signer.sha256 dist/fork-release/signer.sha256
-          (cd dist/fork-release && sha256sum cleanyourtv-multilingual-0.3.3.1.apk > SHA256SUMS.txt)
+          (cd dist/fork-release && sha256sum cleanyourtv-multilingual-0.3.4.1.apk > SHA256SUMS.txt)
       - name: Upload verified signed APK
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
