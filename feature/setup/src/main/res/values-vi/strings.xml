@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">Hoàn tác các thay đổi trên TV?</string>
     <string name="confirm_undo_body">Chúng tôi đã đặt lại mọi thứ mà thay đổi này đã thực hiện để TV vẫn như cũ. Không có gì bị xóa.</string>
     <string name="confirm_undo_button">Hoàn tác các thay đổi</string>
+    <string name="stop_plan_refused_title">Không thể lập kế hoạch thao tác an toàn cho TV này</string>
+    <string name="stop_plan_refused_body">TV đã phản hồi, nhưng trạng thái được ghi nhận không phù hợp với kế hoạch mà chúng tôi chắc chắn an toàn nên đã dừng trước khi thao tác. Không có gì bị thay đổi. Báo cáo sự cố sẽ gửi nguyên nhân để chúng tôi khắc phục.</string>
 </resources>

@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">復原電視上的變更？</string>
     <string name="confirm_undo_body">會還原這次操作的所有變更，讓電視回到操作前的狀態，不會刪除任何項目。</string>
     <string name="confirm_undo_button">還原變更</string>
+    <string name="stop_plan_refused_title">無法為這台電視建立安全的操作計畫</string>
+    <string name="stop_plan_refused_body">電視已回應，但讀取到的狀態無法套用我們能確定安全的計畫，因此在執行前已停止。電視沒有任何變更。回報問題會附上原因，協助我們修正。</string>
 </resources>

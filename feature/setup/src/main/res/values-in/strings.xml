@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">Membatalkan perubahan pada TV?</string>
     <string name="confirm_undo_body">Kami mengembalikan semua perubahan yang dilakukan, sehingga TV kembali seperti semula. Tidak ada yang dihapus.</string>
     <string name="confirm_undo_button">Membatalkan perubahan</string>
+    <string name="stop_plan_refused_title">Tidak dapat membuat rencana yang aman untuk TV ini</string>
+    <string name="stop_plan_refused_body">TV merespons, tetapi kondisi yang ditemukan tidak sesuai dengan rencana yang kami yakini aman. Karena itu, kami berhenti sebelum melakukan apa pun. Tidak ada yang diubah. Laporan masalah akan mengirimkan alasannya agar kami dapat memperbaikinya.</string>
 </resources>

@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">التراجع عن التغييرات في التلفزيون؟</string>
     <string name="confirm_undo_body">أعدنا كل ما فعله هذا التغيير ليعود التلفزيون كما كان من قبل. لا يتم حذف أي شيء.</string>
     <string name="confirm_undo_button">التراجع عن التغييرات</string>
+    <string name="stop_plan_refused_title">تعذّر وضع خطة آمنة لهذا التلفاز</string>
+    <string name="stop_plan_refused_body">استجاب التلفاز، لكن حالته لا تناسب خطة نثق بإمكانية تنفيذها بأمان، فتوقفنا قبل إجراء أي تغيير. لم يتغيّر شيء. سيرسل الإبلاغ عن المشكلة سبب التوقف لمساعدتنا على إصلاحها.</string>
 </resources>

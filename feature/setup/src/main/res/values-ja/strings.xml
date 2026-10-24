@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">テレビの変更を元に戻しますか?</string>
     <string name="confirm_undo_body">この変更をすべて元に戻したため、テレビは以前と同じになります。何も削除されません。</string>
     <string name="confirm_undo_button">変更を元に戻す</string>
+    <string name="stop_plan_refused_title">このテレビに安全な操作プランを作成できませんでした</string>
+    <string name="stop_plan_refused_body">テレビは応答しましたが、確認した状態では安全な操作プランを作成できなかったため、何も変更せずに停止しました。テレビに変更はありません。「問題を報告」で理由を共有すると、改善に役立ちます。</string>
 </resources>

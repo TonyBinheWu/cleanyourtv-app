@@ -2,6 +2,30 @@
 
 All notable changes to the app. Versions follow [semantic versioning](https://semver.org/).
 
+## 0.3.4 (2026-10-24)
+
+Fixes for the TVs whose home screen was already changed, and an honest message when Setup can't
+make a safe plan. Thank you to everyone who sent a report.
+
+### Setup
+- A TV whose home screen is already the new home screen installed another way (for example by
+  the CleanYourTV tool for computers, which signs it with another key) now gets the clean-up, and
+  Setup leaves that home screen as it is. Before, Setup stopped with "plan refused" on every try
+  (issues #171, #187, #220). When the home screen this app installed is already in charge, Setup
+  knows the switch is already done.
+- When Setup can't make a safe plan for a TV, it now says so: the TV answered and nothing was
+  changed, and Report a problem sends us the reason. Before, it showed "We couldn't read what's on
+  the TV", which said the TV had stopped answering when it hadn't (issues #82, #99, #45).
+
+### Manage
+- On a TV whose home screen was installed another way (see Setup above), Home screen says Setup
+  left it as it was, as for other home screens that were already changed, instead of offering a
+  dock and a look for it (issues #171, #187, #220).
+
+### Reports
+- The diagnostics log now names the reasons a plan was refused. Apps you installed yourself are
+  not named in them.
+
 ## 0.3.3 (2026-10-24)
 
 Fixes from the first public day of issues. Thank you to everyone who reported.

@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">Änderungen am Fernseher rückgängig machen?</string>
     <string name="confirm_undo_body">Wir haben alles zurückgesetzt, was diese Änderung bewirkt hat, sodass der Fernseher wieder so ist, wie er vorher war. Es wird nichts gelöscht.</string>
     <string name="confirm_undo_button">Machen Sie die Änderungen rückgängig</string>
+    <string name="stop_plan_refused_title">Für diesen Fernseher konnte kein sicherer Plan erstellt werden</string>
+    <string name="stop_plan_refused_body">Der Fernseher hat geantwortet, aber sein Zustand passt zu keinem Plan, den wir sicher ausführen können. Deshalb haben wir vor jeder Änderung angehalten. Es wurde nichts geändert. Eine Problemmeldung übermittelt den Grund, damit wir das beheben können.</string>
 </resources>

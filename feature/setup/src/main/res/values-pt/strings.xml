@@ -258,4 +258,6 @@
     <string name="confirm_undo_title">Desfazer as alterações na TV?</string>
     <string name="confirm_undo_body">Colocamos de volta tudo o que essa mudança fez, para que a TV fique como era antes. Nada é excluído.</string>
     <string name="confirm_undo_button">Desfazer as alterações</string>
+    <string name="stop_plan_refused_title">Não foi possível criar um plano seguro para esta TV</string>
+    <string name="stop_plan_refused_body">A TV respondeu, mas o estado encontrado não corresponde a um plano que possamos executar com segurança. Por isso, paramos antes de fazer qualquer alteração. Nada foi alterado. Ao relatar o problema, o motivo será enviado para que possamos corrigi-lo.</string>
 </resources>
