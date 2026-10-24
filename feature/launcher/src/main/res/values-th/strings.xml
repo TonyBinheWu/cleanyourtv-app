@@ -39,9 +39,9 @@
     <string name="home_help_add_tv">ช่วยเพิ่มทีวีเครื่องนี้</string>
     <string name="home_tv_changes_note">การเปลี่ยนแปลงที่ทำกับทีวี เช่น การเรียงต่อแถวหรือการเคลื่อนไหว จะคงอยู่จนกว่าคุณจะเปลี่ยนหน้าจอหลักที่นี่ ด็อกที่เปลี่ยนแปลงบนทีวีไม่แสดงด้านบน: รูปลักษณ์ใหม่จะยังคงอยู่ ส่วนด็อกอื่นที่บันทึกไว้ที่นี่จะเข้ามาแทนที่ แอพที่นำออกจากบ้านบนทีวีจะปิดอยู่</string>
     <string name="home_row_update">อัปเดตหน้าจอหลัก</string>
-    <string name="home_row_update_note">เวอร์ชัน {version} พร้อมใช้งานแล้ว ท่าเรือของคุณและดูคงอยู่เหมือนเดิม</string>
+    <string name="home_row_update_note">เวอร์ชัน {version} พร้อมใช้งานแล้ว แถบแอปของคุณและดูคงอยู่เหมือนเดิม</string>
     <string name="home_update_preview_title">อัพเดตหน้าจอหลัก?</string>
-    <string name="home_update_preview_body">เราจะติดตั้งเวอร์ชัน {version} ทับเวอร์ชันบนทีวี ท่าเรือ รูปลักษณ์ และคำตอบของการ์ดยังคงอยู่ หากเป็นหน้าจอหลักของทีวีในตอนนี้ เครื่องจะรีสตาร์ทอีกครั้ง</string>
+    <string name="home_update_preview_body">เราจะติดตั้งเวอร์ชัน {version} ทับเวอร์ชันบนทีวี แถบแอป รูปลักษณ์ และคำตอบของการ์ดยังคงอยู่ หากเป็นหน้าจอหลักของทีวีในตอนนี้ เครื่องจะรีสตาร์ทอีกครั้ง</string>
     <string name="home_update_confirm">อัปเดต</string>
     <string name="home_update_done">หน้าจอหลักเป็นเวอร์ชันล่าสุด: เวอร์ชัน {version}</string>
     <string name="home_stock_preview_title">ใช้หน้าจอหลักของทีวีเองหรือไม่</string>

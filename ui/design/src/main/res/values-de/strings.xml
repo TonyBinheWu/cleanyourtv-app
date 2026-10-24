@@ -3,8 +3,8 @@
     <string name="cyt_back">Zurück</string>
     <string name="cyt_close">Schließen</string>
     <string name="cyt_help">Hilfe</string>
-    <string name="cyt_step_counter">%1$d von %2$d</string>
-    <string name="cyt_step_counter_extra">%1$d von %2$d · %3$s</string>
+    <string name="cyt_step_counter">%1$d / %2$d</string>
+    <string name="cyt_step_counter_extra">%1$d / %2$d · %3$s</string>
     <string name="cyt_status_connected">Verbunden</string>
     <string name="cyt_status_waiting">Warten</string>
     <string name="cyt_status_working">In Bearbeitung</string>
@@ -20,8 +20,8 @@
         <item quantity="one">%d mehr anzeigen</item>
         <item quantity="other">%d mehr anzeigen</item>
     </plurals>
-    <string name="cyt_group_count">%1$s · %2$d von %3$d</string>
-    <string name="cyt_count_of">%1$d von %2$d</string>
+    <string name="cyt_group_count">%1$s · %2$d / %3$d</string>
+    <string name="cyt_count_of">%1$d / %2$d</string>
     <string name="cyt_undo">Rückgängig</string>
     <string name="cyt_obscured_hint">Eine andere App verdeckt den Bildschirm, daher zählte das Tippen nicht. Pausieren oder schließen Sie es und tippen Sie dann erneut.</string>
     <string name="cyt_countdown_60">Noch eine Minute. Sag ja oder geh zurück.</string>

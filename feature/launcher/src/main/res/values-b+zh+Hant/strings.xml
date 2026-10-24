@@ -10,7 +10,7 @@
     <string name="gate_failed">無法確認你的身分，因此未進行任何變更。</string>
     <string name="home_title">主畫面</string>
     <string name="home_row_dock">快捷列</string>
-    <string name="home_row_dock_rows">{names}，加上下面的{count, plural, one {#應用程式} other {# 應用程式}}</string>
+    <string name="home_row_dock_rows">{names}，下方另有 {count, plural, one {# 個 App} other {# 個 App}}</string>
     <string name="home_row_look">外觀</string>
     <string name="home_row_stock">使用原廠主畫面</string>
     <string name="home_row_stock_note">恢復電視自己的主畫面。我們的保持安裝狀態，因此您可以再次切換。</string>
@@ -30,10 +30,10 @@
     <string name="home_not_on_tv_wizard_stays_on">我們不太了解這台電視，無法關閉其設定精靈，如果精靈保持開啟狀態並且電視自己的主畫面關閉，電視可能會崩潰。因此安裝程式保留了主畫面。</string>
     <string name="home_not_on_tv_home_changed">此電視的主畫面已被另一個應用程式或先前的變更更改，因此安裝程式保持原樣，沒有新增我們的主畫面。沒有它，清理工作就可以進行。</string>
     <string name="home_not_on_tv_none">此電視目前尚未安裝新的主畫面。</string>
-    <string name="home_not_on_tv_next_wifi">要更改此設定，請忘記電視設定中的 Wi-Fi 網路並重新新增，或使用網路線。然後再次執行安裝程式。</string>
-    <string name="home_not_on_tv_next_check">再次執行安裝程式進行檢查。</string>
+    <string name="home_not_on_tv_next_wifi">若要更換主畫面，請先在電視設定中忘記並重新加入 Wi-Fi，或改用網路線，再重新執行設定。</string>
+    <string name="home_not_on_tv_next_check">重新執行設定，再檢查一次。</string>
     <string name="home_not_on_tv_next_home_changed">如果您想要新的主畫面，請在電視設定中將電視自己的主畫面重新設定為“主頁”，然後再次執行設定。</string>
-    <string name="home_not_on_tv_next_setup">再次執行安裝程式以新增它。</string>
+    <string name="home_not_on_tv_next_setup">重新執行設定以加入新的主畫面。</string>
     <string name="home_not_on_tv_next_list">需要先為這個電視型號建立支援清單。請提供電視報告，協助我們新增支援，後續版本才可能提供新的主畫面。</string>
     <string name="home_run_setup_again">重新執行設定</string>
     <string name="home_help_add_tv">幫忙加入這台電視</string>

@@ -105,8 +105,8 @@
     <string name="appsettings_launcher_pin_label">バンドルされたホーム画面アプリ</string>
     <string name="appsettings_key_label">スマートフォンの鍵</string>
     <string name="appsettings_key_strongbox">専用セキュリティチップ(StrongBox)に保管されています。</string>
-    <string name="appsettings_key_tee">電話機のセキュア ハードウェア (TEE) に保存されます。</string>
-    <string name="appsettings_key_wrapped">電話機の安全なストレージからのキーでラップされ、ソフトウェア内に保管されます。この電話はハードウェアに固定できません。</string>
+    <string name="appsettings_key_tee">スマートフォンのセキュア ハードウェア (TEE) に保存されます。</string>
+    <string name="appsettings_key_wrapped">スマートフォンの安全なストレージからのキーでラップされ、ソフトウェア内に保管されます。この電話はハードウェアに固定できません。</string>
     <string name="appsettings_check_updates">アップデートを確認する</string>
     <string name="appsettings_checking">チェック中...</string>
     <string name="appsettings_update_available">{version} は利用可能です</string>
@@ -125,7 +125,7 @@
     <string name="appsettings_report_note">まずレポートを確認してから、共有するか GitHub に投稿してください</string>
     <string name="appsettings_reset_key">キーをリセットします</string>
     <string name="appsettings_reset_key_note">すべてのテレビは、この電話を再度信頼するかどうかを尋ねます。</string>
-    <string name="appsettings_reset_key_title">この電話機のキーをリセットしますか?</string>
+    <string name="appsettings_reset_key_title">このスマートフォンのキーをリセットしますか?</string>
     <string name="appsettings_reset_key_confirm">キーをリセットします</string>
     <string name="appsettings_delete_all">すべて削除</string>
     <string name="appsettings_delete_all_note">この携帯電話からすべての TV 録画、ジャーナル、復元ポイント、アプリの診断ログ、およびキーを削除します。テレビ自体は変更されず、後でこの電話から元に戻すことはできません。</string>

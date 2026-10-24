@@ -54,20 +54,20 @@
     <string name="door_unknown_note">私たちはこれまでこのテレビに出会ったことがありません。手順は通常同じです。</string>
     <string name="family_atv_step1">テレビで、[設定] (右上の歯車) を開き、[デバイス設定] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、「ビルド」の OK を 7 回押します。</string>
     <string name="family_atv_step2">1 画面戻ります。開発者向けオプションを開き、USB デバッグをオンにします。テレビに「ネットワーク デバッグ」または「ADB デバッグ」も表示されている場合は、それもオンにします。</string>
-    <string name="family_atv_step3">テレビをこの画面のままにしておきます。電話機は自動的に接続します。</string>
+    <string name="family_atv_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
     <string name="family_atv_extra_shield">シールドでは、「ネットワーク デバッグ」が重要です。</string>
     <string name="family_gtv_step1">テレビで、[設定] を開き、[システム] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、「Android TV OS ビルド」で OK を 7 回押します。</string>
     <string name="family_gtv_step2">1 画面戻ります。 [システム] &gt; [開発者向けオプション] を開き、USB デバッグをオンにしてから、ワイヤレス デバッグもオンにします。</string>
-    <string name="family_gtv_step3">テレビをこの画面のままにしておきます。電話機は自動的に接続します。</string>
+    <string name="family_gtv_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
     <string name="family_fire_step1">テレビで、[設定] &gt; [My Fire TV] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、デバイス名を 7 回選択します。</string>
     <string name="family_fire_step2">1 画面戻ります。開発者向けオプションを開き、ADB デバッグをオンにします。</string>
-    <string name="family_fire_step3">テレビをこの画面のままにしておきます。電話機は自動的に接続します。</string>
+    <string name="family_fire_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
     <string name="family_tcl_step1">テレビで、[設定] &gt; [バージョン情報] &gt; [本機情報] を開き、リモコンで上、下、左、右を押します。</string>
     <string name="family_tcl_step2">小さな「ADB」ウィンドウがアドレスとともに表示されます。開いたままにしておきます。</string>
-    <string name="family_tcl_step3">テレビをこの画面のままにしておきます。電話機は自動的に接続します。</string>
+    <string name="family_tcl_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
     <string name="family_unknown_step1">テレビで、[設定] (右上の歯車) を開き、[デバイス設定] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、「ビルド」の OK を 7 回押します。</string>
     <string name="family_unknown_step2">1 画面戻ります。開発者向けオプションを開き、USB デバッグをオンにします。テレビに「ネットワーク デバッグ」または「ADB デバッグ」も表示されている場合は、それもオンにします。</string>
-    <string name="family_unknown_step3">テレビをこの画面のままにしておきます。電話機は自動的に接続します。</string>
+    <string name="family_unknown_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
     <string name="banner_fire">Fire TV では広告と追跡をオフにできますが、独自のホーム画面は維持されます。クリーンアップはまだ受けられます。</string>
     <string name="banner_tcl">この TV は独自のホーム画面を保持します (TCL は他のホーム画面を許可しません)。クリーンアップはまだ受けられます。</string>
     <string name="banner_mibox_usb">デバッグがオンになっている間、このボックスは USB ポートをオフにします。 USB スピーカーまたはドライブは、完了するまで停止します (最後にデバッグを再度オフにします)。</string>
@@ -124,6 +124,6 @@
     <string name="stop_identity_changed_primary">もう一度探してください</string>
     <string name="stop_identity_changed_secondary">戻る</string>
     <string name="stop_tv_not_supported_title">このテレビはまだ電話からセットアップできません</string>
-    <string name="stop_tv_not_supported_body">この TV のデバッグ接続は電話機で安全に変更するには基本的すぎるため、何も触れる前に停止しました。テレビでは何も変わっていませんでした。</string>
+    <string name="stop_tv_not_supported_body">この TV のデバッグ接続はスマートフォンで安全に変更するには基本的すぎるため、何も触れる前に停止しました。テレビでは何も変わっていませんでした。</string>
     <string name="stop_tv_not_supported_primary">戻る</string>
 </resources>

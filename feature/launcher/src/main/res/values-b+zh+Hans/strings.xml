@@ -18,7 +18,7 @@
     <string name="home_drift_restore">恢复我的</string>
     <string name="home_applying">正在更新电视上的主屏幕...</string>
     <string name="home_snackbar_done">完成。</string>
-    <string name="home_not_on_tv_lead">{tv} 保留自己的主屏幕。底座和外观属于新的主屏幕，但不在这台电视上。</string>
+    <string name="home_not_on_tv_lead">{tv} 保留自己的主屏幕。快捷栏和外观属于新的主屏幕，但不在这台电视上。</string>
     <string name="home_not_on_tv_refuses">{brand} 只允许其自己的主屏幕，因此安装程序没有添加我们的主屏幕。没有它，清理工作就可以进行。</string>
     <string name="home_not_on_tv_old_android">新的主屏幕需要Android 8或更高版本，因此安装程序没有添加它。没有它，清理工作就可以进行。</string>
     <string name="home_not_on_tv_unknown_home">我们不太了解这台电视自己的主屏幕，无法安全地交换它，因此安装程序将其保留。</string>
@@ -37,11 +37,11 @@
     <string name="home_not_on_tv_next_list">会改变这一点的是为此电视制作的列表。将其报告发送给我们，我们将制作一份报告；更高版本可能会提供新的主屏幕。</string>
     <string name="home_run_setup_again">再次运行安装程序</string>
     <string name="home_help_add_tv">帮助添加这台电视</string>
-    <string name="home_tv_changes_note">对电视本身所做的更改（例如每行图块或动作）将持续到您在此处更改主屏幕为止。上面未显示电视上更改的底座：新外观保留它，此处保存的不同底座将取代它。从电视主页上删除的应用程序将保持关闭状态。</string>
+    <string name="home_tv_changes_note">对电视本身所做的更改（例如每行图块或动作）将持续到您在此处更改主屏幕为止。上面未显示电视上更改的快捷栏：新外观保留它，此处保存的不同快捷栏将取代它。从电视主页上删除的应用程序将保持关闭状态。</string>
     <string name="home_row_update">更新主屏幕</string>
-    <string name="home_row_update_note">版本{version}已准备就绪。您的底座和外观保持原样。</string>
+    <string name="home_row_update_note">版本{version}已准备就绪。您的快捷栏和外观保持原样。</string>
     <string name="home_update_preview_title">更新主屏幕？</string>
-    <string name="home_update_preview_body">我们将在电视上安装版本 {version}。码头、外观和卡片答案仍然保留。如果现在是电视的主屏幕，则会重新启动一次。</string>
+    <string name="home_update_preview_body">我们将在电视上安装版本 {version}。快捷栏、外观和卡片答案仍然保留。如果现在是电视的主屏幕，则会重新启动一次。</string>
     <string name="home_update_confirm">更新</string>
     <string name="home_update_done">主屏幕已更新：版本{version}。</string>
     <string name="home_stock_preview_title">使用电视自带的主屏幕？</string>

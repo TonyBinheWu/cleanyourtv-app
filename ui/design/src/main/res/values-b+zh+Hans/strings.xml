@@ -3,8 +3,8 @@
     <string name="cyt_back">返回</string>
     <string name="cyt_close">关闭</string>
     <string name="cyt_help">帮助</string>
-    <string name="cyt_step_counter">%2$d 的 %1$d</string>
-    <string name="cyt_step_counter_extra">%2$d·%3$s的%1$d</string>
+    <string name="cyt_step_counter">%1$d / %2$d</string>
+    <string name="cyt_step_counter_extra">%1$d / %2$d · %3$s</string>
     <string name="cyt_status_connected">已连接</string>
     <string name="cyt_status_waiting">等待中</string>
     <string name="cyt_status_working">处理中</string>
@@ -20,8 +20,8 @@
         <item quantity="one">显示更多 %d</item>
         <item quantity="other">显示更多 %d</item>
     </plurals>
-    <string name="cyt_group_count">%1$s·%3$d的%2$d</string>
-    <string name="cyt_count_of">%2$d 的 %1$d</string>
+    <string name="cyt_group_count">%1$s · %2$d / %3$d</string>
+    <string name="cyt_count_of">%1$d / %2$d</string>
     <string name="cyt_undo">撤销</string>
     <string name="cyt_obscured_hint">另一个应用程序覆盖了屏幕，因此点击不算数。暂停或关闭它，然后再次点击。</string>
     <string name="cyt_countdown_60">还剩一分钟。说是或者回去。</string>
@@ -52,25 +52,25 @@
     <string name="cyt_mirror_show_card">显示卡片</string>
     <string name="cyt_dock_row_dock">快捷栏</string>
     <string name="cyt_dock_row_n">行 %1$d</string>
-    <string name="cyt_dock_item_dock_cd">%1$s，在码头上，放置%2$d</string>
+    <string name="cyt_dock_item_dock_cd">%1$s，在快捷栏上，放置%2$d</string>
     <string name="cyt_dock_item_row_cd">%1$s，在 %2$d 行中，放置 %3$d</string>
     <string name="cyt_dock_remove_cd">取出%1$s</string>
-    <string name="cyt_dock_add_dock_cd">将 %1$s 添加到扩展坞</string>
+    <string name="cyt_dock_add_dock_cd">将 %1$s 添加到快捷栏</string>
     <string name="cyt_dock_add_row_cd">将 %1$s 添加到 %2$d 行</string>
-    <string name="cyt_dock_item_out_cd">%1$s，不在码头或其行中</string>
+    <string name="cyt_dock_item_out_cd">%1$s，不在快捷栏或其行中</string>
     <string name="cyt_dock_action_up">向上移动</string>
     <string name="cyt_dock_action_down">向下移动</string>
-    <string name="cyt_dock_action_to_dock">移动到码头</string>
+    <string name="cyt_dock_action_to_dock">移动到快捷栏</string>
     <string name="cyt_dock_action_to_row">移至行 %1$d</string>
     <string name="cyt_dock_action_remove">取出</string>
-    <string name="cyt_dock_add_row">在停靠栏下添加一行</string>
+    <string name="cyt_dock_add_row">在快捷栏下添加一行</string>
     <string name="cyt_dock_remove_row">删除行</string>
     <string name="cyt_dock_remove_row_cd">删除行 %1$d</string>
     <string name="cyt_dock_row_removed">已删除行 %1$d。它的应用程序又回到了“其他应用程序”下。</string>
     <string name="cyt_dock_row_empty">点击下面的应用程序将其放入此行。</string>
     <string name="cyt_dock_full">坞站容纳 %1$d。取出一个，或者在它下面添加一行。</string>
     <string name="cyt_dock_row_full">这些行已满。取出一行，或添加另一行。</string>
-    <string name="cyt_dock_all_full">码头及其下面的两排已满。取出一个来添加另一个。</string>
+    <string name="cyt_dock_all_full">快捷栏及其下面的两排已满。取出一个来添加另一个。</string>
     <string name="cyt_dock_gaps">电视上的空白位置按名称显示您的其他应用程序。</string>
     <string name="cyt_dock_others">电视上的其他应用程序</string>
 </resources>

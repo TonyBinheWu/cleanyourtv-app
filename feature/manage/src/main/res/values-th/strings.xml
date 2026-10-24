@@ -23,7 +23,7 @@
     <string name="manage_level_simple">แบบง่าย</string>
     <string name="manage_level_custom">กำหนดเอง</string>
     <string name="manage_level_simple_note">ปิดความยุ่งเหยิงตามปกติและเก็บทุกอย่างไว้</string>
-    <string name="manage_level_custom_note">ให้คุณเลือกแต่ละรายการ ท่าเรือ และรูปลักษณ์</string>
+    <string name="manage_level_custom_note">ให้คุณเลือกแต่ละรายการ แถบแอป และรูปลักษณ์</string>
     <string name="manage_row_home">หน้าจอหลัก</string>
     <string name="manage_row_home_own">ทีวียังคงเป็นของตัวเอง ดูว่าทำไม</string>
     <string name="manage_row_cards">การ์ดและโมดูล</string>

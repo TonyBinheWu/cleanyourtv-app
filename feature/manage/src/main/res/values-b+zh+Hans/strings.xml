@@ -23,7 +23,7 @@
     <string name="manage_level_simple">简易</string>
     <string name="manage_level_custom">自定义</string>
     <string name="manage_level_simple_note">关闭通常的混乱并保留其他所有内容。</string>
-    <string name="manage_level_custom_note">让您选择每个项目、码头和外观。</string>
+    <string name="manage_level_custom_note">让您选择每个项目、快捷栏和外观。</string>
     <string name="manage_row_home">主屏幕</string>
     <string name="manage_row_home_own">电视保持其自己的状态。看看为什么</string>
     <string name="manage_row_cards">卡和模块</string>

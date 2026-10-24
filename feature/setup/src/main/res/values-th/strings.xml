@@ -81,8 +81,8 @@
     <string name="customise_protected_pill">ได้รับการป้องกัน</string>
     <string name="customise_protected_why_title">ทำไมเราถึงเก็บสิ่งนี้ไว้</string>
     <string name="customise_group_home">หน้าจอหลัก</string>
-    <string name="customise_dock_row">ท่าเรือ: {names}</string>
-    <string name="customise_dock_row_rows">ท่าเรือ: {names} บวก {count, plural, one {แอป #} other {แอป #}} ใน {rows, plural, one {แถว} other {แถว}} ด้านล่าง</string>
+    <string name="customise_dock_row">แถบแอป: {names}</string>
+    <string name="customise_dock_row_rows">แถบแอป: {names} บวก {count, plural, one {แอป #} other {แอป #}} ใน {rows, plural, one {แถว} other {แถว}} ด้านล่าง</string>
     <string name="customise_dock_row_empty">แถบแอป</string>
     <string name="customise_look_row">ดู: {theme}</string>
     <string name="customise_group_tv">บนทีวี</string>

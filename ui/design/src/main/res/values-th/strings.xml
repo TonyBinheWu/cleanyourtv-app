@@ -3,8 +3,8 @@
     <string name="cyt_back">ย้อนกลับ</string>
     <string name="cyt_close">ปิด</string>
     <string name="cyt_help">ความช่วยเหลือ</string>
-    <string name="cyt_step_counter">%1$d ของ %2$d</string>
-    <string name="cyt_step_counter_extra">%1$d ของ %2$d · %3$s</string>
+    <string name="cyt_step_counter">%1$d / %2$d</string>
+    <string name="cyt_step_counter_extra">%1$d / %2$d · %3$s</string>
     <string name="cyt_status_connected">เชื่อมต่อแล้ว</string>
     <string name="cyt_status_waiting">กำลังรอ</string>
     <string name="cyt_status_working">กำลังดำเนินการ</string>
@@ -20,8 +20,8 @@
         <item quantity="one">แสดง %d เพิ่มเติม</item>
         <item quantity="other">แสดง %d เพิ่มเติม</item>
     </plurals>
-    <string name="cyt_group_count">%1$s · %2$d ของ %3$d</string>
-    <string name="cyt_count_of">%1$d ของ %2$d</string>
+    <string name="cyt_group_count">%1$s · %2$d / %3$d</string>
+    <string name="cyt_count_of">%1$d / %2$d</string>
     <string name="cyt_undo">เลิกทำ</string>
     <string name="cyt_obscured_hint">แอปอื่นบังหน้าจอ จึงไม่นับการแตะ หยุดชั่วคราวหรือปิด จากนั้นแตะอีกครั้ง</string>
     <string name="cyt_countdown_60">เหลือเวลาอีกหนึ่งนาที ตอบว่าใช่หรือกลับไป</string>
@@ -52,25 +52,25 @@
     <string name="cyt_mirror_show_card">แสดงการ์ด</string>
     <string name="cyt_dock_row_dock">แถบแอป</string>
     <string name="cyt_dock_row_n">แถว %1$d</string>
-    <string name="cyt_dock_item_dock_cd">%1$s ในท่าเรือ วาง %2$d</string>
+    <string name="cyt_dock_item_dock_cd">%1$s ในแถบแอป วาง %2$d</string>
     <string name="cyt_dock_item_row_cd">%1$s ในแถว %2$d วาง %3$d</string>
     <string name="cyt_dock_remove_cd">นำ %1$s ออกมา</string>
     <string name="cyt_dock_add_dock_cd">เพิ่ม %1$s เข้ากับด็อค</string>
     <string name="cyt_dock_add_row_cd">เพิ่ม %1$s ไปที่แถว %2$d</string>
-    <string name="cyt_dock_item_out_cd">%1$s ไม่อยู่ในท่าเรือหรือแถว</string>
+    <string name="cyt_dock_item_out_cd">%1$s ไม่อยู่ในแถบแอปหรือแถว</string>
     <string name="cyt_dock_action_up">เลื่อนขึ้น</string>
     <string name="cyt_dock_action_down">เลื่อนลง</string>
-    <string name="cyt_dock_action_to_dock">ย้ายไปที่ท่าเรือ</string>
+    <string name="cyt_dock_action_to_dock">ย้ายไปที่แถบแอป</string>
     <string name="cyt_dock_action_to_row">ย้ายไปที่แถว %1$d</string>
     <string name="cyt_dock_action_remove">นำออกไป</string>
-    <string name="cyt_dock_add_row">เพิ่มแถวใต้ท่าเรือ</string>
+    <string name="cyt_dock_add_row">เพิ่มแถวใต้แถบแอป</string>
     <string name="cyt_dock_remove_row">ลบแถว</string>
     <string name="cyt_dock_remove_row_cd">ลบแถว %1$d</string>
     <string name="cyt_dock_row_removed">แถว %1$d ถูกลบออก แอพของมันกลับมาอยู่ภายใต้แอพอื่น ๆ</string>
     <string name="cyt_dock_row_empty">แตะแอปด้านล่างเพื่อวางไว้ในแถวนี้</string>
-    <string name="cyt_dock_full">ท่าเรือรองรับ %1$d เอาอันหนึ่งออกหรือเพิ่มแถวข้างใต้</string>
+    <string name="cyt_dock_full">แถบแอปรองรับ %1$d เอาอันหนึ่งออกหรือเพิ่มแถวข้างใต้</string>
     <string name="cyt_dock_row_full">แถวเหล่านี้เต็มแล้ว นำออกหนึ่งแถวหรือเพิ่มอีกแถว</string>
-    <string name="cyt_dock_all_full">ท่าเรือและสองแถวด้านล่างเต็มแล้ว เอาอันหนึ่งออกไปเพิ่มอีกอัน</string>
+    <string name="cyt_dock_all_full">แถบแอปและสองแถวด้านล่างเต็มแล้ว เอาอันหนึ่งออกไปเพิ่มอีกอัน</string>
     <string name="cyt_dock_gaps">ที่ว่างบนทีวีจะแสดงชื่อแอปอื่นๆ ของคุณ</string>
     <string name="cyt_dock_others">แอปอื่นๆ ในทีวี</string>
 </resources>

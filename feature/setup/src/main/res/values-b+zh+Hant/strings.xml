@@ -40,7 +40,7 @@
     <string name="found_keep_paragraph_no_apps">我們保留您使用的所有東西：{fixed}。</string>
     <string name="found_keep_fixed">電視頻道與 HDMI、遙控器、鍵盤、Chromecast、語音助理與軟體更新</string>
     <string name="found_home_row">主畫面：{dock}</string>
-    <string name="found_home_row_rows">主畫面：{dock}，加上下面的{count, plural, one {#應用程式} other {# 應用程式}}</string>
+    <string name="found_home_row_rows">主畫面：{dock}，下方另有 {count, plural, one {# 個 App} other {# 個 App}}</string>
     <string name="found_home_row_cd">主畫面快捷列：{dock}</string>
     <string name="found_home_change">變更</string>
     <string name="found_home_row_empty">您的新主畫面</string>
@@ -49,21 +49,21 @@
     <string name="found_customise">自訂</string>
     <string name="found_replaces_launcher">會取代電視上現有的主畫面 App，其外觀、應用程式順序、設定與卡片授權選擇都將重新設定。</string>
     <string name="found_no_lock">這款手機沒有螢幕鎖定，因此我們無法再次確認是您本人。</string>
-    <string name="found_unknown_title">{count, plural, =0 {我們沒有找到任何我們確定的東西} one {我們發現了一件事我們確信} other {我們發現了我們確信的 # 事情}}</string>
-    <string name="found_unknown_headline">{count, plural, =0 {我們沒有找到任何我們確定的東西} one {我們確定的事情} other {我們確定的事情}}</string>
+    <string name="found_unknown_title">{count, plural, =0 {沒有找到可確定安全停用的項目} one {找到一個可確定安全停用的項目} other {找到 # 個可確定安全停用的項目}}</string>
+    <string name="found_unknown_headline">{count, plural, =0 {沒有找到可確定安全停用的項目} one {個可確定安全停用的項目} other {個可確定安全停用的項目}}</string>
     <string name="found_unknown_body">我們尚無這個型號的完整資料，因此只做保守的清理。使用一段時間後，你可以在「自訂」中停用更多項目。</string>
     <string name="found_help_add_tv">幫忙加入這台電視</string>
     <string name="stop_tv_refuses_home_title">此電視上無法使用新的主畫面</string>
-    <string name="stop_tv_refuses_home_body">{brand}只允許自身。我們將關閉廣告和追蹤，這是最大的勝利。</string>
-    <string name="found_home_old_android">新的主畫面需要 Android 8 或更高版本，因此這款電視保留了自己的主畫面。我們仍然會關閉廣告和追蹤，這是最大的勝利。</string>
+    <string name="stop_tv_refuses_home_body">{brand} 只允許使用原廠主畫面。我們仍會停用廣告與追蹤功能，完成主要的清理工作。</string>
+    <string name="found_home_old_android">新的主畫面需要 Android 8 以上版本，因此這台電視會保留原廠主畫面。我們仍會停用廣告與追蹤功能。</string>
     <string name="found_home_changed">此電視上的主畫面已被另一個應用程式或較早的更改更改，因此我們保持原樣。我們仍然會關閉廣告和追蹤。</string>
     <string name="found_home_unknown_stock">我們不太了解這台電視自己的主畫面，無法安全地更換它，所以它保留了下來。我們仍然會關閉廣告和追蹤。</string>
-    <string name="found_home_wizard_wifi">此電視的 Wi-Fi 已由其設定精靈儲存。新的主畫面需要關閉精靈，這會忘記 Wi-Fi，並且精靈留在電視上可能會崩潰。所以它保留了自己的主畫面。我們仍然會關閉廣告和追蹤。如需稍後更換，請忘記並在“設定”中重新新增網路，或使用電纜，然後再次執行安裝程序。</string>
-    <string name="found_home_wizard_wifi_unlisted">這台電視的 Wi-Fi 已由其設定精靈儲存，但我們還不太了解這台電視，無法安全地關閉精靈。如果精靈保持開啟狀態，新的主畫面可能會使電視崩潰，因此它會保留自己的主畫面。我們仍然會關閉廣告和追蹤。</string>
-    <string name="found_home_wizard_wifi_unknown">我們無法檢查誰儲存了這台電視的 Wi-Fi。新的主畫面需要關閉設定精靈，這可能會忘記 Wi-Fi，並且精靈留在電視上可能會崩潰。所以它保留了自己的主畫面。我們仍然會關閉廣告和追蹤。</string>
-    <string name="found_home_casting">在此 Google 裝置上，新的主畫面需要關閉設定精靈，如果沒有它，從手機進行的投射將在每次重新啟動後停止運作。所以它保留了自己的主畫面。我們仍然會關閉廣告和追蹤。</string>
-    <string name="found_home_boot_loop">在此電視系列上，設定精靈會在每次重新啟動時返回，並且電視自己的主畫面關閉，這可能會阻止電視啟動。所以它保留了自己的主畫面。我們仍然會關閉廣告和追蹤。</string>
-    <string name="found_home_wizard_stays_on">我們不太了解這台電視，無法關閉其設定精靈，如果精靈保持開啟狀態並且電視自己的主畫面關閉，電視可能會崩潰。所以它保留了自己的主畫面。我們仍然會關閉廣告和追蹤。</string>
+    <string name="found_home_wizard_wifi">這台電視的 Wi-Fi 由設定精靈儲存。新主畫面需要停用精靈，但這會遺失 Wi-Fi 設定；保持精靈啟用又可能導致電視當機。因此會保留原廠主畫面，仍會停用廣告與追蹤功能。若日後想更換主畫面，請先在電視設定中忘記並重新加入 Wi-Fi，或改用網路線，再重新執行設定。</string>
+    <string name="found_home_wizard_wifi_unlisted">這台電視的 Wi-Fi 由設定精靈儲存，而目前資料不足，無法確定停用精靈是否安全。保持精靈啟用時，更換主畫面可能導致當機，因此會保留原廠主畫面，仍會停用廣告與追蹤功能。</string>
+    <string name="found_home_wizard_wifi_unknown">無法確認是誰儲存這台電視的 Wi-Fi。新主畫面需要停用設定精靈，這可能遺失 Wi-Fi 設定；保持精靈啟用又可能導致當機。因此會保留原廠主畫面，仍會停用廣告與追蹤功能。</string>
+    <string name="found_home_casting">這台 Google 裝置需要停用設定精靈才能使用新主畫面，但停用後，每次重新啟動都會造成手機投放功能失效。因此會保留原廠主畫面，仍會停用廣告與追蹤功能。</string>
+    <string name="found_home_boot_loop">這個電視系列的設定精靈會在每次重新啟動後恢復。若停用原廠主畫面，電視可能無法開機，因此會保留原廠主畫面，仍會停用廣告與追蹤功能。</string>
+    <string name="found_home_wizard_stays_on">目前資料不足，無法安全停用這台電視的設定精靈。保持精靈啟用又停用原廠主畫面可能導致當機，因此會保留原廠主畫面，仍會停用廣告與追蹤功能。</string>
     <string name="customise_title">自訂</string>
     <string name="customise_live">{total, plural, other {共 # 個項目，將停用 {off} 個}}</string>
     <string name="customise_nothing_deleted">不會刪除任何項目，停用只是讓它們暫停運作。</string>
@@ -82,7 +82,7 @@
     <string name="customise_protected_why_title">為什麼我們保留這個</string>
     <string name="customise_group_home">主畫面</string>
     <string name="customise_dock_row">快捷列：{names}</string>
-    <string name="customise_dock_row_rows">快捷列：{names}，加上下面{rows, plural, one {行} other {行}}中的{count, plural, one {#應用程式} other {# 應用程式}}</string>
+    <string name="customise_dock_row_rows">快捷列：{names}，另有 {count, plural, one {# 個 App} other {# 個 App}} 位於下方的{rows, plural, one {列} other {列}}</string>
     <string name="customise_dock_row_empty">快捷列</string>
     <string name="customise_look_row">外觀：{theme}</string>
     <string name="customise_group_tv">在電視上</string>
@@ -152,7 +152,7 @@
     <string name="stop_home_setupwraith_body">這台電視的首次開機設定精靈會攔截主畫面鍵。此型號必須同時停用精靈，新的主畫面才能正常運作。這不影響日常使用；還原或恢復原廠設定前會重新啟用精靈。</string>
     <string name="stop_home_setupwraith_primary">嘗試關閉精靈</string>
     <string name="stop_home_setupwraith_secondary">保留原廠主畫面</string>
-    <string name="stop_home_setupwraith_wifi_body">您電視的 Wi-Fi 已由其設定精靈儲存，因此關閉精靈會忘記它。使用電纜，或忘記並在“設定”中重新新增網路，然後重試。</string>
+    <string name="stop_home_setupwraith_wifi_body">這台電視的 Wi-Fi 由設定精靈儲存，停用精靈會遺失 Wi-Fi 設定。請先改用網路線，或在電視設定中忘記並重新加入 Wi-Fi，再試一次。</string>
     <string name="stop_home_setupwraith_wifi_primary">重試</string>
     <string name="stop_home_setupwraith_wifi_unknown_body">我們無法檢查誰儲存了這台電視的 Wi-Fi，因此我們保留其設定精靈以確保 Wi-Fi 安全。</string>
     <string name="stop_home_other_launcher_title">舊的主畫面又回來了</string>
@@ -200,7 +200,7 @@
     <string name="stop_resume_change_body">還沒完成就停了。繼續剩下的事情，還是復原我們所做的事情？</string>
     <string name="stop_reconnect_home_body">重新連接到電視以恢復舊的主畫面。 {tv} 答覆後我們會立即處理。</string>
     <string name="stop_install_failed_title">無法安裝新的主畫面</string>
-    <string name="stop_install_failed_body">電視空間不足：{free, plural, other {# MB}} 可用，{needed, plural, other {# MB}} 需要。我們清除了快取並重試。還是不行。清理工作完成；在「設定」&gt;「儲存」中釋放空間後，稍後嘗試從「管理」進入主畫面。</string>
+    <string name="stop_install_failed_body">電視儲存空間不足：可用 {free, plural, other {# MB}}，需要 {needed, plural, other {# MB}}。已清除快取並重試，仍然無法安裝。清理已完成；請先在「設定 &gt; 儲存空間」釋放空間，之後再從「管理」安裝新主畫面。</string>
     <string name="stop_install_failed_generic_body">電視不接受新的主畫面。清理工作完成；您可以稍後從「管理」再次嘗試主畫面。</string>
     <string name="stop_install_failed_primary">確定</string>
     <string name="stop_install_failed_secondary">顯示詳細資訊</string>
@@ -249,13 +249,13 @@
     <string name="restart_back_try">嘗試關閉精靈</string>
     <string name="restart_back_leave">保持原樣</string>
     <string name="confirm_stop_title">現在停下來嗎？</string>
-    <string name="confirm_stop_body">我們到此為止並放回到目前為止所做的更改。您的電視保持安全。</string>
+    <string name="confirm_stop_body">會在此停止並還原目前的變更，確保電視可正常使用。</string>
     <string name="confirm_stop_button">停止並復原</string>
     <string name="confirm_keep_going">繼續</string>
     <string name="confirm_stop_here_title">停在這裡嗎？</string>
-    <string name="confirm_stop_here_body">我們保留已經完成的事情，不做任何改變。您的電視保持安全。</string>
+    <string name="confirm_stop_here_body">會保留已完成的變更，不再進行其他操作，確保電視可正常使用。</string>
     <string name="confirm_stop_here_button">停在這裡</string>
     <string name="confirm_undo_title">復原電視上的變更？</string>
-    <string name="confirm_undo_body">我們恢復了此更改所做的所有內容，因此電視與以前一樣。什麼都沒有被刪除。</string>
-    <string name="confirm_undo_button">復原更改</string>
+    <string name="confirm_undo_body">會還原這次操作的所有變更，讓電視回到操作前的狀態，不會刪除任何項目。</string>
+    <string name="confirm_undo_button">還原變更</string>
 </resources>

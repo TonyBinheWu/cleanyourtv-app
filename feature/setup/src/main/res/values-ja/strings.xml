@@ -10,7 +10,7 @@
     <string name="gate_negative">キャンセル</string>
     <string name="gate_failed">ご本人であることを確認できなかったため、何も変更されませんでした。</string>
     <string name="notify_channel_name">テレビのセットアップ</string>
-    <string name="notify_channel_description">電話機がテレビの内容を変更する間の進行状況を表示し、いつテレビを見るべきかを知らせます。</string>
+    <string name="notify_channel_description">スマートフォンがテレビの内容を変更する間の進行状況を表示し、いつテレビを見るべきかを知らせます。</string>
     <string name="notify_progress" formatted="false">{tv}、{percent}%をセットアップしています</string>
     <string name="notify_look">テレビを見てください。タップして回答します。</string>
     <string name="notify_rationale">テレビを見る時間になったらブザーを鳴らします。通知を許可すると、ポケットに携帯電話を入れても機能します。</string>
@@ -185,7 +185,7 @@
     <string name="stop_connection_lost_secondary">ここで停止</string>
     <string name="stop_connection_lost_tertiary">行ったことを元に戻します</string>
     <string name="stop_connection_lost_suspect">「{name}」を再度オンにしました。このテレビでは Wi-Fi を搭載しているようです。それなしで続行します。</string>
-    <string name="stop_connection_lost_gone_body">テレビがまだ応答しません。この電話機がオンになっていて、この電話機と同じ Wi-Fi 上にあることを確認します。</string>
+    <string name="stop_connection_lost_gone_body">テレビがまだ応答しません。このスマートフォンがオンになっていて、このスマートフォンと同じ Wi-Fi 上にあることを確認します。</string>
     <string name="stop_connection_lost_keep_trying">試し続けてください</string>
     <string name="stop_resume_title">{tv} のセットアップの途中でした</string>
     <string name="stop_resume_body">{total, plural, one {# の {done} がオフになっています。ホーム画面はまだ変更されていません。続ける？} other {{done}/# のスイッチがオフになっています。ホーム画面はまだ変更されていません。続ける？}}</string>

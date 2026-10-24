@@ -41,7 +41,7 @@
     <string name="found_keep_fixed">直播电视和 HDMI、遥控器、键盘、Chromecast、语音助手和软件更新</string>
     <string name="found_home_row">主屏幕：{dock}</string>
     <string name="found_home_row_rows">主屏幕：{dock}，加上下面的{count, plural, one {#应用程序} other {# 应用程序}}</string>
-    <string name="found_home_row_cd">主屏幕底座：{dock}</string>
+    <string name="found_home_row_cd">主屏幕快捷栏：{dock}</string>
     <string name="found_home_change">改变</string>
     <string name="found_home_row_empty">您的新主屏幕</string>
     <string name="found_safety">首先保存还原点，因此可以恢复所有内容。</string>
@@ -81,8 +81,8 @@
     <string name="customise_protected_pill">受保护</string>
     <string name="customise_protected_why_title">为什么我们保留这个</string>
     <string name="customise_group_home">主屏幕</string>
-    <string name="customise_dock_row">码头：{names}</string>
-    <string name="customise_dock_row_rows">码头：{names}，加上下面{rows, plural, one {行} other {行}}中的{count, plural, one {#应用程序} other {# 应用程序}}</string>
+    <string name="customise_dock_row">快捷栏：{names}</string>
+    <string name="customise_dock_row_rows">快捷栏：{names}，加上下面{rows, plural, one {行} other {行}}中的{count, plural, one {#应用程序} other {# 应用程序}}</string>
     <string name="customise_dock_row_empty">快捷栏</string>
     <string name="customise_look_row">看：{theme}</string>
     <string name="customise_group_tv">在电视上</string>
@@ -133,7 +133,7 @@
     <string name="working_stopping">停止并撤销我们所做的事情......</string>
     <string name="check_overline">请看电视画面</string>
     <string name="check_title">你能看到吗？</string>
-    <string name="check_thumbnail_cd">{count, plural, =0 {电视显示带有空底座的新主屏幕} one {电视显示新的主屏幕，其中 Dock 中有一个应用程序} other {电视显示新的主屏幕，其中 Dock 中包含 # 应用程序}}</string>
+    <string name="check_thumbnail_cd">{count, plural, =0 {电视显示带有空快捷栏的新主屏幕} one {电视显示新的主屏幕，其中 Dock 中有一个应用程序} other {电视显示新的主屏幕，其中 Dock 中包含 # 应用程序}}</string>
     <string name="check_dock_sentence">新的主屏幕，底部有 {dock}。</string>
     <string name="check_dock_sentence_empty">新的主屏幕。</string>
     <string name="check_press_home">按遥控器上的 Home 键一次。</string>

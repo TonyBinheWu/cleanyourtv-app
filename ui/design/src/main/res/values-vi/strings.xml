@@ -3,8 +3,8 @@
     <string name="cyt_back">Quay lại</string>
     <string name="cyt_close">Đóng</string>
     <string name="cyt_help">Trợ giúp</string>
-    <string name="cyt_step_counter">%1$d của %2$d</string>
-    <string name="cyt_step_counter_extra">%1$d của %2$d · %3$s</string>
+    <string name="cyt_step_counter">%1$d / %2$d</string>
+    <string name="cyt_step_counter_extra">%1$d / %2$d · %3$s</string>
     <string name="cyt_status_connected">Đã kết nối</string>
     <string name="cyt_status_waiting">Đang chờ</string>
     <string name="cyt_status_working">Đang xử lý</string>
@@ -20,8 +20,8 @@
         <item quantity="one">Hiển thị thêm %d</item>
         <item quantity="other">Hiển thị thêm %d</item>
     </plurals>
-    <string name="cyt_group_count">%1$s · %2$d của %3$d</string>
-    <string name="cyt_count_of">%1$d của %2$d</string>
+    <string name="cyt_group_count">%1$s · %2$d / %3$d</string>
+    <string name="cyt_count_of">%1$d / %2$d</string>
     <string name="cyt_undo">Hoàn tác</string>
     <string name="cyt_obscured_hint">Một ứng dụng khác đang che màn hình nên lần nhấn đó không được tính. Tạm dừng hoặc đóng nó, sau đó nhấn lại.</string>
     <string name="cyt_countdown_60">Còn một phút. Nói có hoặc quay lại.</string>

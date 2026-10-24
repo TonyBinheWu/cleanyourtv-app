@@ -3,8 +3,8 @@
     <string name="cyt_back">뒤로</string>
     <string name="cyt_close">닫기</string>
     <string name="cyt_help">도움말</string>
-    <string name="cyt_step_counter">%2$d의 %1$d</string>
-    <string name="cyt_step_counter_extra">%2$d · %3$s의 %1$d</string>
+    <string name="cyt_step_counter">%1$d / %2$d</string>
+    <string name="cyt_step_counter_extra">%1$d / %2$d · %3$s</string>
     <string name="cyt_status_connected">연결됨</string>
     <string name="cyt_status_waiting">대기 중</string>
     <string name="cyt_status_working">처리 중</string>
@@ -20,8 +20,8 @@
         <item quantity="one">%d 더보기</item>
         <item quantity="other">%d 더보기</item>
     </plurals>
-    <string name="cyt_group_count">%1$s · %2$d of %3$d</string>
-    <string name="cyt_count_of">%2$d의 %1$d</string>
+    <string name="cyt_group_count">%1$s · %2$d / %3$d</string>
+    <string name="cyt_count_of">%1$d / %2$d</string>
     <string name="cyt_undo">실행 취소</string>
     <string name="cyt_obscured_hint">다른 앱이 화면을 덮고 있어서 해당 탭이 계산되지 않았습니다. 일시중지하거나 닫은 다음 다시 탭하세요.</string>
     <string name="cyt_countdown_60">1분 남았습니다. 예라고 말하거나 돌아가세요.</string>
