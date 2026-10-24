@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/udhaykumarbala/cleanyourtv-app/releases/latest"><img src="https://img.shields.io/github/v/release/udhaykumarbala/cleanyourtv-app?style=flat&color=E8A84C&labelColor=15181e&label=download%20APK" alt="Download the latest APK"></a>
+  <a href="https://github.com/TonyBinheWu/cleanyourtv-app/releases/latest"><img src="https://img.shields.io/github/v/release/TonyBinheWu/cleanyourtv-app?style=flat&color=E8A84C&labelColor=15181e&label=multilingual%20APK" alt="Download the latest multilingual APK"></a>
   <img src="https://img.shields.io/badge/TVs-131%20models%20%C2%B7%2046%20brands-E8A84C?style=flat&labelColor=15181e" alt="131 TV models from 46 brands">
   <img src="https://img.shields.io/badge/phone-Android%209%2B-E8A84C?style=flat&labelColor=15181e" alt="Android 9 or newer">
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-E8A84C?style=flat&labelColor=15181e" alt="MIT licence"></a>
@@ -12,7 +12,7 @@
 <h3 align="center">A community-built phone app for <a href="https://github.com/Gathin23/cleanyourtv">Clean Your TV</a>.<br>Anyone can clean up their TV: no laptop, no coding agent, no cables.</h3>
 
 <p align="center">
-  <a href="https://github.com/udhaykumarbala/cleanyourtv-app/releases/latest"><b>Download</b></a> ·
+  <a href="https://github.com/TonyBinheWu/cleanyourtv-app/releases/latest"><b>Download Multilingual APK</b></a> ·
   <a href="#how-it-works"><b>How it works</b></a> ·
   <a href="#safe-by-design"><b>Is it safe?</b></a> ·
   <a href="#supported-tvs"><b>Supported TVs</b></a>
@@ -23,6 +23,10 @@
 </p>
 
 ## 多國語言版 APP 下載 / Multilingual APK
+
+原始手機 App 由 [udhaykumarbala](https://github.com/udhaykumarbala/cleanyourtv-app) 開發。
+此分支由 TonyBinheWu 加入多國語言支援；[PR #271](https://github.com/udhaykumarbala/cleanyourtv-app/pull/271)
+已提交原作者，目前尚未合併。
 
 **[直接下載多國語言版 APK 0.3.4.1（約 5.9 MB）](https://github.com/TonyBinheWu/cleanyourtv-app/releases/download/multilingual-0.3.4.1/cleanyourtv-multilingual-0.3.4.1.apk)**
 
