@@ -22,6 +22,19 @@
   <img src="docs/images/connect-analyse-clean-hd.gif" width="800" alt="Three steps, phone and TV side by side. 1 Connect: the app finds the TV and the TV asks to allow the phone. 2 Analyse: the phone reads the TV and shows 22 things to switch off while the TV is untouched. 3 Clean: the phone shows Making it clean while the TV shows a lantern scanning the old cards and drawing them into a soft black hole, and the TV ends on its new home screen.">
 </p>
 
+## 多國語言版 APP 下載 / Multilingual APK
+
+**[直接下載多國語言版 APK 0.3.4.1（約 5.9 MB）](https://github.com/TonyBinheWu/cleanyourtv-app/releases/download/multilingual-0.3.4.1/cleanyourtv-multilingual-0.3.4.1.apk)**
+
+[最新版本、更新與安裝說明 / Latest releases and installation notes](https://github.com/TonyBinheWu/cleanyourtv-app/releases/latest)
+
+由 TonyBinheWu 發布的社群多國語言版本，支援下列 16 種語言，適用於 Android 9 以上。
+已安裝本 Fork 的 0.3.3.1 多國語言版可直接更新；原作者版或不同簽章的 Debug 版無法直接覆蓋，
+切換前請先閱讀 Release 的簽章與還原點備份說明。
+
+Community multilingual build published by TonyBinheWu, supporting the 16 languages below on
+Android 9 or newer. See the release notes for installation, signing differences and updates.
+
 ## Languages
 
 English · 繁體中文 · 日本語 · 한국어 · 简体中文 · ไทย · Tiếng Việt · Deutsch
