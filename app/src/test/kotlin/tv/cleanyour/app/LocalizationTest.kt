@@ -3,6 +3,7 @@ package tv.cleanyour.app
 import android.content.Context
 import android.content.res.Configuration
 import android.icu.text.MessageFormat
+import android.icu.text.MessagePattern
 import android.os.LocaleList
 import androidx.test.core.app.ApplicationProvider
 import java.io.File
@@ -39,6 +40,16 @@ class LocalizationTest {
     private fun id(name: String): Int = context.resources.getIdentifier(name, "string", context.packageName)
         .also { assertTrue(it != 0, "Missing compiled resource: $name") }
 
+    // MessageFormat.argumentNames includes only top-level arguments. Read all pattern parts so
+    // arguments inside plural branches receive sample values and are checked too.
+    private fun argumentNames(text: String): Set<String> {
+        val pattern = MessagePattern(text)
+        return (0 until pattern.countParts()).mapNotNull { index ->
+            val part = pattern.getPart(index)
+            if (part.type == MessagePattern.Part.Type.ARG_NAME) pattern.getSubstring(part) else null
+        }.toSet()
+    }
+
     @Test fun allCompiledTranslationsResolveAndFormatWithoutLosingArguments() {
         val root = File(System.getProperty("cleanyourtv.repoRoot") ?: error("no repo root"))
         for ((tag, folder) in locales) {
@@ -57,10 +68,11 @@ class LocalizationTest {
                     if ('{' !in text) continue
                     val source = localized("en").getString(id(name))
                     val format = MessageFormat(text, Locale.forLanguageTag(tag))
-                    assertEquals(MessageFormat(source, Locale.ENGLISH).argumentNames, format.argumentNames,
+                    val names = argumentNames(source)
+                    assertEquals(names, argumentNames(text),
                         "$tag/$name changed an argument name")
                     for (count in listOf(0, 1, 2, 5, 21)) {
-                        val args = format.argumentNames.associateWith<String, Any> { "Sample" }.toMutableMap()
+                        val args = names.associateWith<String, Any> { "Sample" }.toMutableMap()
                         // The source determines numeric argument types, including nested plural groups.
                         Regex("\\{(\\w+),\\s*(?:plural|selectordinal|spellout|number)").findAll(source).forEach {
                             args[it.groupValues[1]] = count
