@@ -63,7 +63,10 @@ class FullStoreTest {
         assertEquals(listOf(Store.RELEASES_URL), newer.urls)
         assertEquals("", Store.updateChecker(OneAnswer(200, """{"tag_name":"v0.3.0"}""")).latestNewerThan("0.3.0"))
         assertEquals(null, Store.updateChecker(OneAnswer(404, "")).latestNewerThan("0.3.0"))
-        assertEquals("https://github.com/udhaykumarbala/cleanyourtv-app/releases", Store.releasePage)
+        assertEquals("https://github.com/TonyBinheWu/cleanyourtv-app/releases", Store.releasePage)
+        assertEquals("https://api.github.com/repos/TonyBinheWu/cleanyourtv-app/releases/latest", Store.RELEASES_URL)
+        assertEquals("0.3.3.2", Store.updateChecker(OneAnswer(200, """{"tag_name":"multilingual-0.3.3.2"}""")).latestNewerThan("0.3.3.1"))
+        assertEquals("", Store.updateChecker(OneAnswer(200, """{"tag_name":"multilingual-0.3.3.1"}""")).latestNewerThan("0.3.3.1"))
     }
 
     @Test fun softwareUpdatesStayTheOwnersChoice() {

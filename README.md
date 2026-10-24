@@ -22,6 +22,13 @@
   <img src="docs/images/connect-analyse-clean-hd.gif" width="800" alt="Three steps, phone and TV side by side. 1 Connect: the app finds the TV and the TV asks to allow the phone. 2 Analyse: the phone reads the TV and shows 22 things to switch off while the TV is untouched. 3 Clean: the phone shows Making it clean while the TV shows a lantern scanning the old cards and drawing them into a soft black hole, and the TV ends on its new home screen.">
 </p>
 
+## Multilingual APK for this fork
+
+[Download the signed APK](https://github.com/TonyBinheWu/cleanyourtv-app/releases/latest)
+from this fork's Releases. See [installation and future updates](docs/FORK-RELEASES.md), including
+the signing difference from the original app. Translation improvements are also submitted upstream
+in [PR #271](https://github.com/udhaykumarbala/cleanyourtv-app/pull/271).
+
 ## Languages
 
 English · 繁體中文 · 日本語 · 한국어 · 简体中文 · ไทย · Tiếng Việt · Deutsch

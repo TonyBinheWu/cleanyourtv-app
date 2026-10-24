@@ -1,0 +1,99 @@
+name: fork-signed-apk
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fork-signed-apk-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4.9.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@ed408507eac070d1f99cc633dbcf757c94c7933a # v4.4.3
+      - name: Prepare private signing store
+        env:
+          KEYSTORE_BASE64: ${{ secrets.CYT_FORK_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64, os
+          from pathlib import Path
+          value = os.environ['KEYSTORE_BASE64']
+          if not value:
+              raise SystemExit('Fork signing secret is missing')
+          target = Path(os.environ['RUNNER_TEMP']) / 'fork-signing.p12'
+          target.write_bytes(base64.b64decode(value, validate=True))
+          target.chmod(0o600)
+          PY
+      - name: Validate translations, tests and signed Release APK
+        env:
+          CYT_RELEASE_KEYSTORE: ${{ runner.temp }}/fork-signing.p12
+          CYT_RELEASE_KEYSTORE_PASSWORD: ${{ secrets.CYT_FORK_KEYSTORE_PASSWORD }}
+          CYT_RELEASE_KEY_ALIAS: cleanyourtv
+        run: |
+          python3 -m unittest discover -s scripts/tests -p test_localization.py -v
+          ./gradlew check :app:assembleFullRelease :app:checkApkSizeFullRelease --console=plain
+      - name: Verify signature, package, version and bundled languages
+        run: |
+          set -euo pipefail
+          apk=app/build/outputs/apk/full/release/app-full-release.apk
+          signer="$ANDROID_HOME/build-tools/36.0.0/apksigner"
+          aapt="$ANDROID_HOME/build-tools/36.0.0/aapt2"
+          "$signer" verify --verbose --print-certs "$apk" > "$RUNNER_TEMP/signature.txt"
+          grep -F 'Verified using v2 scheme (APK Signature Scheme v2): true' "$RUNNER_TEMP/signature.txt"
+          grep -F 'Verified using v3 scheme (APK Signature Scheme v3): true' "$RUNNER_TEMP/signature.txt"
+          digest=$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' "$RUNNER_TEMP/signature.txt")
+          test "$digest" = "$(tr -d '[:space:]' < docs/fork-release-signer.sha256)"
+          "$aapt" dump badging "$apk" > "$RUNNER_TEMP/badging.txt"
+          grep -F "package: name='tv.cleanyour.app' versionCode='7' versionName='0.3.3.1'" "$RUNNER_TEMP/badging.txt"
+          if grep -q '^application-debuggable' "$RUNNER_TEMP/badging.txt"; then
+            echo 'Release APK must not be debuggable'; exit 1
+          fi
+          "$aapt" dump configurations "$apk" > "$RUNNER_TEMP/configurations.txt"
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          text = (Path(os.environ['RUNNER_TEMP']) / 'configurations.txt').read_text()
+          for qualifier in ['b+zh+Hant', 'b+zh+Hans', 'ja', 'ko', 'th', 'vi', 'de']:
+              if not any(line.strip() == qualifier or line.strip().startswith(qualifier+'-') for line in text.splitlines()):
+                  raise SystemExit('Missing packaged language: '+qualifier)
+          print('All seven non-English languages are packaged; English is the default resource set.')
+          PY
+          mkdir -p dist/fork-release
+          cp "$apk" dist/fork-release/cleanyourtv-multilingual-0.3.3.1.apk
+          cp "$RUNNER_TEMP/signature.txt" dist/fork-release/signature.txt
+          cp "$RUNNER_TEMP/badging.txt" dist/fork-release/apk-info.txt
+          cp "$RUNNER_TEMP/configurations.txt" dist/fork-release/languages.txt
+          cp docs/fork-release-signer.sha256 dist/fork-release/signer.sha256
+          (cd dist/fork-release && sha256sum cleanyourtv-multilingual-0.3.3.1.apk > SHA256SUMS.txt)
+      - name: Upload verified signed APK
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: signed-multilingual-release
+          path: dist/fork-release/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Upload failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: fork-apk-diagnostics
+          path: |
+            **/build/reports/
+            **/build/test-results/
+      - name: Remove temporary signing store
+        if: always()
+        run: rm -f "$RUNNER_TEMP/fork-signing.p12"

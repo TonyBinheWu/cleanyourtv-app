@@ -21,13 +21,13 @@ object Store : StorePorts {
         val r = http.get(RELEASES_URL, null, null)
         if (r.code != 200) { r.body?.close(); null } else {
             val body = r.body?.use { it.readBytes().decodeToString() } ?: return@UpdateChecker null
-            val tag = Regex("\"tag_name\"\\s*:\\s*\"v?([0-9][0-9A-Za-z.]*)\"").find(body)?.groupValues?.get(1) ?: return@UpdateChecker null
+            val tag = Regex("\"tag_name\"\\s*:\\s*\"(?:multilingual-|v)?([0-9][0-9A-Za-z.]*)\"").find(body)?.groupValues?.get(1) ?: return@UpdateChecker null
             if (tag != current) tag else ""
         }
     }
 
     override fun addOnFetcher(make: () -> ArtifactFetcher): ArtifactFetcher = make()
 
-    const val RELEASES_URL = "https://api.github.com/repos/udhaykumarbala/cleanyourtv-app/releases/latest"
-    const val RELEASE_PAGE = "https://github.com/udhaykumarbala/cleanyourtv-app/releases"
+    const val RELEASES_URL = "https://api.github.com/repos/TonyBinheWu/cleanyourtv-app/releases/latest"
+    const val RELEASE_PAGE = "https://github.com/TonyBinheWu/cleanyourtv-app/releases"
 }
