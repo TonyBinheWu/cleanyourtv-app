@@ -45,13 +45,13 @@
     <string name="found_home_change">改变</string>
     <string name="found_home_row_empty">您的新主屏幕</string>
     <string name="found_safety">首先保存还原点，因此可以恢复所有内容。</string>
-    <string name="found_make_clean">让它干净</string>
+    <string name="found_make_clean">开始清理</string>
     <string name="found_customise">自定义</string>
     <string name="found_replaces_launcher">替换此电视上已有的主屏幕应用程序。它的外观、应用程序顺序、设置和卡片答案都是全新的。</string>
     <string name="found_no_lock">这款手机没有屏幕锁定，因此我们无法再次确认是您本人。</string>
     <string name="found_unknown_title">{count, plural, =0 {我们没有找到任何我们确定的东西} one {我们发现了一件事我们确信} other {我们发现了我们确信的 # 事情}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {我们没有找到任何我们确定的东西} one {我们确定的事情} other {我们确定的事情}}</string>
-    <string name="found_unknown_body">我们以前没有见过这种电视，所以我们要小心。一旦您习惯了，可以在“自定义”下关闭更多功能。</string>
+    <string name="found_unknown_body">我们还没有这个电视型号的完整资料，因此只停用确定安全的项目。使用一段时间后，你可以在“自定义”中选择更多项目。</string>
     <string name="found_help_add_tv">帮助添加这台电视</string>
     <string name="stop_tv_refuses_home_title">此电视上无法使用新的主屏幕</string>
     <string name="stop_tv_refuses_home_body">{brand}只允许其自身。我们将关闭广告和跟踪，这是最大的胜利。</string>
@@ -127,7 +127,7 @@
     <string name="working_step_done_cd">{step}，完成</string>
     <string name="working_thumbnail_caption">电视直播</string>
     <string name="working_thumbnail_cd">电视直播</string>
-    <string name="working_keep_on">保持电视打开。你可以放下手机；到了看电视的时间我们就会嗡嗡作响。</string>
+    <string name="working_keep_on">请保持电视开启。你可以先放下手机，需要查看电视画面时我们会振动提醒。</string>
     <string name="working_stop">停止并撤消</string>
     <string name="working_putting_back">恢复旧主屏幕...</string>
     <string name="working_stopping">停止并撤销我们所做的事情......</string>

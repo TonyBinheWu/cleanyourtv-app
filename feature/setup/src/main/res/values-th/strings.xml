@@ -45,13 +45,13 @@
     <string name="found_home_change">เปลี่ยน</string>
     <string name="found_home_row_empty">หน้าจอหลักใหม่ของคุณ</string>
     <string name="found_safety">จุดคืนค่าจะถูกบันทึกก่อน ดังนั้นทุกอย่างจึงสามารถใส่กลับคืนได้</string>
-    <string name="found_make_clean">ทำให้สะอาด</string>
+    <string name="found_make_clean">เริ่มจัดระเบียบ</string>
     <string name="found_customise">ปรับแต่ง</string>
     <string name="found_replaces_launcher">แทนที่แอปหน้าจอหลักที่มีอยู่แล้วบนทีวีเครื่องนี้ รูปลักษณ์ ลำดับแอป การตั้งค่า และคำตอบของการ์ดเริ่มต้นใหม่</string>
     <string name="found_no_lock">ไม่มีการล็อกหน้าจอในโทรศัพท์เครื่องนี้ ดังนั้นเราจึงตรวจสอบไม่ได้ว่าเป็นคุณอีกครั้ง</string>
     <string name="found_unknown_title">{count, plural, =0 {เราไม่พบสิ่งที่เราแน่ใจ} one {เราพบสิ่งหนึ่งที่เราแน่ใจ} other {เราพบ # สิ่งที่เราแน่ใจ}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {เราไม่พบสิ่งที่เราแน่ใจ} one {สิ่งที่เราแน่ใจ} other {สิ่งที่เราแน่ใจ}}</string>
-    <string name="found_unknown_body">เราไม่เคยพบกับทีวีประเภทนี้มาก่อน ดังนั้นเราจึงระมัดระวัง คุณสามารถปิดเพิ่มเติมได้ภายใต้การปรับแต่งเมื่อคุณใช้งานแล้ว</string>
+    <string name="found_unknown_body">เรายังไม่มีข้อมูลทีวีรุ่นนี้ จึงปิดใช้งานเฉพาะรายการที่มั่นใจว่าปลอดภัย หลังจากลองใช้งานแล้ว คุณสามารถเลือกรายการเพิ่มเติมได้ในปรับแต่ง</string>
     <string name="found_help_add_tv">ช่วยเพิ่มทีวีเครื่องนี้</string>
     <string name="stop_tv_refuses_home_title">หน้าจอหลักใหม่ไม่สามารถทำได้บนทีวีเครื่องนี้</string>
     <string name="stop_tv_refuses_home_body">{brand} อนุญาตเฉพาะของตัวเองเท่านั้น เราจะปิดโฆษณาและการติดตาม ซึ่งถือเป็นชัยชนะส่วนใหญ่</string>
@@ -127,7 +127,7 @@
     <string name="working_step_done_cd">{step} เสร็จแล้ว</string>
     <string name="working_thumbnail_caption">สดจากทีวี</string>
     <string name="working_thumbnail_cd">สดจากทีวี</string>
-    <string name="working_keep_on">เปิดทีวีไว้ คุณสามารถวางโทรศัพท์ลงได้ เราจะส่งเสียงพึมพำเมื่อถึงเวลาดูทีวี</string>
+    <string name="working_keep_on">เปิดทีวีไว้ คุณวางโทรศัพท์ลงได้ เราจะสั่นแจ้งเตือนเมื่อถึงเวลาที่ต้องดูหน้าจอทีวี</string>
     <string name="working_stop">หยุดและเลิกทำ</string>
     <string name="working_putting_back">นำหน้าจอหลักแบบเก่ากลับมา...</string>
     <string name="working_stopping">หยุดและเลิกทำสิ่งที่เราทำ...</string>

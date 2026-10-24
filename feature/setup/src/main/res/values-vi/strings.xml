@@ -45,13 +45,13 @@
     <string name="found_home_change">Thay đổi</string>
     <string name="found_home_row_empty">Màn hình chính mới của bạn</string>
     <string name="found_safety">Điểm khôi phục được lưu trước tiên, vì vậy mọi thứ có thể được đặt lại.</string>
-    <string name="found_make_clean">Làm sạch</string>
+    <string name="found_make_clean">Bắt đầu dọn dẹp</string>
     <string name="found_customise">Tùy chỉnh</string>
     <string name="found_replaces_launcher">Thay thế ứng dụng màn hình chính đã có trên TV này. Giao diện, thứ tự ứng dụng, cài đặt và câu trả lời thẻ bắt đầu mới.</string>
     <string name="found_no_lock">Không có khóa màn hình trên điện thoại này nên chúng tôi không thể kiểm tra kỹ xem đó có phải là bạn không.</string>
     <string name="found_unknown_title">{count, plural, =0 {Chúng tôi không tìm thấy điều gì chắc chắn cả} one {Chúng tôi đã tìm thấy một điều mà chúng tôi chắc chắn} other {Chúng tôi đã tìm thấy # những điều chúng tôi chắc chắn về}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Chúng tôi không tìm thấy điều gì chắc chắn cả} one {điều chúng tôi chắc chắn} other {những điều chúng ta chắc chắn}}</string>
-    <string name="found_unknown_body">Chúng tôi chưa gặp chính xác chiếc TV này trước đây nên chúng tôi rất cẩn thận. Bạn có thể tắt nhiều tính năng khác trong phần Tùy chỉnh khi bạn đã quen với nó.</string>
+    <string name="found_unknown_body">Chúng tôi chưa có thông tin đầy đủ về mẫu TV này nên chỉ tắt các mục chắc chắn an toàn. Sau khi dùng thử, bạn có thể chọn thêm mục trong Tùy chỉnh.</string>
     <string name="found_help_add_tv">Giúp thêm tivi này</string>
     <string name="stop_tv_refuses_home_title">Không thể có màn hình chính mới trên TV này</string>
     <string name="stop_tv_refuses_home_body">{brand} chỉ cho phép riêng của nó. Chúng tôi sẽ tắt quảng cáo và theo dõi, đó là phần lớn chiến thắng.</string>
@@ -127,7 +127,7 @@
     <string name="working_step_done_cd">{step}, xong</string>
     <string name="working_thumbnail_caption">Trực tiếp từ tivi</string>
     <string name="working_thumbnail_cd">Trực tiếp từ tivi</string>
-    <string name="working_keep_on">Bật TV. Bạn có thể đặt điện thoại xuống; chúng ta sẽ ồn ào khi đến giờ xem TV.</string>
+    <string name="working_keep_on">Hãy giữ TV bật. Bạn có thể đặt điện thoại xuống; chúng tôi sẽ báo rung khi cần bạn nhìn màn hình TV.</string>
     <string name="working_stop">Dừng và hoàn tác</string>
     <string name="working_putting_back">Đưa trở lại màn hình chính cũ...</string>
     <string name="working_stopping">Dừng lại và hoàn tác những gì chúng ta đã làm...</string>
@@ -229,7 +229,7 @@
     <string name="done_add_card_title">Thêm thẻ vào màn hình chính</string>
     <string name="done_add_card_body">Tùy chọn. Bạn có thể thêm thẻ sau trong Quản lý.</string>
     <string name="done_note_title">Lưu ghi chú khôi phục cho gia đình</string>
-    <string name="done_finish">Kết thúc</string>
+    <string name="done_finish">Hoàn tất</string>
     <string name="done_finishing">Đang tắt gỡ lỗi...</string>
     <string name="done_finished">Tắt gỡ lỗi... xong.</string>
     <string name="restart_card_title">Khởi động lại TV để kiểm tra tất cả</string>

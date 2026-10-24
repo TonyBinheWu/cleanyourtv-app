@@ -45,13 +45,13 @@
     <string name="found_home_change">変更</string>
     <string name="found_home_row_empty">新しいホーム画面</string>
     <string name="found_safety">復元ポイントが最初に保存されるため、すべてを元に戻すことができます。</string>
-    <string name="found_make_clean">きれいにする</string>
+    <string name="found_make_clean">クリーンアップを開始</string>
     <string name="found_customise">カスタマイズ</string>
     <string name="found_replaces_launcher">このテレビにすでにあるホーム画面アプリを置き換えます。見た目、アプリの順序、設定、カードの答えが新しく始まります。</string>
     <string name="found_no_lock">この電話には画面ロックがないため、本人であることを再確認できません。</string>
     <string name="found_unknown_title">{count, plural, =0 {確かな情報は何も見つかりませんでした} one {確信していることが 1 つ見つかりました} other {# 確信できることが見つかりました}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {確かな情報は何も見つかりませんでした} one {私たちが確信していること} other {私たちが確信していること}}</string>
-    <string name="found_unknown_body">私たちはこれまでこのテレビに遭遇したことがないので、注意しています。使い慣れてきたら、[カスタマイズ] でさらに多くの機能をオフにすることができます。</string>
+    <string name="found_unknown_body">このテレビの機種情報がまだないため、安全と判断できる項目だけを無効にします。しばらく使ってから「カスタマイズ」でさらに項目を選べます。</string>
     <string name="found_help_add_tv">このテレビの追加を手伝ってください</string>
     <string name="stop_tv_refuses_home_title">このテレビでは新しいホーム画面を使用できません</string>
     <string name="stop_tv_refuses_home_body">{brand} は独自のもののみを許可します。広告と追跡をオフにします。これが利点のほとんどです。</string>
@@ -127,7 +127,7 @@
     <string name="working_step_done_cd">{step}、完了</string>
     <string name="working_thumbnail_caption">テレビからライブ配信</string>
     <string name="working_thumbnail_cd">テレビからライブ配信</string>
-    <string name="working_keep_on">テレビをつけっぱなしにしてください。電話を置いても構いません。テレビを見る時間になると、みんなで騒ぎます。</string>
+    <string name="working_keep_on">テレビの電源を入れたままにしてください。スマートフォンは置いても大丈夫です。テレビの確認が必要になったら振動で知らせます。</string>
     <string name="working_stop">停止して元に戻す</string>
     <string name="working_putting_back">古いホーム画面に戻します...</string>
     <string name="working_stopping">実行を停止して元に戻します...</string>
@@ -229,7 +229,7 @@
     <string name="done_add_card_title">ホーム画面にカードを追加</string>
     <string name="done_add_card_body">オプション。後で「管理」でカードを追加できます。</string>
     <string name="done_note_title">家族向けの復元メモを保存します</string>
-    <string name="done_finish">終了</string>
+    <string name="done_finish">完了</string>
     <string name="done_finishing">デバッグをオフに切り替えています...</string>
     <string name="done_finished">デバッグをオフに切り替えました... 完了しました。</string>
     <string name="restart_card_title">テレビを再起動してすべてのスティックが確認できることを確認します</string>

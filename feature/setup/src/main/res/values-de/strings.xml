@@ -45,13 +45,13 @@
     <string name="found_home_change">Änderung</string>
     <string name="found_home_row_empty">Ihr neuer Startbildschirm</string>
     <string name="found_safety">Zuerst wird ein Wiederherstellungspunkt gespeichert, sodass alles zurückgesetzt werden kann.</string>
-    <string name="found_make_clean">Machen Sie es sauber</string>
+    <string name="found_make_clean">Bereinigung starten</string>
     <string name="found_customise">Anpassen</string>
     <string name="found_replaces_launcher">Ersetzt die Startbildschirm-App, die bereits auf diesem Fernseher vorhanden ist. Sein Aussehen, die App-Reihenfolge, die Einstellungen und die Kartenantworten beginnen neu.</string>
     <string name="found_no_lock">Auf diesem Telefon gibt es keine Bildschirmsperre, daher können wir Ihre Identität nicht noch einmal überprüfen.</string>
     <string name="found_unknown_title">{count, plural, =0 {Wir haben nichts gefunden, worüber wir uns sicher sind} one {Wir haben eine Sache gefunden, bei der wir uns sicher sind} other {Wir haben # Dinge gefunden, bei denen wir uns sicher sind}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Wir haben nichts gefunden, worüber wir uns sicher sind} one {Sache, bei der wir uns sicher sind} other {Dinge, bei denen wir uns sicher sind}}</string>
-    <string name="found_unknown_body">Genau diesen Fernseher haben wir noch nie gesehen, also sind wir vorsichtig. Weiteres lässt sich unter Anpassen abschalten, wenn man einmal damit gelebt hat.</string>
+    <string name="found_unknown_body">Für dieses Fernsehmodell haben wir noch keine vollständigen Informationen. Deshalb deaktivieren wir nur sichere Kandidaten. Unter Anpassen kannst du später weitere Elemente auswählen.</string>
     <string name="found_help_add_tv">Helfen Sie mit, diesen Fernseher hinzuzufügen</string>
     <string name="stop_tv_refuses_home_title">Der neue Startbildschirm ist auf diesem Fernseher nicht möglich</string>
     <string name="stop_tv_refuses_home_body">{brand} erlaubt nur seine eigenen. Wir werden die Werbung und das Tracking ausschalten, was den größten Teil des Gewinns ausmacht.</string>
@@ -127,7 +127,7 @@
     <string name="working_step_done_cd">{step}, fertig</string>
     <string name="working_thumbnail_caption">Live aus dem Fernsehen</string>
     <string name="working_thumbnail_cd">Live aus dem Fernsehen</string>
-    <string name="working_keep_on">Lassen Sie den Fernseher eingeschaltet. Sie können den Hörer auflegen; Wir werden summen, wenn es Zeit ist, fernzusehen.</string>
+    <string name="working_keep_on">Lass den Fernseher eingeschaltet. Du kannst das Telefon ablegen. Wir benachrichtigen dich per Vibration, sobald du auf den Fernseher schauen musst.</string>
     <string name="working_stop">Stoppen und rückgängig machen</string>
     <string name="working_putting_back">Der alte Startbildschirm wird wiederhergestellt...</string>
     <string name="working_stopping">Aufhören und rückgängig machen, was wir getan haben ...</string>

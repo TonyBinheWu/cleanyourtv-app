@@ -3,14 +3,14 @@
     <string name="action_back">Zurück</string>
     <string name="action_cancel">Abbrechen</string>
     <string name="action_ok">OK</string>
-    <string name="welcome_title">Dein Fernseher, aufgeräumt.</string>
-    <string name="welcome_body">Schalten Sie die Unordnung aus, behalten Sie die von Ihnen verwendeten Apps und erhalten Sie einen ruhigen Startbildschirm. Fünf Minuten. Alles kann zurückgesetzt werden.</string>
+    <string name="welcome_title">Dein Fernseher. Klar und aufgeräumt.</string>
+    <string name="welcome_body">Deaktiviere unnötige Apps und Werbung, behalte deine Lieblingsapps und erhalte einen übersichtlichen Startbildschirm. Das dauert etwa fünf Minuten. Alle Änderungen lassen sich rückgängig machen.</string>
     <string name="welcome_hero_cd">Ein TV-Startbildschirm voller gesponserter Zeilen verwandelt sich in einen sauberen Bildschirm mit vier Apps am unteren Rand</string>
     <string name="welcome_looking">Suche nach Fernsehern in Ihrem WLAN...</string>
     <string name="welcome_found_one">{name} ({room}) gefunden</string>
     <string name="welcome_found_one_noroom">{name} gefunden</string>
     <string name="welcome_found_many">{count, plural, one {# TV gefunden} other {#-Fernseher gefunden}}</string>
-    <string name="welcome_none_yet">Noch kein Fernseher. Machen Sie weiter, wir suchen weiter.</string>
+    <string name="welcome_none_yet">Noch kein Fernseher gefunden. Du kannst fortfahren, wir suchen weiter.</string>
     <string name="welcome_start">Start</string>
     <string name="welcome_returning">Ich habe schon einmal einen Fernseher aufgestellt</string>
     <string name="picker_title">Welcher Fernseher?</string>
@@ -29,8 +29,8 @@
     <string name="address_field_label">TV-Adresse</string>
     <string name="address_error">Das ist keine Adresse in Ihrem Heimnetzwerk</string>
     <string name="address_connect">Verbinden</string>
-    <string name="door_title">Lass das Telefon rein</string>
-    <string name="door_body">Nehmen Sie die TV-Fernbedienung in die Hand. Das dauert etwa eine Minute und ist der einzige knifflige Teil.</string>
+    <string name="door_title">Verbindung zum Telefon erlauben</string>
+    <string name="door_body">Nimm die Fernbedienung zur Hand. Dieser Schritt dauert etwa eine Minute und ist der einzige etwas knifflige Teil.</string>
     <string name="door_step_cd">Schritt {current} von {total}</string>
     <string name="door_next">Weiter</string>
     <string name="door_menu_names_vary">Die Menünamen können auf Ihrem Fernseher leicht abweichen.</string>
@@ -76,7 +76,7 @@
     <string name="allow_body_emphasis_always">„Immer zulassen“</string>
     <string name="allow_body_emphasis_ok">„OK“</string>
     <string name="allow_code_label">Der Code auf dem Fernseher endet mit</string>
-    <string name="allow_code_caption">Das ist dieses Telefon.</string>
+    <string name="allow_code_caption">Das ist der Code dieses Telefons.</string>
     <string name="allow_waiting">Ich warte darauf, dass du auf den Fernseher tippst ...</string>
     <string name="allow_still_waiting">Ich warte immer noch auf „OK“ auf dem Fernseher.</string>
     <string name="allow_trusted">Vertrauenswürdig</string>
