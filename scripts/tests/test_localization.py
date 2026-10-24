@@ -10,7 +10,9 @@ MODULES = ['app', 'ui/design', 'feature/backup', 'feature/connect',
            'feature/launcher', 'feature/manage', 'feature/modules', 'feature/setup']
 LOCALES = {'en': 'values', 'zh-Hant': 'values-b+zh+Hant', 'ja': 'values-ja',
            'ko': 'values-ko', 'zh-Hans': 'values-b+zh+Hans', 'th': 'values-th',
-           'vi': 'values-vi', 'de': 'values-de'}
+           'vi': 'values-vi', 'de': 'values-de', 'hi': 'values-hi', 'es': 'values-es',
+           'fr': 'values-fr', 'ar': 'values-ar', 'bn': 'values-bn', 'ru': 'values-ru',
+           'pt': 'values-pt', 'id': 'values-in'}
 
 
 def resources(path):
@@ -91,14 +93,34 @@ class LocalizationTest(unittest.TestCase):
                         dst = translated[name]
                         self.assertEqual(src.tag, dst.tag)
                         self.assertEqual(src.get('formatted'), dst.get('formatted'))
-                        src_items = list(src) if src.tag == 'plurals' else [src]
-                        dst_items = list(dst) if dst.tag == 'plurals' else [dst]
-                        self.assertEqual([el.get('quantity') for el in src_items], [el.get('quantity') for el in dst_items])
-                        for s, d in zip(src_items, dst_items):
+                        if src.tag == 'plurals':
+                            src_by_quantity = {el.get('quantity'): el for el in src}
+                            dst_by_quantity = {el.get('quantity'): el for el in dst}
+                            required = {'ar': {'zero', 'one', 'two', 'few', 'many', 'other'},
+                                        'ru': {'one', 'few', 'many', 'other'}}.get(tag, set(src_by_quantity))
+                            self.assertEqual(required, set(dst_by_quantity))
+                            pairs = [(src_by_quantity.get(q, src_by_quantity['other']), d)
+                                     for q, d in dst_by_quantity.items()]
+                        else:
+                            pairs = [(src, dst)]
+                        for s, d in pairs:
                             text = d.text or ''
                             self.assertTrue(text.strip(), str(path))
                             self.assertNotRegex(text, r'ZXQ\d+QXZ|TODO|TRANSLATE')
-                            self.assertEqual(signature(s.text or ''), signature(text), str(path))
+                            original, local = signature(s.text or ''), signature(text)
+                            if src.tag == 'plurals' and tag == 'ar' and d.get('quantity') in ('one', 'two'):
+                                # Arabic singular and dual forms can express the exact count in words.
+                                self.assertEqual(original[:4], local[:4], str(path))
+                                self.assertFalse(local[4])
+                            elif tag in ('ar', 'ru') and ', plural,' in (s.text or ''):
+                                # Locale-specific categories may repeat arguments and count symbols.
+                                self.assertEqual(set(original[0]), set(local[0]), str(path))
+                                self.assertEqual(set(original[1]), set(local[1]), str(path))
+                                self.assertTrue(set(original[2]) <= set(local[2]), str(path))
+                                self.assertEqual(bool(original[3]), bool(local[3]), str(path))
+                                self.assertEqual(original[4], local[4], str(path))
+                            else:
+                                self.assertEqual(original, local, str(path))
                             self.assertNotRegex(text, r'(?<!\\)[\'"]', 'Android quotes must be escaped')
                             self.assertNotIn('—', text)
                             self.assertNotIn('--', text)
