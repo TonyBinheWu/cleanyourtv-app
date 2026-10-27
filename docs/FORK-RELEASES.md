@@ -2,7 +2,10 @@
 
 This fork publishes the signed full-flavour Android APK at
 <https://github.com/TonyBinheWu/cleanyourtv-app/releases>.
-The latest fork version is **0.3.4.1**, version code **8**, tag **multilingual-0.3.4.1**, based on the latest upstream 0.3.4 PR revision. The first fork release was 0.3.3.1 (7).
+The latest published fork version is **0.3.4.1**, version code **8**, tag **multilingual-0.3.4.1**, based on upstream 0.3.4. The first fork release was 0.3.3.1 (7).
+The source branches are now synchronized with upstream **0.4.0**, commit `e42aaf2`, and include
+1,066 translatable resource entries in all sixteen languages. A source synchronization does not
+replace an existing Release asset. Published APKs retain the version shown on their Release page.
 It includes English, Traditional Chinese, Japanese, Korean, Simplified Chinese, Thai, Vietnamese
 and German, plus Hindi, Spanish, French, Modern Standard Arabic, Bengali, Russian, Portuguese and Indonesian. The full build's update check points to this fork's latest release.
 
@@ -34,11 +37,13 @@ Run **Actions > fork-signed-apk > Run workflow**. It reads the encrypted reposit
 `check` and the size gate, verifies the v2/v3 signature and certificate, checks that the APK is
 not debuggable and contains the requested languages, then uploads the signed artifact.
 
-For the next release, increment the version name and code in `app/build.gradle.kts`, update
-the expected version and asset name in `fork-apk.yml`, and use a matching `multilingual-<version>`
+For the next release, use the version name and code in `app/build.gradle.kts` (a higher code than
+the previous published APK) and a matching `multilingual-<version>`
 tag. Run the workflow, inspect the successful result, then attach its verified APK and checksums
 to a GitHub Release with notes. The `multilingual-` prefix avoids the upstream `v*` release pipeline,
 which expects the original maintainer's offline signing key.
+The signing workflow reads the synchronized app version automatically; its checks and APK name
+do not need a separate version edit.
 
 The upstream contribution lives separately in branch `i18n-eight-languages` and
 [PR #271](https://github.com/udhaykumarbala/cleanyourtv-app/pull/271). Update that branch to add
