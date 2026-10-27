@@ -2,6 +2,181 @@
 
 All notable changes to the app. Versions follow [semantic versioning](https://semver.org/).
 
+## 0.4.0 (2026-10-26)
+
+A new Look sheet for the TV's home screen: pick a picture, pick one of five styles, pick how many
+apps sit in a row, and see your own TV in a preview before anything reaches it.
+
+### Home screen
+- The Look sheet starts with the picture, then the style, then apps in a row. Nothing is sent to
+  the TV until you tap "Put it on the TV".
+- Five styles, each shown as a small preview of your TV with your picture: Classic (a dark dock, a
+  big name and a soft glow), Glass (a frosted dock and light in each app's colour), Spotlight (a
+  big banner of the app you are on, like newer smart TVs, with the app's colour across the top),
+  All apps (every app in one grid, no dock band) and Calm (no glow and no big name, just apps and
+  your picture).
+- Pictures to go with any style: Mist, Aurora, Navy, Autumn lake, Curtains, Mountains (with a sky
+  that changes with the hour), Lamp light, Neon, Cobalt, no picture, or your own photo. Diwali is
+  there until 10 November, with its lamps and festive icons. The pictures are our own work, free
+  to use (CC0).
+- Apps in a row: 4, 5, 6, 7 or 8. Fewer apps means bigger tiles, and 4 is the biggest the TV can
+  show. At 8 the tiles are small and long names get cut short (the TV's own settings stop at 7).
+  "Names under every app" puts each app's name under its tile, easier to read from the sofa.
+- More options, for when you want to tweak a style: how the highlight moves (Lively, Smooth, Quick
+  or Off), the big name, the glow (soft, from the top or none), a ring in the app's colour, the
+  dock band (solid, see-through or glass), the buttons at the top (with names, round icons or one
+  menu button) and a green Wi-Fi icon when the TV is online. Rows the style can't use say why.
+  "Use Classic's own settings" (or whichever style you're on) puts them all back.
+- TVs with 1.5 GB of memory or less get Quick movement picked for them, so Home stays snappy. A
+  style change that drops one of your tweaks says so, with Keep mine.
+- Advanced: lift and zoom on the app you're on, how see-through the dock band is, how strong the
+  sky is, the home screen's own setting names, and the settings file itself with a Copy button.
+- Changed your mind? "Undo changes" takes the sheet back to how it opened, and "Put back the earlier
+  look" brings back the look the TV had before your last send, photo and all. Closing with changes
+  asks first.
+- The preview is drawn from the same settings the TV gets, laid out the way the home screen app
+  2.7 lays out Home: the picture, its dim, the sky, the dock band, your apps, the focus glow and
+  the buttons at the top.
+- Your own photo (Manage, then Home screen, then Look): "Choose a photo" opens Android's photo
+  picker (no permission needed), then you pinch and drag it in a 16:9 frame with the clock and the
+  dock drawn over it, choose how dark it is and tap "Use this crop". The TV gets a 1920 x 1080 copy
+  under 280 KB without the photo's place, camera or time, and the phone keeps that copy for the TV.
+- Your dock keeps its order when you go to fewer apps in a row. Say you had 15 apps 7 in a row and
+  went to 4: the TV shows the first 12, the other 3 wait (the Look and Dock sheets say so), and
+  going back brings all 15 back in the same order. Empty spaces in the dock stay empty on the TV
+  now, instead of filling up with whatever app comes next.
+- Home's Look row shows a small preview of what you last sent, like "Glass with Mist" and "5 apps
+  in a row". If a look doesn't reach the TV, the phone keeps your choice and Home offers Open Look.
+- Setup's Look step is the same sheet with Done at the bottom, and running Setup again starts from
+  the look you saved.
+- A look you picked before this version stays on the TV exactly as it is, byte for byte, until you
+  send a new one. It opens in the new sheet as the closest style with its own picture and apps in
+  a row.
+- On a TV with a home screen app older than 2.7, Classic is the one style it can show, and the
+  sheet offers the update.
+- After Diwali ends, the phone counts your earlier picture as the TV's again and Home offers to
+  put it back with one tap.
+
+### Credits
+- The look pictures are this project's own work, drawn from code and released under CC0. Aurora,
+  Navy (the launcher's Glass picture) and Autumn lake (the launcher's Ruska, named for what it
+  shows) come from Clean Your TV (MIT). The app's Licences screen lists them.
+
+### Other
+- The app now refuses a home screen settings file with a number that isn't finite in a list, which
+  makes the home screen app 2.7 stop on every start. The app never writes one itself.
+- The README links to Obtainium, which follows the GitHub releases and updates the app by itself.
+- Picking TCL under "Change model" now asks whether the TV's menus are in English (or your
+  language) or in Chinese. TCL TVs sold outside China get the usual Developer options steps,
+  with a line for Google TV's Wireless debugging; only Chinese menus get the 本机信息 steps.
+
+## 0.3.7 (2026-10-25)
+
+Seventeen more TVs with a tested list, the home screen app updated to 2.7, and more apps this app
+never switches off. Thank you to Gathin for the lists, and to everyone who tested one on their TV
+and sent a report: each of these lists starts from one.
+
+### TV lists
+- 17 more TVs match a tested list, 148 in all, from the lists of Clean Your TV v2.7.0: the
+  Amazon Fire TV AFTDEC012E (issues #65, #76), the Chromecast with Google TV HD (#239), the
+  Hisense SmartTV 4K FFM on songshan, also the Hisense 50A6H4 (#63, #68, #69, #107, #110, #146,
+  #289), and on lushan (#52), the Karbonn SWTV-20AE (#81), the OK. AI PONT (#165, #179, #256),
+  the Philips 50PUD7406 and 55PUS7906 (#13, #39, #75, #266), the Skyworth SW-22SA (#89) and
+  SWTV-22AE-FHD (#185, #215, #216), the Sony BRAVIA 4K UR3 (#42, #73, #90, #113, #228, #246,
+  #255, #269), BRAVIA 4K VH1 (#142, #143, #155, #178, #233, #268, #274) and KD-43X80L (#46,
+  #124, #293), and the Xiaomi Mi Box 3 (#199, #224, #273), MiTV-MFTR0 (#193, #249), TV S Mini
+  LED 75 2025 (#128), Mi TV P1 43 (#184) and MiTV-MSSP1 (#57, #58, #78, #176).
+- The Fire TV AFTDEC012E, the MiTV-MFTR0 and the Chromecast with Google TV HD get the clean-up
+  and keep their own home screen: Fire OS keeps its Home, the app does not know the MFTR0's China
+  home screen, and on the Chromecast the switch would cost casting after every reboot.
+- Ten lists changed upstream and follow it, among them the Hisense SmartTV 4K FFM, the Sony
+  BRAVIA 4K UR2 and VH2, the TCL G05 and G09 Google TV and the Xiaomi TV A Pro 2026. The Xiaomi
+  MiTV-AESP0 list keeps its setup wizard on, as in 0.3.6; the wizard off option upstream added
+  for it costs casting, so its rows are a choice instead.
+- Hisense TVs without an exact list also switch off Google partner setup and Calendar sync.
+- The other brand sets are unchanged.
+
+### Home screen launcher
+- Bundles the Clean Your TV launcher 2.7 (upstream v2.7.0), built from source and signed with
+  this project's launcher key. With its default settings the TV looks as before, with fixes: the
+  network pill shows the VPN badge right away, the dock's corners follow its tiles, Launcher
+  settings changes apply when you leave with Home, and the quick settings no longer crash on
+  Android 8.0. It also speaks Ukrainian. Its new options are all off by default; the app lets
+  you choose them in a later version.
+- A TV set up with an earlier version is offered "Update the home screen" in Manage.
+
+### Safety
+- Never switched off, by any list, also during the home screen switch: vendor setup wizards
+  (OnePlus, Xiaomi and Android's device provisioning), vendor home screens (Haier, OnePlus),
+  TalkBack and Google's text-to-speech, the Sony accessibility tutorial and the TCL hearing aid,
+  the remote's services (the Google TV remote service and its logger, Sony remote start and the
+  OnePlus remote diagnosis), the Xiaomi TV service and TCL Live. Some upstream lists switch these
+  off; this app keeps them on.
+- When a vendor setup wizard comes up after the Home key during the switch, the switch rolls
+  back.
+- More TV software updaters (CVTE, TCL, Sber, Fire TV, the TCL remote and peripherals updater,
+  Sony's camera firmware) are "Software updates" rows, which stay on in Simple.
+
+## 0.3.6 (2026-10-25)
+
+Fixes for TVs that got stuck after a home screen switch rolled back, and for the install that
+kept saying the TV stopped answering. Thank you to everyone who sent a report and a log: each of
+these fixes starts from one.
+
+### Setup
+- A TV whose home screen switch rolled back no longer gets stuck. Setup used to offer "Try with
+  the wizard off" after the rollback, which saved a choice every later plan refused, and Back
+  led to Welcome instead of the TV's restore options. That card is gone, saved choices the TV
+  would refuse are dropped before planning, and Back on a refused plan opens Manage for a TV this
+  app already changed (issues #375, #385).
+- No more endless "TV stopped answering" during an install. When the TV ends a streamed install
+  with a protocol error while still connected, the app checks whether the app landed: done if it
+  did, else that step fails and Setup carries on with the clean-up, without the home screen
+  switch (issues #80, #364, #367).
+- On TCL Google TV sets, the plan screen and Manage > Home screen say before the switch that the
+  remote's Settings (gear), Netflix and YouTube buttons don't work with the new home screen, and
+  that Use the TV's own home screen brings them back (issue #275).
+- A safety rule: the home screen switch is never planned while the TV shows a setup wizard that
+  can answer the Home button and the switch would leave it on, also on TVs with an exact list
+  (the Sony BRAVIA BF1 list among them). The clean-up alone still runs. Lists whose switch
+  switches the wizard off, such as the TCL G10 Google TV list, are unchanged.
+- When the TV's port answers but the connection fails, the door now says so, lists what on the
+  phone can block the app (a per-app network limit on MIUI or Samsung, a VPN, Private DNS,
+  mobile data), and offers Copy error: a short summary with the app and Android version, the
+  error and the last log lines, with no addresses in it, ready to paste into an issue.
+
+### Reports and logs
+- The problem report lists what this app switched off and has not put back.
+- The diagnostics log names why a socket connect failed (the exception class and the system's
+  reason), what the TV showed when the home check rolled back, the step the home screen switch
+  stopped at, and the in doubt state by name.
+
+## 0.3.5 (2026-10-24)
+
+More TVs get a careful clean-up, and a safety guard for the ACER R4G. Thank you to everyone who
+sent a TV report: these changes come straight from them.
+
+### Setup
+- More TVs get a careful clean-up. TVs from brands with one or two tested lists (Skyworth, SHARP,
+  onn, OnePlus, Haier and others) now switch off up to six hidden feedback and advertising
+  services: Google Feedback and its consent prompt, the print service, and Android's on-device
+  advertising, ad personalization and ad model services. Each of them is switched off by every
+  tested list of that brand and by at least ten lists in all. Before, these TVs got no clean-up
+  unless a list matched the exact model (for example issues #89, #108, #169, #194, #196, #251).
+  The home screen decision on these TVs is the same as before, and the app still checks each
+  switch-off on the TV before it runs it. TVs that already had a brand set get nothing new.
+- A safety guard for the ACER R4G. It is made by MOKA, in the same family as the TVs whose setup
+  wizard comes back at every restart, so Setup never offers the home screen switch on it, even
+  when its setup wizard is off, and does the clean-up alone (issues #74, #102).
+
+### Reports
+- A TV report from one of these TVs now says `Profile: brand set <Brand>` instead of `none`.
+
+### Under the hood
+- Test builds can carry candidate lists for TVs nobody has tested yet, offered on Setup only to
+  people who agree to try one. Releases carry none: this one resolves every TV as it would
+  without them.
+
 ## 0.3.4 (2026-10-24)
 
 Fixes for the TVs whose home screen was already changed, and an honest message when Setup can't

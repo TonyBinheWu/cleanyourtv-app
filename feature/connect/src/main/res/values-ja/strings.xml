@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">その他</string>
+    <string name="door_tcl_menus_prompt">テレビではどのメニューが放送されますか?</string>
+    <string name="door_tcl_menus_global">英語または私の言語のメニュー</string>
+    <string name="door_tcl_menus_chinese">中国語のメニュー</string>
+    <string name="door_connect_failed_title">テレビは応答しましたが、この電話は接続できませんでした</string>
+    <string name="door_connect_failed_body">接続に失敗しました ({kind})。この画面が開いている間は試し続けます。</string>
+    <string name="door_connect_failed_hint">コンピューターからの ADB は機能するが、このアプリがテレビに接続できない場合は、アプリごとのネットワーク制限 (MIUI、Samsung)、VPN、プライベート DNS、またはモバイル データなど、電話上の何かが邪魔をしている可能性があります。しばらく電源を切ってから、もう一度試してください。</string>
+    <string name="door_copy_error">コピーエラー</string>
+    <string name="door_error_copied">コピーされました。それを問題に貼り付けます。</string>
     <string name="door_unknown_note">私たちはこれまでこのテレビに出会ったことがありません。手順は通常同じです。</string>
     <string name="family_atv_step1">テレビで、[設定] (右上の歯車) を開き、[デバイス設定] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、「ビルド」の OK を 7 回押します。</string>
     <string name="family_atv_step2">1 画面戻ります。開発者向けオプションを開き、USB デバッグをオンにします。テレビに「ネットワーク デバッグ」または「ADB デバッグ」も表示されている場合は、それもオンにします。</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">テレビで、[設定] &gt; [バージョン情報] &gt; [本機情報] を開き、リモコンで上、下、左、右を押します。</string>
     <string name="family_tcl_step2">小さな「ADB」ウィンドウがアドレスとともに表示されます。開いたままにしておきます。</string>
     <string name="family_tcl_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>
+    <string name="family_tcl_extra_gtv_step1">Google TV で: [システム] &gt; [バージョン情報] を選択し、[Android TV OS ビルド] で [OK] を 7 回押します。</string>
+    <string name="family_tcl_extra_gtv">Google TV で、ワイヤレス デバッグもオンにします。</string>
     <string name="family_unknown_step1">テレビで、[設定] (右上の歯車) を開き、[デバイス設定] &gt; [バージョン情報] を開きます。テレビに「あなたは開発者になりました」と表示されるまで、「ビルド」の OK を 7 回押します。</string>
     <string name="family_unknown_step2">1 画面戻ります。開発者向けオプションを開き、USB デバッグをオンにします。テレビに「ネットワーク デバッグ」または「ADB デバッグ」も表示されている場合は、それもオンにします。</string>
     <string name="family_unknown_step3">テレビをこの画面のままにしておきます。スマートフォンは自動的に接続します。</string>

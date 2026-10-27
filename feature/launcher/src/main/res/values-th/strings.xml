@@ -12,10 +12,11 @@
     <string name="home_row_dock">แถบแอป</string>
     <string name="home_row_dock_rows">{names} บวก {count, plural, one {แอป #} other {แอป #}} ด้านล่าง</string>
     <string name="home_row_look">รูปแบบหน้าจอ</string>
+    <string name="home_tcl_remote_keys">บน TCL Google TV ปุ่มการตั้งค่า (เกียร์), Netflix และ YouTube ของรีโมทใช้งานไม่ได้กับหน้าจอหลักใหม่ หากต้องการนำกลับมา ให้เลือกใช้หน้าจอหลักของทีวี</string>
     <string name="home_row_stock">ใช้หน้าจอหลักของทีวี</string>
     <string name="home_row_stock_note">นำหน้าจอหลักของทีวีกลับมา ของเรายังคงติดตั้งอยู่ ดังนั้นคุณจึงสามารถสลับได้อีกครั้ง</string>
     <string name="home_drift_banner">การตั้งค่าหน้าจอหลักบนทีวีเปลี่ยนไปนับตั้งแต่ที่คุณตั้งค่า</string>
-    <string name="home_drift_restore">กู้คืนของฉัน</string>
+    <string name="home_drift_restore">ส่งของฉันอีกครั้ง</string>
     <string name="home_applying">กำลังอัปเดตหน้าจอหลักบนทีวี...</string>
     <string name="home_snackbar_done">เสร็จสิ้น</string>
     <string name="home_not_on_tv_lead">{tv} เก็บหน้าจอหลักของตัวเองไว้ แท่นเชื่อมต่อและรูปลักษณ์เป็นของหน้าจอหลักใหม่และไม่ได้อยู่ในทีวีเครื่องนี้</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">สิ่งที่จะเปลี่ยนแปลงคือรายการที่สร้างขึ้นสำหรับทีวีเครื่องนี้ ส่งรายงานมาให้เราแล้วเราจะจัดทำรายงาน เวอร์ชันที่ใหม่กว่าอาจเสนอหน้าจอหลักใหม่</string>
     <string name="home_run_setup_again">เรียกใช้การตั้งค่าอีกครั้ง</string>
     <string name="home_help_add_tv">ช่วยเพิ่มทีวีเครื่องนี้</string>
-    <string name="home_tv_changes_note">การเปลี่ยนแปลงที่ทำกับทีวี เช่น การเรียงต่อแถวหรือการเคลื่อนไหว จะคงอยู่จนกว่าคุณจะเปลี่ยนหน้าจอหลักที่นี่ ด็อกที่เปลี่ยนแปลงบนทีวีไม่แสดงด้านบน: รูปลักษณ์ใหม่จะยังคงอยู่ ส่วนด็อกอื่นที่บันทึกไว้ที่นี่จะเข้ามาแทนที่ แอพที่นำออกจากบ้านบนทีวีจะปิดอยู่</string>
+    <string name="home_tv_changes_note">การตั้งค่าที่เปลี่ยนแปลงบนทีวีจะถูกแทนที่เมื่อคุณส่งจากที่นี่</string>
+    <string name="home_row_look_summary_picture">{style} พร้อม {picture}</string>
+    <string name="home_row_look_summary_photo">{style} พร้อมรูปถ่ายของคุณ</string>
+    <string name="home_row_look_summary_none">{style} ไม่มีภาพ</string>
+    <string name="home_row_look_columns">{count, plural, one {แอป # ติดกัน} other {แอป # ติดกัน}}</string>
+    <string name="home_row_look_sending">กำลังส่ง...</string>
+    <string name="home_look_failed">ส่งรูปแบบหน้าจอนี้ไปยังทีวีไม่สำเร็จ</string>
+    <string name="home_look_failed_open">เปิดลุค</string>
     <string name="home_row_update">อัปเดตหน้าจอหลัก</string>
     <string name="home_row_update_note">เวอร์ชัน {version} พร้อมใช้งานแล้ว แถบแอปของคุณและดูคงอยู่เหมือนเดิม</string>
     <string name="home_update_preview_title">อัพเดตหน้าจอหลัก?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">ใช้ทีวีของตัวเอง</string>
     <string name="home_stock_working">นำหน้าจอหลักของทีวีกลับมา...</string>
     <string name="home_stock_done">หน้าจอหลักของทีวีกลับมาแล้ว ของเรายังคงติดตั้งอยู่</string>
-    <string name="theme_title">รูปแบบหน้าจอ</string>
     <string name="theme_default">ค่าเริ่มต้น</string>
-    <string name="theme_default_desc">พื้นหลังสีดำมีสี่แอปอยู่ด้านล่าง</string>
-    <string name="theme_aurora">ออโรร่า</string>
-    <string name="theme_aurora_desc">พื้นหลังสีน้ำเงินเข้มพร้อมแสงนุ่มนวลด้านหลังแอป</string>
-    <string name="theme_six_columns">หกคอลัมน์</string>
-    <string name="theme_six_columns_desc">หกแอพ พอดีกับหน้าจอมากขึ้น</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name} เลือกอยู่ {description}</string>
+    <string name="home_look_ended_banner">{picture} สิ้นสุดแล้ว นำภาพก่อนหน้าของคุณกลับคืนสู่ทีวีหรือไม่?</string>
+    <string name="home_look_ended_restore">ใส่กลับเข้าไป</string>
     <string name="dock_title">แถบแอปของคุณ</string>
     <string name="dock_body">สูงสุด {count, spellout} ที่ด้านล่าง ลากแอพตามจุดเพื่อเปลี่ยนลำดับ</string>
+    <string name="dock_waiting">{count, plural, one {แอป # รออยู่} other {แอป # รออยู่}} ในตารางจนกว่าคุณจะเลือกแอปเพิ่มเติมติดต่อกันใน Look</string>
 </resources>

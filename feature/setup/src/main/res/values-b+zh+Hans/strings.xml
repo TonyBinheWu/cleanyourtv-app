@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">重试</string>
     <string name="stop_probe_failed_secondary">返回</string>
     <string name="stop_probe_failed_tertiary">显示详细信息</string>
+    <string name="stop_plan_refused_title">无法为这台电视制定安全的操作方案</string>
+    <string name="stop_plan_refused_body">电视已响应，但读取到的状态无法应用我们能确定安全的方案，因此在执行前已停止。电视没有任何更改。报告问题会附上原因，帮助我们修复。</string>
     <string name="found_title">{count, plural, =0 {没有什么可以关闭的。想要新的主屏幕吗？} one {我们发现了一件事要关掉} other {我们发现 # 需要关闭的东西}}</string>
     <string name="found_headline">{count, plural, =0 {没有什么可以关闭的。想要新的主屏幕吗？} one {要关闭的东西} other {要关闭的东西}}</string>
     <string name="found_overline">我们发现</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">开始清理</string>
     <string name="found_customise">自定义</string>
     <string name="found_replaces_launcher">替换此电视上已有的主屏幕应用程序。它的外观、应用程序顺序、设置和卡片答案都是全新的。</string>
+    <string name="found_tcl_remote_keys">在 TCL Google TV 上，遥控器的设置（齿轮）、Netflix 和 YouTube 按钮在新主屏幕上停止工作。要恢复它们，请在“管理”中选择“使用电视自己的主屏幕”。</string>
     <string name="found_no_lock">这款手机没有屏幕锁定，因此我们无法再次确认是您本人。</string>
     <string name="found_unknown_title">{count, plural, =0 {我们没有找到任何我们确定的东西} one {我们发现了一件事我们确信} other {我们发现了我们确信的 # 事情}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {我们没有找到任何我们确定的东西} one {我们确定的事情} other {我们确定的事情}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">快捷栏：{names}，加上下面{rows, plural, one {行} other {行}}中的{count, plural, one {#应用程序} other {# 应用程序}}</string>
     <string name="customise_dock_row_empty">快捷栏</string>
     <string name="customise_look_row">看：{theme}</string>
+    <string name="customise_look_row_count">看：{theme}、{count, plural, one {# 连续应用} other {# 连续应用}}</string>
+    <string name="look_photo_after">尚未发送任何内容。当您点击“使其清洁”时，它会转到电视。</string>
     <string name="customise_group_tv">在电视上</string>
     <string name="customise_show_on_tv">在电视上显示进度</string>
     <string name="customise_show_on_tv_note">电视显示每一步，然后是新的主屏幕</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">已复制</string>
     <string name="customise_snackbar_kept">{name} 将被保留。</string>
     <string name="customise_snackbar_off">{name} 将关闭。</string>
-    <string name="theme_title">外观</string>
     <string name="theme_default">默认</string>
-    <string name="theme_default_desc">黑色背景，底部有四个应用程序。</string>
     <string name="theme_aurora">极光</string>
-    <string name="theme_aurora_desc">深蓝色背景，应用程序后面发出柔和的光芒。</string>
     <string name="theme_six_columns">六列</string>
-    <string name="theme_six_columns_desc">六个应用程序，因此更适合屏幕。</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}，已选择。 {description}</string>
     <string name="dock_title">你的快捷栏</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">撤消电视上的更改？</string>
     <string name="confirm_undo_body">我们恢复了此更改所做的所有内容，因此电视与以前一样。什么都没有被删除。</string>
     <string name="confirm_undo_button">撤消更改</string>
-    <string name="stop_plan_refused_title">无法为这台电视制定安全的操作方案</string>
-    <string name="stop_plan_refused_body">电视已响应，但读取到的状态无法应用我们能确定安全的方案，因此在执行前已停止。电视没有任何更改。报告问题会附上原因，帮助我们修复。</string>
+    <string name="candidate_overline">测试版本</string>
+    <string name="candidate_title">这台电视的列表是新的</string>
+    <string name="candidate_body">我们根据同型号的报告列出了这款电视的列表，但尚未有人测试过。它关闭的内容照常列在计划中，您可以从还原点恢复所有内容。</string>
+    <string name="candidate_ask_issue">如果您尝试一下，请在问题 {issue} 中告诉我们几天后的情况：</string>
+    <string name="candidate_ask">如果您尝试一下，请在您的问题中告诉我们几天后的情况：</string>
+    <string name="candidate_check_wifi">重启后Wi-Fi</string>
+    <string name="candidate_check_remote">遥控器上的每个按钮，输入和语音</string>
+    <string name="candidate_check_hdmi">每个HDMI输入</string>
+    <string name="candidate_check_live_tv">直播电视</string>
+    <string name="candidate_check_casting">从手机投射</string>
+    <string name="candidate_try">尝试测试列表</string>
+    <string name="candidate_careful">保持小心，如 0.3.4 所示</string>
+    <string name="candidate_careful_note">“小心”仅表示该品牌电视所确定的内容，与0.3.4版本相同。</string>
 </resources>

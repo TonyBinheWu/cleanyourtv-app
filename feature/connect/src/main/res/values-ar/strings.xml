@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">أخرى</string>
+    <string name="door_tcl_menus_prompt">ما هي القوائم التي يعرضها التلفزيون؟</string>
+    <string name="door_tcl_menus_global">القوائم باللغة الإنجليزية أو لغتي</string>
+    <string name="door_tcl_menus_chinese">القوائم باللغة الصينية</string>
+    <string name="door_connect_failed_title">أجاب التلفزيون ولكن هذا الهاتف لا يستطيع الاتصال</string>
+    <string name="door_connect_failed_body">فشل الاتصال ({kind}). سنستمر في المحاولة بينما تكون هذه الشاشة مفتوحة.</string>
+    <string name="door_connect_failed_hint">إذا كان ADB من جهاز كمبيوتر يعمل ولكن هذا التطبيق لا يمكنه الوصول إلى التلفزيون، فقد يكون هناك شيء ما على الهاتف يعيق الطريق: حد الشبكة لكل تطبيق (MIUI، Samsung)، VPN، DNS خاص، أو بيانات الهاتف المحمول. قم بإيقاف تشغيله للحظة وحاول مرة أخرى.</string>
+    <string name="door_copy_error">خطأ في النسخ</string>
+    <string name="door_error_copied">منقول. الصقها في مشكلتك</string>
     <string name="door_unknown_note">لم نلتقي بهذا التلفاز بالتحديد من قبل. الخطوات عادة ما تكون هي نفسها.</string>
     <string name="family_atv_step1">على التلفزيون، افتح الإعدادات (الترس، أعلى اليمين)، ثم تفضيلات الجهاز &gt; حول. اضغط على \"موافق\" في \"Build\" سبع مرات حتى يقول التلفزيون \"أنت الآن مطور\".</string>
     <string name="family_atv_step2">الرجوع شاشة واحدة. افتح خيارات المطور وقم بتشغيل تصحيح أخطاء USB. إذا كان التلفزيون يعرض أيضًا \"تصحيح أخطاء الشبكة\" أو \"تصحيح أخطاء ADB\"، فقم بتشغيل ذلك أيضًا.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">على التلفزيون، افتح الإعدادات &gt; حول &gt; 本机信息، ثم اضغط على \"أعلى\" و\"أسفل\" و\"يسار\" و\"يمين\" على جهاز التحكم عن بُعد.</string>
     <string name="family_tcl_step2">تظهر نافذة صغيرة \"ADB\" بها عنوان. اتركه مفتوحا.</string>
     <string name="family_tcl_step3">اترك التلفاز على هذه الشاشة. سوف يتصل هاتفك من تلقاء نفسه.</string>
+    <string name="family_tcl_extra_gtv_step1">في Google TV: النظام &gt; حول، ثم اضغط على \"موافق\" في \"Android TV OS build\" سبع مرات.</string>
+    <string name="family_tcl_extra_gtv">في Google TV، قم أيضًا بتشغيل تصحيح الأخطاء اللاسلكية.</string>
     <string name="family_unknown_step1">على التلفزيون، افتح الإعدادات (الترس، أعلى اليمين)، ثم تفضيلات الجهاز &gt; حول. اضغط على \"موافق\" في \"Build\" سبع مرات حتى يقول التلفزيون \"أنت الآن مطور\".</string>
     <string name="family_unknown_step2">الرجوع شاشة واحدة. افتح خيارات المطور وقم بتشغيل تصحيح أخطاء USB. إذا كان التلفزيون يعرض أيضًا \"تصحيح أخطاء الشبكة\" أو \"تصحيح أخطاء ADB\"، فقم بتشغيل ذلك أيضًا.</string>
     <string name="family_unknown_step3">اترك التلفاز على هذه الشاشة. سوف يتصل هاتفك من تلقاء نفسه.</string>

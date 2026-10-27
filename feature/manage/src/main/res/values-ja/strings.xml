@@ -117,6 +117,7 @@
     <string name="appsettings_licence_app">Clean Your TV: GPL-3.0-or-later</string>
     <string name="appsettings_licence_font">Outfit typeface: SIL Open Font Licence 1.1</string>
     <string name="appsettings_licence_apache">dadb and Shizuku code we adapted: Apache-2.0 notices</string>
+    <string name="appsettings_licence_pictures">Look pictures: our own work, CC0 1.0 (public domain); Aurora, Glass and Autumn lake (Ruska) from the Clean Your TV launcher, MIT</string>
     <string name="appsettings_licence_bouncycastle">Bouncy Castle cryptography library: Bouncy Castle Licence</string>
     <string name="appsettings_privacy">プライバシー</string>
     <string name="appsettings_privacy_text">github.com からのダウンロード以外、ネットワークからは何も出ません。 GitHub は、携帯電話のアドレスと汎用ユーザー エージェントを認識します。レポートは、自分でコピー、共有、または投稿した場合にのみ携帯電話から送信されます。</string>

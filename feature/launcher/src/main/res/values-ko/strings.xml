@@ -12,10 +12,11 @@
     <string name="home_row_dock">도크</string>
     <string name="home_row_dock_rows">{names} 및 아래 {count, plural, one {# 앱} other {# 앱}}</string>
     <string name="home_row_look">화면 모양</string>
+    <string name="home_tcl_remote_keys">TCL Google TV에서 리모컨의 설정(기어), Netflix 및 YouTube 버튼이 새 홈 화면에서 작동하지 않습니다. 다시 가져오려면 TV 자체 홈 화면 사용을 선택하세요.</string>
     <string name="home_row_stock">TV 자체의 홈 화면을 사용</string>
     <string name="home_row_stock_note">TV 자체 홈 화면을 다시 표시합니다. 우리 제품은 설치된 상태로 유지되므로 다시 전환할 수 있습니다.</string>
     <string name="home_drift_banner">설정한 이후 TV의 홈 화면 설정이 변경되었습니다.</string>
-    <string name="home_drift_restore">광산 복원</string>
+    <string name="home_drift_restore">내 것을 다시 보내세요</string>
     <string name="home_applying">TV 홈 화면을 업데이트하는 중...</string>
     <string name="home_snackbar_done">완료되었습니다.</string>
     <string name="home_not_on_tv_lead">{tv}는 자체 홈 화면을 유지합니다. 도크와 디자인은 새 홈 화면에 속하며 이 TV에는 없습니다.</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">이것을 바꿀 것은 이 TV를 위해 만들어진 목록입니다. 보고서를 보내주시면 작성해 드리겠습니다. 이후 버전에서는 새로운 홈 화면을 제공할 수 있습니다.</string>
     <string name="home_run_setup_again">설치를 다시 실행하세요.</string>
     <string name="home_help_add_tv">이 TV를 추가하는 데 도움을 주세요</string>
-    <string name="home_tv_changes_note">행별 타일이나 모션 등 TV 자체에서 변경된 내용은 여기에서 홈 화면을 변경할 때까지 지속됩니다. TV에서 변경된 도크는 위에 표시되지 않습니다. 새로운 모습으로 유지되고 여기에 저장된 다른 도크가 이를 대체합니다. 제거된 앱은 홈 TV에서 꺼진 상태로 유지됩니다.</string>
+    <string name="home_tv_changes_note">여기에서 전송하면 TV 자체에서 변경된 설정이 대체됩니다.</string>
+    <string name="home_row_look_summary_picture">{style}와 {picture}</string>
+    <string name="home_row_look_summary_photo">{style} 사진 포함</string>
+    <string name="home_row_look_summary_none">{style}, 사진 없음</string>
+    <string name="home_row_look_columns">{count, plural, one {# 앱 연속} other {# 앱이 연속으로}}</string>
+    <string name="home_row_look_sending">보내는 중...</string>
+    <string name="home_look_failed">이 화면 모양을 TV로 전송하지 못했습니다.</string>
+    <string name="home_look_failed_open">오픈룩</string>
     <string name="home_row_update">홈 화면 업데이트</string>
     <string name="home_row_update_note">버전 {version}가 준비되었습니다. 도크와 모양은 그대로 유지됩니다.</string>
     <string name="home_update_preview_title">홈 화면을 업데이트하시겠습니까?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">TV 자체를 사용</string>
     <string name="home_stock_working">TV 자체 홈 화면을 다시 넣는 중...</string>
     <string name="home_stock_done">TV 자체의 홈 화면이 돌아왔습니다. 우리 제품은 아직 설치되어 있습니다.</string>
-    <string name="theme_title">화면 모양</string>
     <string name="theme_default">기본값</string>
-    <string name="theme_default_desc">하단에 4개의 앱이 있는 검정색 배경입니다.</string>
-    <string name="theme_aurora">오로라</string>
-    <string name="theme_aurora_desc">앱 뒤에 부드러운 빛이 나는 진한 파란색 배경.</string>
-    <string name="theme_six_columns">6열</string>
-    <string name="theme_six_columns_desc">앱이 6개 있으므로 화면에 더 잘 맞습니다.</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}, 선택됨. {description}</string>
+    <string name="home_look_ended_banner">{picture}가 종료되었습니다. 이전 사진을 TV에 다시 올리시겠습니까?</string>
+    <string name="home_look_ended_restore">다시 넣어</string>
     <string name="dock_title">도크 편집</string>
     <string name="dock_body">하단을 따라 {count, spellout}까지. 순서를 변경하려면 앱의 점을 드래그하세요.</string>
+    <string name="dock_waiting">Look에서 연속으로 더 많은 앱을 선택할 때까지 그리드에 {count, plural, one {# 앱 대기} other {# 앱 대기}}가 표시됩니다.</string>
 </resources>

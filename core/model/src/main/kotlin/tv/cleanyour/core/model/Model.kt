@@ -47,7 +47,14 @@ data class LauncherState(val versionCode: Long, val signer: Sha256, val overlayD
 // R0: 2 was referenced and never declared; persisted on every committed choice (ARCHITECTURE 2.2); W8 may add fields, never remove
 data class WizardDraft(val step: Int, val level: Level, val kept: Set<PackageName>, val extraOff: Set<PackageName>,
     val dock: List<PackageName>?, val themeId: String?, val keepDebuggingOn: Boolean, val planId: PlanId?, val updatedAtMs: Long,
-    val curtain: Boolean = true)   // RFC-CURTAIN-1: "Show the progress on the TV" (Custom only; Simple always shows it)
+    val curtain: Boolean = true,   // RFC-CURTAIN-1: "Show the progress on the TV" (Custom only; Simple always shows it)
+    // 0.4.0 (RFC-LOOK-SETUP-1): the look step's apps in a row, only when it differs from the look's
+    // own (4 to 8, null for the look's own), and its picture (HomeChoice.picture: null for the look's
+    // own, "none", "mine", "new" or a gallery id).
+    val columns: Int? = null, val picture: String? = null,
+    // look2: the look step's choice in home.txt line form (HomePrefs), null before the look step made
+    // one; themeId, columns and picture stay for the legacy (0.4.0) form.
+    val look: String? = null)
 
 sealed interface ConnectionState {
     data object Idle : ConnectionState
@@ -103,7 +110,12 @@ enum class Quirk { HDMI_SWITCH, HOME_TAKEOVER_SETUPWRAITH, EXTRA_HOME_CLAIMERS, 
 data class PackageEntry(val name: PackageName, val note: String?)
 data class PackageGroup(val id: String, val title: String, val default: GroupDefault, val packages: List<PackageEntry>)
 data class ProfileMatch(val models: List<String>, val devices: List<String>, val brand: String?, val sdkMin: Int?, val sdkMax: Int?, val fingerprintPrefix: String?)
-data class TestedInfo(val by: String?, val firmware: String?, val daysLivedWith: Int?, val rebootTested: Boolean)
+// Test build (0.3.5-test1): `candidate` marks a list made from reports of the same model and not
+// tested yet. Only the test build bundles one (core/spec/candidates, -Pcyt.candidates=true).
+data class TestedInfo(val by: String?, val firmware: String?, val daysLivedWith: Int?, val rebootTested: Boolean, val candidate: Boolean = false)
 data class Profile(val id: String, val match: ProfileMatch, val platform: Platform, val stockLaunchers: List<Component>,
     val liveTv: PackageName?, val setupWraith: PackageName?, val quirks: Set<Quirk>, val groups: List<PackageGroup>,
-    val neverDisable: Set<PackageName>, val suggestedDock: List<PackageName>, val tested: TestedInfo?, val sourceSha256: Sha256)
+    val neverDisable: Set<PackageName>, val suggestedDock: List<PackageName>, val tested: TestedInfo?, val sourceSha256: Sha256) {
+    // Test build: a candidate list (TestedInfo.candidate), offered only after the person agrees.
+    val isCandidate: Boolean get() = tested?.candidate == true
+}

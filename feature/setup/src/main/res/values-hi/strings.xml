@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">फिर से कोशिश करें</string>
     <string name="stop_probe_failed_secondary">वापस</string>
     <string name="stop_probe_failed_tertiary">विवरण दिखाएँ</string>
+    <string name="stop_plan_refused_title">इस टीवी के लिए सुरक्षित योजना नहीं बन सकी</string>
+    <string name="stop_plan_refused_body">टीवी ने जवाब दिया, लेकिन उसकी स्थिति किसी ऐसी योजना से मेल नहीं खाती जिसे हम सुरक्षित मानते हैं। इसलिए कुछ भी करने से पहले रुक गए। कोई बदलाव नहीं हुआ। समस्या की रिपोर्ट करने पर हमें कारण मिलेगा, जिससे हम इसे ठीक कर सकेंगे।</string>
     <string name="found_title">{count, plural, =0 {स्विच ऑफ करने के लिए कुछ भी नहीं। नई होम स्क्रीन चाहिए?} one {हमें स्विच ऑफ करने के लिए एक चीज़ मिली} other {हमें स्विच ऑफ करने के लिए # चीज़ें मिलीं}}</string>
     <string name="found_headline">{count, plural, =0 {स्विच ऑफ करने के लिए कुछ भी नहीं। नई होम स्क्रीन चाहिए?} one {स्विच ऑफ करने वाली चीज़} other {बंद करने योग्य चीज़ें}}</string>
     <string name="found_overline">हमने पाया</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">सफ़ाई शुरू करें</string>
     <string name="found_customise">अपनी पसंद से सेट करें</string>
     <string name="found_replaces_launcher">इस टीवी पर पहले से मौजूद होम स्क्रीन ऐप को बदल देता है। इसका लुक, ऐप ऑर्डर, सेटिंग्स और कार्ड उत्तर नए सिरे से शुरू होते हैं।</string>
+    <string name="found_tcl_remote_keys">टीसीएल गूगल टीवी पर, रिमोट की सेटिंग्स (गियर), नेटफ्लिक्स और यूट्यूब बटन नई होम स्क्रीन के साथ काम करना बंद कर देते हैं। उन्हें वापस पाने के लिए, मैनेज में टीवी की अपनी होम स्क्रीन का उपयोग करें चुनें।</string>
     <string name="found_no_lock">इस फ़ोन पर कोई स्क्रीन लॉक नहीं है, इसलिए हम दोबारा जाँच नहीं कर सकते कि यह आप ही हैं।</string>
     <string name="found_unknown_title">{count, plural, =0 {हमें ऐसा कुछ नहीं मिला जिसके बारे में हम निश्चित हों} one {हमें एक चीज़ मिली जिसके बारे में हम निश्चित हैं} other {हमें # ऐसी चीज़ें मिलीं जिनके बारे में हम निश्चित हैं}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {हमें ऐसा कुछ नहीं मिला जिसके बारे में हम निश्चित हों} one {वह चीज़ जिसके बारे में हम निश्चित हैं} other {जिन चीज़ों के बारे में हम निश्चित हैं}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">डॉक: {names}, नीचे {rows, plural, one {पंक्ति} other {पंक्तियाँ}} में प्लस {count, plural, one {# ऐप} other {# ऐप्स}}</string>
     <string name="customise_dock_row_empty">ऐप बार</string>
     <string name="customise_look_row">देखो: {theme}</string>
+    <string name="customise_look_row_count">देखो: {theme}, {count, plural, one {# ऐप एक पंक्ति में} other {# ऐप्स एक पंक्ति में}}</string>
+    <string name="look_photo_after">अभी तक कुछ भी नहीं भेजा गया है। जब आप इसे साफ़ करें टैप करते हैं तो यह टीवी पर चला जाता है।</string>
     <string name="customise_group_tv">टीवी पर</string>
     <string name="customise_show_on_tv">टीवी पर प्रगति दिखाएं</string>
     <string name="customise_show_on_tv_note">टीवी प्रत्येक चरण दिखाता है, फिर नई होम स्क्रीन</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">कॉपी किया गया</string>
     <string name="customise_snackbar_kept">{name} रखा जाएगा.</string>
     <string name="customise_snackbar_off">{name} बंद हो जाएगा।</string>
-    <string name="theme_title">रूप-रंग</string>
     <string name="theme_default">डिफ़ॉल्ट</string>
-    <string name="theme_default_desc">नीचे की ओर चार ऐप्स वाला एक काला बैकग्राउंड।</string>
     <string name="theme_aurora">अरोरा</string>
-    <string name="theme_aurora_desc">ऐप्स के पीछे हल्की चमक के साथ गहरे नीले रंग की पृष्ठभूमि।</string>
     <string name="theme_six_columns">छह कॉलम</string>
-    <string name="theme_six_columns_desc">छह ऐप्स, इसलिए स्क्रीन पर अधिक फिट।</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, चयनित। {description}</string>
     <string name="dock_title">आपका ऐप बार</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">टीवी पर परिवर्तन पूर्ववत करें?</string>
     <string name="confirm_undo_body">हमने इस बदलाव के कारण हुई हर चीज़ को वापस रख दिया है, इसलिए टीवी वैसा ही है जैसा पहले था। कुछ भी नहीं हटाया गया है.</string>
     <string name="confirm_undo_button">परिवर्तनों को पूर्ववत करें</string>
-    <string name="stop_plan_refused_title">इस टीवी के लिए सुरक्षित योजना नहीं बन सकी</string>
-    <string name="stop_plan_refused_body">टीवी ने जवाब दिया, लेकिन उसकी स्थिति किसी ऐसी योजना से मेल नहीं खाती जिसे हम सुरक्षित मानते हैं। इसलिए कुछ भी करने से पहले रुक गए। कोई बदलाव नहीं हुआ। समस्या की रिपोर्ट करने पर हमें कारण मिलेगा, जिससे हम इसे ठीक कर सकेंगे।</string>
+    <string name="candidate_overline">परीक्षण निर्माण</string>
+    <string name="candidate_title">इस टीवी की सूची नई है</string>
+    <string name="candidate_body">हमने इसी मॉडल की रिपोर्ट से इस टीवी के लिए एक सूची बनाई है, लेकिन अभी तक किसी ने इसका परीक्षण नहीं किया है। यह जो बंद करता है वह हमेशा की तरह योजना में सूचीबद्ध है, और आप पुनर्स्थापना बिंदु से सब कुछ वापस रख सकते हैं।</string>
+    <string name="candidate_ask_issue">यदि आप इसे आज़माते हैं, तो कृपया हमें अंक {issue} में बताएं कि कुछ दिनों के बाद यह कैसा रहा:</string>
+    <string name="candidate_ask">यदि आप इसे आज़माते हैं, तो कृपया हमें अपने अंक में बताएं कि कुछ दिनों के बाद यह कैसा रहा:</string>
+    <string name="candidate_check_wifi">पुनरारंभ के बाद वाई-फ़ाई</string>
+    <string name="candidate_check_remote">रिमोट का हर बटन, इनपुट और आवाज भी</string>
+    <string name="candidate_check_hdmi">प्रत्येक एचडीएमआई इनपुट</string>
+    <string name="candidate_check_live_tv">लाइव टीवी</string>
+    <string name="candidate_check_casting">फ़ोन से कास्टिंग</string>
+    <string name="candidate_try">परीक्षण सूची आज़माएँ</string>
+    <string name="candidate_careful">सावधान रहें, जैसा कि 0.3.4 में है</string>
+    <string name="candidate_careful_note">सावधान का मतलब केवल वही है जिसके बारे में हम इस ब्रांड के टीवी के बारे में निश्चित हैं, संस्करण 0.3.4 के समान।</string>
 </resources>

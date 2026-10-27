@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import tv.cleanyour.core.discovery.DiscoverySource
 import tv.cleanyour.core.discovery.FoundTv
 import tv.cleanyour.core.flows.ChipState
+import tv.cleanyour.core.flows.ConnectError
 import tv.cleanyour.core.flows.DoorPhase
 import tv.cleanyour.core.flows.Families
 import tv.cleanyour.core.flows.SetupActions
@@ -89,11 +90,11 @@ fun isConnectState(state: SetupState): Boolean =
 
 
 @Composable
-fun ConnectFlow(state: SetupState, extras: SetupExtras, actions: SetupActions, onReturning: () -> Unit, modifier: Modifier = Modifier) {
+fun ConnectFlow(state: SetupState, extras: SetupExtras, actions: SetupActions, onReturning: () -> Unit, modifier: Modifier = Modifier, onCopyError: (String) -> Unit = {}) {
     when (state) {
         is SetupState.Welcome -> WelcomeScreen(state, extras, actions, onReturning, modifier)
         is SetupState.Picker -> PickerScreen(state, extras, actions, modifier)
-        is SetupState.OpenDoor -> DoorScreen(state, extras, actions, modifier)
+        is SetupState.OpenDoor -> DoorScreen(state, extras, actions, modifier, onCopyError)
         is SetupState.PairingNeeded -> PairingScreen(state, extras, actions, modifier)
         else -> {}
     }
@@ -209,7 +210,7 @@ fun PickerScreen(state: SetupState.Picker, extras: SetupExtras, actions: SetupAc
 
 // S2a to S2d: one screen, four states; the phone advances on its own (UX 2 screen 2).
 @Composable
-fun DoorScreen(state: SetupState.OpenDoor, extras: SetupExtras, actions: SetupActions, modifier: Modifier = Modifier) {
+fun DoorScreen(state: SetupState.OpenDoor, extras: SetupExtras, actions: SetupActions, modifier: Modifier = Modifier, onCopyError: (String) -> Unit = {}) {
     // A typed address has no name until the TV answers: the chip then reads the model the TV gave
     // (the identity line's), not the address (round 3).
     val name = extras.tvName ?: state.tv.friendlyName ?: state.tv.model ?: extras.identity?.model ?: state.tv.host.ifEmpty { null }
@@ -244,6 +245,7 @@ fun DoorScreen(state: SetupState.OpenDoor, extras: SetupExtras, actions: SetupAc
             }
             DoorPhase.STEPS, DoorPhase.CONNECTING -> {
                 StepsContent(state, actions, name, brandsOpen, onBrands = { brandsOpen = !brandsOpen })
+                extras.connectError?.let { ConnectErrorCard(it, onCopyError) }
                 NotThisTv(state, actions)
             }
         }
@@ -255,6 +257,21 @@ fun DoorScreen(state: SetupState.OpenDoor, extras: SetupExtras, actions: SetupAc
             NotSeenContent(extras.allowRetries, onAsk = { actions.intent(SetupIntent.AskTvAgain); showNotSeen = false })
         }
     }
+}
+
+// 0.3.6 (issues #98, #270, #325, #468): the TV's port answered but the connection failed. What may be
+// in the way on the phone's side, and "Copy error" with a short redacted summary for an issue.
+@Composable
+private fun ConnectErrorCard(error: ConnectError, onCopy: (String) -> Unit) {
+    var copied by remember(error) { mutableStateOf(false) }
+    StopCard(
+        stringResource(R.string.door_connect_failed_title),
+        msg(R.string.door_connect_failed_body, "kind" to error.kind) + "\n\n" + stringResource(R.string.door_connect_failed_hint),
+        Modifier.padding(top = 20.dp),
+        primaryLabel = stringResource(if (copied) R.string.door_error_copied else R.string.door_copy_error),
+        onPrimary = { onCopy(error.summary); copied = true },
+        primaryGuarded = false,
+    )
 }
 
 // Start goes straight to the one device discovery found, which may not be the TV (emulator run,
@@ -279,23 +296,38 @@ private fun StepsContent(state: SetupState.OpenDoor, actions: SetupActions, name
     // The card follows the TV: when the port opens it moves to step 3 on its own.
     LaunchedEffect(state.step) { page = state.step.coerceIn(0, 2) }
     val shield = state.family == Families.ATV && listOfNotNull(state.tv.model, state.tv.friendlyName).any { "shield" in it.lowercase() }
+    // A step's extra line: a Shield's network debugging on step 2, or for TCL outside China the Google
+    // TV menu on step 1 and its switch on step 2 (it is Android TV or Google TV, and the phone cannot
+    // tell which before it connects).
+    val extra = when {
+        page == 1 && shield -> stringResource(R.string.family_atv_extra_shield)
+        page == 0 && state.family == Families.TCL_GLOBAL -> stringResource(R.string.family_tcl_extra_gtv_step1)
+        page == 1 && state.family == Families.TCL_GLOBAL -> stringResource(R.string.family_tcl_extra_gtv)
+        else -> null
+    }
     val note = stringResource(R.string.door_menu_names_vary)
-    StepCard(
-        title = msg(R.string.door_step_cd, "current" to page + 1, "total" to 3),
-        body = if (shield && page == 1) steps[page] + " " + stringResource(R.string.family_atv_extra_shield) else steps[page],
-        modifier = Modifier.padding(top = 20.dp),
-        illustration = {
-            when (page) {
-                0 -> TvMenuArt(highlight = 3, modifier = Modifier.width(240.dp), taps = 7)
-                1 -> TvMenuArt(highlight = 1, modifier = Modifier.width(240.dp), toggleOn = true)
-                else -> TvMenuArt(highlight = 1, modifier = Modifier.width(240.dp), toggleOn = true)
-            }
-        },
-    )
-    Row(Modifier.fillMaxWidth().padding(top = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-        PagerDots(3, page, Modifier.padding(start = 4.dp), description = msg(R.string.door_step_cd, "current" to page + 1, "total" to 3))
-        Spacer(Modifier.weight(1f))
-        if (page < 2) TertiaryButton(stringResource(R.string.door_next), { page++ })
+    if (state.family == Families.TCL_ASK && state.phase == DoorPhase.STEPS) {
+        // The TCL chip: which menus first, then the steps that go with them (never the 本机信息
+        // ones for a TV with English menus).
+        TclMenuChips(onPick = { chinese -> actions.intent(SetupIntent.ChangeFamily(Families.ofTclMenus(chinese))) })
+    } else {
+        StepCard(
+            title = msg(R.string.door_step_cd, "current" to page + 1, "total" to 3),
+            body = if (extra != null) steps[page] + " " + extra else steps[page],
+            modifier = Modifier.padding(top = 20.dp),
+            illustration = {
+                when (page) {
+                    0 -> TvMenuArt(highlight = 3, modifier = Modifier.width(240.dp), taps = 7)
+                    1 -> TvMenuArt(highlight = 1, modifier = Modifier.width(240.dp), toggleOn = true)
+                    else -> TvMenuArt(highlight = 1, modifier = Modifier.width(240.dp), toggleOn = true)
+                }
+            },
+        )
+        Row(Modifier.fillMaxWidth().padding(top = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+            PagerDots(3, page, Modifier.padding(start = 4.dp), description = msg(R.string.door_step_cd, "current" to page + 1, "total" to 3))
+            Spacer(Modifier.weight(1f))
+            if (page < 2) TertiaryButton(stringResource(R.string.door_next), { page++ })
+        }
     }
     val stillWaiting = state.phase == DoorPhase.STEPS && state.waitedMs >= 180_000
     val status = when {
@@ -327,12 +359,23 @@ private fun BrandChips(onPick: (String) -> Unit) {
     }
 }
 
+// After the TCL brand chip: one question, two answers, in the brand row's chips.
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun TclMenuChips(onPick: (chinese: Boolean) -> Unit) {
+    Overline(stringResource(R.string.door_tcl_menus_prompt), Modifier.padding(start = 4.dp, top = 20.dp, bottom = 8.dp))
+    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        GlassChip(stringResource(R.string.door_tcl_menus_global), onClick = { onPick(false) })
+        GlassChip(stringResource(R.string.door_tcl_menus_chinese), onClick = { onPick(true) })
+    }
+}
+
 @Composable
 private fun familySteps(family: String): List<String> = when (family) {
     Families.GTV -> listOf(stringResource(R.string.family_gtv_step1), stringResource(R.string.family_gtv_step2), stringResource(R.string.family_gtv_step3))
     Families.FIRE -> listOf(stringResource(R.string.family_fire_step1), stringResource(R.string.family_fire_step2), stringResource(R.string.family_fire_step3))
     Families.TCL -> listOf(stringResource(R.string.family_tcl_step1), stringResource(R.string.family_tcl_step2), stringResource(R.string.family_tcl_step3))
-    Families.ATV -> listOf(stringResource(R.string.family_atv_step1), stringResource(R.string.family_atv_step2), stringResource(R.string.family_atv_step3))
+    Families.ATV, Families.TCL_GLOBAL -> listOf(stringResource(R.string.family_atv_step1), stringResource(R.string.family_atv_step2), stringResource(R.string.family_atv_step3))
     else -> listOf(stringResource(R.string.family_unknown_step1), stringResource(R.string.family_unknown_step2), stringResource(R.string.family_unknown_step3))
 }
 

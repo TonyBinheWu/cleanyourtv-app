@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Réessayer</string>
     <string name="stop_probe_failed_secondary">Retour</string>
     <string name="stop_probe_failed_tertiary">Afficher les détails</string>
+    <string name="stop_plan_refused_title">Impossible de créer un plan sûr pour ce téléviseur</string>
+    <string name="stop_plan_refused_body">Le téléviseur a répondu, mais son état ne correspond à aucun plan que nous puissions exécuter en toute sécurité. Nous nous sommes donc arrêtés avant toute action. Rien n’a été modifié. Le signalement du problème nous transmettra la raison pour nous aider à le corriger.</string>
     <string name="found_title">{count, plural, =0 {Rien à éteindre. Vous voulez le nouvel écran d\'accueil ?} one {Nous avons trouvé une chose à désactiver} other {Nous avons trouvé des éléments # à désactiver}}</string>
     <string name="found_headline">{count, plural, =0 {Rien à éteindre. Vous voulez le nouvel écran d\'accueil ?} one {chose à éteindre} other {éléments à éteindre}}</string>
     <string name="found_overline">Nous avons trouvé</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Démarrer le nettoyage</string>
     <string name="found_customise">Personnaliser</string>
     <string name="found_replaces_launcher">remplace l\'application de l\'écran d\'accueil déjà présente sur ce téléviseur. Son apparence, l\'ordre des applications, ses paramètres et les réponses des cartes repartent à zéro.</string>
+    <string name="found_tcl_remote_keys">Sur TCL Google TV, les boutons Paramètres (engrenage), Netflix et YouTube de la télécommande ne fonctionnent plus avec le nouvel écran d\'accueil. Pour les récupérer, choisissez Utiliser le propre écran d\'accueil du téléviseur dans Gérer.</string>
     <string name="found_no_lock">Pas de verrouillage d\'écran sur ce téléphone, nous ne pouvons donc pas vérifier qu\'il s\'agit bien de vous.</string>
     <string name="found_unknown_title">{count, plural, =0 {Nous n\'avons rien trouvé dont nous soyons sûrs} one {Nous avons trouvé une chose dont nous sommes sûrs} other {Nous avons trouvé des éléments # dont nous sommes sûrs}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Nous n\'avons rien trouvé dont nous soyons sûrs} one {chose dont nous sommes sûrs} other {choses dont nous sommes sûrs}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Dock : {names}, plus {count, plural, one {application #} other {applications #}} dans le {rows, plural, one {ligne} other {lignes}} ci-dessous</string>
     <string name="customise_dock_row_empty">Barre d’applications</string>
     <string name="customise_look_row">Regardez : {theme}</string>
+    <string name="customise_look_row_count">Regarde : {theme}, {count, plural, one {application # consécutive} other {applications # consécutives}}</string>
+    <string name="look_photo_after">Rien n’est encore envoyé. Il va au téléviseur lorsque vous appuyez sur Rendre le propre.</string>
     <string name="customise_group_tv">À la télévision</string>
     <string name="customise_show_on_tv">Afficher la progression sur le téléviseur</string>
     <string name="customise_show_on_tv_note">Le téléviseur affiche chaque étape, puis le nouvel écran d\'accueil</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">copié</string>
     <string name="customise_snackbar_kept">{name} sera conservé.</string>
     <string name="customise_snackbar_off">{name} sera éteint.</string>
-    <string name="theme_title">Apparence</string>
     <string name="theme_default">par défaut</string>
-    <string name="theme_default_desc">un fond noir avec quatre applications en bas.</string>
     <string name="theme_aurora">Aurore</string>
-    <string name="theme_aurora_desc">Un fond bleu profond avec une douce lueur derrière les applications.</string>
     <string name="theme_six_columns">six colonnes</string>
-    <string name="theme_six_columns_desc">six applications réparties, donc plus de place sur l\'écran.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, sélectionné. {description}</string>
     <string name="dock_title">Votre barre d’applications</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Annuler les modifications sur le téléviseur ?</string>
     <string name="confirm_undo_body">Nous avons remis tout ce que ce changement a fait, donc le téléviseur est comme avant. Rien n\'est supprimé.</string>
     <string name="confirm_undo_button">Annuler les modifications</string>
-    <string name="stop_plan_refused_title">Impossible de créer un plan sûr pour ce téléviseur</string>
-    <string name="stop_plan_refused_body">Le téléviseur a répondu, mais son état ne correspond à aucun plan que nous puissions exécuter en toute sécurité. Nous nous sommes donc arrêtés avant toute action. Rien n’a été modifié. Le signalement du problème nous transmettra la raison pour nous aider à le corriger.</string>
+    <string name="candidate_overline">version de test</string>
+    <string name="candidate_title">La liste de ce téléviseur est nouvelle</string>
+    <string name="candidate_body">Nous avons dressé une liste pour ce téléviseur à partir des rapports du même modèle, mais personne ne l\'a encore testé. Ce qu\'il désactive est répertorié dans le plan comme d\'habitude, et vous pouvez tout remettre à partir du point de restauration.</string>
+    <string name="candidate_ask_issue">Si vous l\'essayez, dites-nous dans le numéro {issue} comment cela s\'est passé après quelques jours :</string>
+    <string name="candidate_ask">Si vous l\'essayez, dites-nous dans votre problème comment cela s\'est passé après quelques jours :</string>
+    <string name="candidate_check_wifi">Wi-Fi après un redémarrage</string>
+    <string name="candidate_check_remote">Chaque bouton de la télécommande, entrée et voix également</string>
+    <string name="candidate_check_hdmi">Chaque entrée HDMI</string>
+    <string name="candidate_check_live_tv">Télévision en direct</string>
+    <string name="candidate_check_casting">Diffusion depuis un téléphone</string>
+    <string name="candidate_try">Essayez la liste de tests</string>
+    <string name="candidate_careful">Restez prudent, comme dans 0.3.4</string>
+    <string name="candidate_careful_note">Attention signifie uniquement ce dont nous sommes sûrs pour les téléviseurs de cette marque, comme pour la version 0.3.4.</string>
 </resources>

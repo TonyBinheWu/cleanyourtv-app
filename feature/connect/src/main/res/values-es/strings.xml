@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">Otro</string>
+    <string name="door_tcl_menus_prompt">¿Qué menús muestra el televisor?</string>
+    <string name="door_tcl_menus_global">Menús en inglés o mi idioma</string>
+    <string name="door_tcl_menus_chinese">Menús en chino</string>
+    <string name="door_connect_failed_title">El televisor respondió, pero este teléfono no pudo conectarse</string>
+    <string name="door_connect_failed_body">La conexión falló ({kind}). Seguiremos intentándolo mientras esta pantalla esté abierta.</string>
+    <string name="door_connect_failed_hint">Si ADB desde una computadora funciona pero esta aplicación no puede llegar al televisor, es posible que algo en el teléfono esté en el camino: un límite de red por aplicación (MIUI, Samsung), una VPN, DNS privado o datos móviles. Apágalo por un momento y vuelve a intentarlo.</string>
+    <string name="door_copy_error">error de copia</string>
+    <string name="door_error_copied">Copiado. Pégalo en tu problema.</string>
     <string name="door_unknown_note">No habíamos conocido exactamente este televisor antes. Los pasos suelen ser los mismos.</string>
     <string name="family_atv_step1">En el televisor, abra Configuración (el engranaje, arriba a la derecha), luego Preferencias del dispositivo &gt; Acerca de. Presione OK en \"Construir\" siete veces hasta que el televisor diga \"Ahora es desarrollador\".</string>
     <string name="family_atv_step2">Retrocede una pantalla. Abra Opciones de desarrollador y active la depuración USB. Si el televisor también muestra \"Depuración de red\" o \"Depuración ADB\", actívelo también.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">En el televisor, abra Configuración &gt; Acerca de &gt; 本机信息, luego presione Arriba, Abajo, Izquierda, Derecha en el control remoto.</string>
     <string name="family_tcl_step2">Aparece una pequeña ventana \"ADB\" con una dirección. Déjalo abierto.</string>
     <string name="family_tcl_step3">Deja el televisor en esta pantalla. Su teléfono se conectará solo.</string>
+    <string name="family_tcl_extra_gtv_step1">En Google TV: Sistema &gt; Acerca de, luego presione OK en \"Compilación del sistema operativo Android TV\" siete veces.</string>
+    <string name="family_tcl_extra_gtv">En Google TV, active también la depuración inalámbrica.</string>
     <string name="family_unknown_step1">En el televisor, abra Configuración (el engranaje, arriba a la derecha), luego Preferencias del dispositivo &gt; Acerca de. Presione OK en \"Construir\" siete veces hasta que el televisor diga \"Ahora es desarrollador\".</string>
     <string name="family_unknown_step2">Retrocede una pantalla. Abra Opciones de desarrollador y active la depuración USB. Si el televisor también muestra \"Depuración de red\" o \"Depuración ADB\", actívelo también.</string>
     <string name="family_unknown_step3">Deja el televisor en esta pantalla. Su teléfono se conectará solo.</string>

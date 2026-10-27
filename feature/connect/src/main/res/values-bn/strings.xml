@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">অন্যান্য</string>
+    <string name="door_tcl_menus_prompt">কোন মেনু টিভি দেখায়?</string>
+    <string name="door_tcl_menus_global">ইংরেজি বা আমার ভাষায় মেনু</string>
+    <string name="door_tcl_menus_chinese">চীনা ভাষায় মেনু</string>
+    <string name="door_connect_failed_title">টিভি উত্তর দিয়েছে, কিন্তু এই ফোনটি সংযোগ করতে পারেনি৷</string>
+    <string name="door_connect_failed_body">সংযোগ ব্যর্থ হয়েছে ({kind})। এই স্ক্রীন খোলা থাকাকালীন আমরা চেষ্টা চালিয়ে যাব।</string>
+    <string name="door_connect_failed_hint">যদি একটি কম্পিউটার থেকে ADB কাজ করে কিন্তু এই অ্যাপটি টিভিতে পৌঁছাতে না পারে, তাহলে ফোনে কিছু সমস্যা হতে পারে: একটি প্রতি-অ্যাপ নেটওয়ার্ক সীমা (MIUI, Samsung), একটি VPN, ব্যক্তিগত DNS বা মোবাইল ডেটা৷ কিছুক্ষণের জন্য এটি বন্ধ করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="door_copy_error">কপি ত্রুটি</string>
+    <string name="door_error_copied">কপি করা হয়েছে। আপনার সমস্যা এটি আটকান.</string>
     <string name="door_unknown_note">আমরা আগে এই সঠিক টিভির সাথে দেখা করিনি। ধাপগুলো সাধারণত একই।</string>
     <string name="family_atv_step1">টিভিতে, সেটিংস খুলুন (গিয়ার, উপরে ডানদিকে), তারপর ডিভাইস পছন্দগুলি &gt; সম্পর্কে। \"বিল্ড\" এ সাতবার ঠিক আছে টিপুন যতক্ষণ না টিভি বলছে \"আপনি এখন একজন বিকাশকারী\"।</string>
     <string name="family_atv_step2">একটি পর্দায় ফিরে যান। বিকাশকারী বিকল্পগুলি খুলুন এবং USB ডিবাগিং চালু করুন৷ যদি টিভি \"নেটওয়ার্ক ডিবাগিং\" বা \"ADB ডিবাগিং\"ও দেখায়, তাহলে সেটিও চালু করুন।</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">টিভিতে, সেটিংস &gt; সম্পর্কে &gt; 本机信息 খুলুন, তারপর রিমোটে উপরে, নিচে, বামে, ডানে টিপুন।</string>
     <string name="family_tcl_step2">একটি ছোট \"ADB\" উইন্ডো একটি ঠিকানা সহ প্রদর্শিত হবে। খোলা রেখে দিন।</string>
     <string name="family_tcl_step3">এই স্ক্রিনে টিভি ছেড়ে দিন। আপনার ফোন নিজে থেকেই কানেক্ট হবে।</string>
+    <string name="family_tcl_extra_gtv_step1">Google TV-তে: System &gt; About, তারপর \"Android TV OS বিল্ড\"-এ সাতবার ওকে টিপুন।</string>
+    <string name="family_tcl_extra_gtv">Google TV-তেও ওয়্যারলেস ডিবাগিং চালু করুন।</string>
     <string name="family_unknown_step1">টিভিতে, সেটিংস খুলুন (গিয়ার, উপরে ডানদিকে), তারপর ডিভাইস পছন্দগুলি &gt; সম্পর্কে। \"বিল্ড\" এ সাতবার ঠিক আছে টিপুন যতক্ষণ না টিভি বলছে \"আপনি এখন একজন বিকাশকারী\"।</string>
     <string name="family_unknown_step2">একটি পর্দায় ফিরে যান। বিকাশকারী বিকল্পগুলি খুলুন এবং USB ডিবাগিং চালু করুন৷ যদি টিভি \"নেটওয়ার্ক ডিবাগিং\" বা \"ADB ডিবাগিং\"ও দেখায়, তাহলে সেটিও চালু করুন।</string>
     <string name="family_unknown_step3">এই স্ক্রিনে টিভি ছেড়ে দিন। আপনার ফোন নিজে থেকেই কানেক্ট হবে।</string>

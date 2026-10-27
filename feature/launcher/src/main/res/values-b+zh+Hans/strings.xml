@@ -12,10 +12,11 @@
     <string name="home_row_dock">快捷栏</string>
     <string name="home_row_dock_rows">{names}，加上下面的{count, plural, one {#应用程序} other {# 应用程序}}</string>
     <string name="home_row_look">外观</string>
+    <string name="home_tcl_remote_keys">在 TCL Google TV 上，遥控器的“设置”（齿轮）、Netflix 和 YouTube 按钮不适用于新的主屏幕。要恢复它们，请选择使用电视自己的主屏幕。</string>
     <string name="home_row_stock">使用电视自带的主屏幕</string>
     <string name="home_row_stock_note">恢复电视自己的主屏幕。我们的保持安装状态，因此您可以再次切换。</string>
     <string name="home_drift_banner">电视上的主屏幕设置自您设置后发生了变化。</string>
-    <string name="home_drift_restore">恢复我的</string>
+    <string name="home_drift_restore">再次发送我的</string>
     <string name="home_applying">正在更新电视上的主屏幕...</string>
     <string name="home_snackbar_done">完成。</string>
     <string name="home_not_on_tv_lead">{tv} 保留自己的主屏幕。快捷栏和外观属于新的主屏幕，但不在这台电视上。</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">会改变这一点的是为此电视制作的列表。将其报告发送给我们，我们将制作一份报告；更高版本可能会提供新的主屏幕。</string>
     <string name="home_run_setup_again">再次运行安装程序</string>
     <string name="home_help_add_tv">帮助添加这台电视</string>
-    <string name="home_tv_changes_note">对电视本身所做的更改（例如每行图块或动作）将持续到您在此处更改主屏幕为止。上面未显示电视上更改的快捷栏：新外观保留它，此处保存的不同快捷栏将取代它。从电视主页上删除的应用程序将保持关闭状态。</string>
+    <string name="home_tv_changes_note">当您从此处发送时，电视本身更改的设置将被替换。</string>
+    <string name="home_row_look_summary_picture">{style} 与 {picture}</string>
+    <string name="home_row_look_summary_photo">{style} 与你的照片</string>
+    <string name="home_row_look_summary_none">{style}，无图片</string>
+    <string name="home_row_look_columns">{count, plural, one {# 连续应用} other {# 连续应用}}</string>
+    <string name="home_row_look_sending">正在发送...</string>
+    <string name="home_look_failed">此外观未成功发送到电视。</string>
+    <string name="home_look_failed_open">打开看看</string>
     <string name="home_row_update">更新主屏幕</string>
     <string name="home_row_update_note">版本{version}已准备就绪。您的快捷栏和外观保持原样。</string>
     <string name="home_update_preview_title">更新主屏幕？</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">使用电视自带的</string>
     <string name="home_stock_working">将电视自己的主屏幕放回...</string>
     <string name="home_stock_done">电视自己的主屏幕又回来了。我们的还是安装的。</string>
-    <string name="theme_title">外观</string>
     <string name="theme_default">默认</string>
-    <string name="theme_default_desc">黑色背景，底部有四个应用程序。</string>
-    <string name="theme_aurora">极光</string>
-    <string name="theme_aurora_desc">深蓝色背景，应用程序后面发出柔和的光芒。</string>
-    <string name="theme_six_columns">六列</string>
-    <string name="theme_six_columns_desc">六个应用程序，因此更适合屏幕。</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}，已选择。 {description}</string>
+    <string name="home_look_ended_banner">{picture} 已结束。将您之前的照片放回电视上？</string>
+    <string name="home_look_ended_restore">放回去</string>
     <string name="dock_title">你的快捷栏</string>
     <string name="dock_body">沿底部向上至 {count, spellout}。通过拖动应用程序的点来更改顺序。</string>
+    <string name="dock_waiting">{count, plural, one {# 应用程序等待} other {# 应用程序等待}} 在网格中，直到您在“查找”中连续选择更多应用程序。</string>
 </resources>

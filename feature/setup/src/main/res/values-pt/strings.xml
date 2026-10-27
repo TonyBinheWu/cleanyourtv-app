@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Tentar novamente</string>
     <string name="stop_probe_failed_secondary">Voltar</string>
     <string name="stop_probe_failed_tertiary">Mostrar detalhes</string>
+    <string name="stop_plan_refused_title">Não foi possível criar um plano seguro para esta TV</string>
+    <string name="stop_plan_refused_body">A TV respondeu, mas o estado encontrado não corresponde a um plano que possamos executar com segurança. Por isso, paramos antes de fazer qualquer alteração. Nada foi alterado. Ao relatar o problema, o motivo será enviado para que possamos corrigi-lo.</string>
     <string name="found_title">{count, plural, =0 {Nada para desligar. Quer a nova tela inicial?} one {Encontramos uma coisa para desligar} other {Encontramos coisas # para desligar}}</string>
     <string name="found_headline">{count, plural, =0 {Nada para desligar. Quer a nova tela inicial?} one {coisa para desligar} other {coisas para desligar}}</string>
     <string name="found_overline">Encontramos</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Iniciar limpeza</string>
     <string name="found_customise">Personalizar</string>
     <string name="found_replaces_launcher">Substitui o aplicativo da tela inicial já presente nesta TV. Sua aparência, ordem de aplicativos, configurações e respostas de cartões começam do zero.</string>
+    <string name="found_tcl_remote_keys">No TCL Google TV, os botões Configurações (engrenagem) do controle remoto, Netflix e YouTube param de funcionar com a nova tela inicial. Para recuperá-los, escolha Usar a tela inicial da própria TV em Gerenciar.</string>
     <string name="found_no_lock">Não há bloqueio de tela neste telefone, por isso não podemos verificar se é você.</string>
     <string name="found_unknown_title">{count, plural, =0 {Não encontramos nada que tenhamos certeza} one {Encontramos uma coisa da qual temos certeza} other {Encontramos coisas # das quais temos certeza}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Não encontramos nada que tenhamos certeza} one {algo que temos certeza} other {coisas das quais temos certeza}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Dock: {names}, mais {count, plural, one {aplicativo #} other {aplicativos #}} no {rows, plural, one {linha} other {linhas}} abaixo</string>
     <string name="customise_dock_row_empty">Barra de aplicativos</string>
     <string name="customise_look_row">Veja: {theme}</string>
+    <string name="customise_look_row_count">Veja: {theme}, {count, plural, one {aplicativo # seguido} other {aplicativos # seguidos}}</string>
+    <string name="look_photo_after">Nada foi enviado ainda. Ele vai para a TV quando você toca em Deixar limpo.</string>
     <string name="customise_group_tv">Na TV</string>
     <string name="customise_show_on_tv">Mostra o progresso na TV</string>
     <string name="customise_show_on_tv_note">A TV mostra cada etapa e depois a nova tela inicial</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Copiado</string>
     <string name="customise_snackbar_kept">{name} será mantido.</string>
     <string name="customise_snackbar_off">{name} será desligado.</string>
-    <string name="theme_title">Aparência</string>
     <string name="theme_default">Padrão</string>
-    <string name="theme_default_desc">Um fundo preto com quatro aplicativos na parte inferior.</string>
     <string name="theme_aurora">Aurora</string>
-    <string name="theme_aurora_desc">Um fundo azul profundo com um brilho suave atrás dos aplicativos.</string>
     <string name="theme_six_columns">Seis colunas</string>
-    <string name="theme_six_columns_desc">Seis aplicativos, para que caibam mais na tela.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, selecionado. {description}</string>
     <string name="dock_title">Sua barra de aplicativos</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Desfazer as alterações na TV?</string>
     <string name="confirm_undo_body">Colocamos de volta tudo o que essa mudança fez, para que a TV fique como era antes. Nada é excluído.</string>
     <string name="confirm_undo_button">Desfazer as alterações</string>
-    <string name="stop_plan_refused_title">Não foi possível criar um plano seguro para esta TV</string>
-    <string name="stop_plan_refused_body">A TV respondeu, mas o estado encontrado não corresponde a um plano que possamos executar com segurança. Por isso, paramos antes de fazer qualquer alteração. Nada foi alterado. Ao relatar o problema, o motivo será enviado para que possamos corrigi-lo.</string>
+    <string name="candidate_overline">Compilação de teste</string>
+    <string name="candidate_title">A lista desta TV é nova</string>
+    <string name="candidate_body">Fizemos uma lista para esta TV a partir de relatos do mesmo modelo, mas ninguém testou ainda. O que ele desliga está listado no plano como de costume, e você pode colocar tudo de volta no ponto de restauração.</string>
+    <string name="candidate_ask_issue">Se você tentar, conte-nos na edição {issue} como foi depois de alguns dias:</string>
+    <string name="candidate_ask">Se você tentar, conte-nos em sua edição como foi depois de alguns dias:</string>
+    <string name="candidate_check_wifi">Wi-Fi após reinicialização</string>
+    <string name="candidate_check_remote">Todos os botões do controle remoto, entrada e voz também</string>
+    <string name="candidate_check_hdmi">Cada entrada HDMI</string>
+    <string name="candidate_check_live_tv">TV ao vivo</string>
+    <string name="candidate_check_casting">Transmissão de um telefone</string>
+    <string name="candidate_try">Experimente a lista de testes</string>
+    <string name="candidate_careful">Tenha cuidado, como em 0.3.4</string>
+    <string name="candidate_careful_note">Cuidado significa apenas o que temos certeza para TVs desta marca, igual à versão 0.3.4.</string>
 </resources>

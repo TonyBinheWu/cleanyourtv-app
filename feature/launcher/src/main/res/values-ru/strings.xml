@@ -12,10 +12,11 @@
     <string name="home_row_dock">Панель приложений</string>
     <string name="home_row_dock_rows">{names}, ниже ещё {count, plural, one {# приложение} few {# приложения} many {# приложений} other {# приложения}}</string>
     <string name="home_row_look">Оформление</string>
+    <string name="home_tcl_remote_keys">На TCL Google TV кнопки «Настройки» (шестеренка) пульта дистанционного управления, Netflix и YouTube не работают с новым главным экраном. Чтобы вернуть их, выберите «Использовать собственный главный экран телевизора».</string>
     <string name="home_row_stock">Используйте домашний экран телевизора.</string>
     <string name="home_row_stock_note">Возвращает домашний экран телевизора. Наш остается установленным, поэтому вы можете переключиться снова.</string>
     <string name="home_drift_banner">Настройки главного экрана телевизора изменились с момента их установки.</string>
-    <string name="home_drift_restore">Восстановить шахту</string>
+    <string name="home_drift_restore">Отправь мою ещё раз</string>
     <string name="home_applying">Обновление главного экрана телевизора...</string>
     <string name="home_snackbar_done">Готово.</string>
     <string name="home_not_on_tv_lead">{tv} сохраняет собственный домашний экран. Док-станция и внешний вид принадлежат новому главному экрану, и их нет на этом телевизоре.</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">Что изменится, так это список, созданный для этого телевизора. Отправьте нам отчет, и мы его составим; более поздняя версия может предложить новый главный экран.</string>
     <string name="home_run_setup_again">Запустите установку еще раз.</string>
     <string name="home_help_add_tv">Помогите добавить этот телевизор.</string>
-    <string name="home_tv_changes_note">Изменения, внесенные на самом телевизоре, например количество плиток в строке или движение, действуют до тех пор, пока вы не измените здесь главный экран. Док-станция, измененная на телевизоре, не показана выше: она сохраняется в новом виде, другая сохраненная здесь панель приложений заменяет ее. Приложения удалены. Домой на телевизоре остается выключенным.</string>
+    <string name="home_tv_changes_note">Настройки, измененные на самом телевизоре, заменяются при отправке отсюда.</string>
+    <string name="home_row_look_summary_picture">{style} с {picture}</string>
+    <string name="home_row_look_summary_photo">{style} с твоей фотографией</string>
+    <string name="home_row_look_summary_none">{style}, нет изображения</string>
+    <string name="home_row_look_columns">{count, plural, one {Приложение # подряд} other {# приложения подряд}}</string>
+    <string name="home_row_look_sending">Отправка...</string>
+    <string name="home_look_failed">Не удалось отправить оформление на телевизор.</string>
+    <string name="home_look_failed_open">Открытый взгляд</string>
     <string name="home_row_update">Обновить главный экран.</string>
     <string name="home_row_update_note">Версия {version} готова. Ваша панель приложений и внешний вид останутся такими, какие они есть.</string>
     <string name="home_update_preview_title">Обновить главный экран?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">Используйте собственный телевизор</string>
     <string name="home_stock_working">Возвращаем домашний экран телевизора...</string>
     <string name="home_stock_done">Главный экран телевизора вернулся. Наш до сих пор установлен.</string>
-    <string name="theme_title">Оформление</string>
     <string name="theme_default">По умолчанию</string>
-    <string name="theme_default_desc">Черный фон с четырьмя приложениями внизу.</string>
-    <string name="theme_aurora">Аврора</string>
-    <string name="theme_aurora_desc">Темно-синий фон с мягким свечением позади приложений.</string>
-    <string name="theme_six_columns">Шесть столбцов</string>
-    <string name="theme_six_columns_desc">Шесть приложений, поэтому больше места на экране.</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}, выбрано. {description}</string>
+    <string name="home_look_ended_banner">{picture} завершился. Вернуть свою предыдущую фотографию на телевизор?</string>
+    <string name="home_look_ended_restore">Верни обратно.</string>
     <string name="dock_title">Ваша панель приложений</string>
     <string name="dock_body">До {count, spellout} внизу. Перетащите приложение за точки, чтобы изменить порядок.</string>
+    <string name="dock_waiting">{count, plural, one {Приложение # ждет} other {Приложения # ждут}} в сетке, пока вы не выберете больше приложений подряд в Look.</string>
 </resources>

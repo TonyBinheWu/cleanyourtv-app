@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">अन्य</string>
+    <string name="door_tcl_menus_prompt">टीवी कौन सा मेनू दिखाता है?</string>
+    <string name="door_tcl_menus_global">अंग्रेजी या मेरी भाषा में मेनू</string>
+    <string name="door_tcl_menus_chinese">चीनी में मेनू</string>
+    <string name="door_connect_failed_title">टीवी जवाब दे गया, लेकिन यह फ़ोन कनेक्ट नहीं हो सका</string>
+    <string name="door_connect_failed_body">कनेक्शन विफल ({kind})। जब तक यह स्क्रीन खुली रहेगी हम प्रयास करते रहेंगे।</string>
+    <string name="door_connect_failed_hint">यदि कंप्यूटर से एडीबी काम करता है लेकिन यह ऐप टीवी तक नहीं पहुंच पाता है, तो फोन पर कुछ बाधा उत्पन्न हो सकती है: प्रति-ऐप नेटवर्क सीमा (एमआईयूआई, सैमसंग), एक वीपीएन, निजी डीएनएस, या मोबाइल डेटा। इसे एक पल के लिए बंद करें और पुनः प्रयास करें।</string>
+    <string name="door_copy_error">प्रतिलिपि त्रुटि</string>
+    <string name="door_error_copied">कॉपी किया गया. इसे अपने अंक में चिपकाएँ.</string>
     <string name="door_unknown_note">हम इस सटीक टीवी से पहले नहीं मिले हैं। चरण आमतौर पर समान होते हैं.</string>
     <string name="family_atv_step1">टीवी पर, सेटिंग्स (गियर, ऊपर दाईं ओर) खोलें, फिर डिवाइस प्राथमिकताएँ &gt; अबाउट खोलें। \"बिल्ड\" पर सात बार ओके दबाएं जब तक कि टीवी यह न कहे \"अब आप डेवलपर हैं\"।</string>
     <string name="family_atv_step2">एक स्क्रीन पीछे जाएं। डेवलपर विकल्प खोलें और यूएसबी डिबगिंग चालू करें। यदि टीवी \"नेटवर्क डिबगिंग\" या \"एडीबी डिबगिंग\" भी दिखाता है, तो उसे भी चालू करें।</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">टीवी पर, सेटिंग्स &gt; अबाउट &gt; सेटिंग्स खोलें, फिर रिमोट पर ऊपर, नीचे, बाएँ, दाएँ दबाएँ।</string>
     <string name="family_tcl_step2">एक पते के साथ एक छोटी \"एडीबी\" विंडो दिखाई देती है। इसे खुला छोड़ दें.</string>
     <string name="family_tcl_step3">टीवी को इस स्क्रीन पर छोड़ दें। आपका फ़ोन अपने आप कनेक्ट हो जाएगा.</string>
+    <string name="family_tcl_extra_gtv_step1">Google टीवी पर: सिस्टम &gt; अबाउट, फिर \"एंड्रॉइड टीवी ओएस बिल्ड\" पर सात बार ओके दबाएं।</string>
+    <string name="family_tcl_extra_gtv">Google TV पर, वायरलेस डिबगिंग भी चालू करें।</string>
     <string name="family_unknown_step1">टीवी पर, सेटिंग्स (गियर, ऊपर दाईं ओर) खोलें, फिर डिवाइस प्राथमिकताएँ &gt; अबाउट खोलें। \"बिल्ड\" पर सात बार ओके दबाएं जब तक कि टीवी यह न कहे \"अब आप डेवलपर हैं\"।</string>
     <string name="family_unknown_step2">एक स्क्रीन पीछे जाएं। डेवलपर विकल्प खोलें और यूएसबी डिबगिंग चालू करें। यदि टीवी \"नेटवर्क डिबगिंग\" या \"एडीबी डिबगिंग\" भी दिखाता है, तो उसे भी चालू करें।</string>
     <string name="family_unknown_step3">टीवी को इस स्क्रीन पर छोड़ दें। आपका फ़ोन अपने आप कनेक्ट हो जाएगा.</string>

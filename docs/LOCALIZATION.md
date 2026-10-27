@@ -39,7 +39,7 @@ outside the bundled Outfit typeface.
 
 ## Coverage and review
 
-All 816 translatable resource entries in `app`, the six `feature` modules and `ui/design` have
+All 1,066 translatable resource entries in `app`, the six `feature` modules and `ui/design` have
 fifteen localized counterparts. This covers connection instructions, setup, management, backup and
 restore, add-ons, notifications and accessibility descriptions. English remains the source.
 The new translations were machine-assisted, with terminology and key interface text edited;
@@ -53,6 +53,7 @@ are not translated by these phone-app resources. Their pins and signatures are u
 ## Maintain translations
 
 - Add each new translatable entry to the matching locale folder in the same module.
+  Checks scan all resource XML files, including the TV-preview strings added in upstream 0.4.0.
 - Preserve ICU argument names (`{tv}`, `{name}`), selector syntax (`plural`, `one`, `other`,
   `=0`), count information, `spellout`, printf placeholders and `formatted="false"` attributes.
   Arabic and Russian include additional locale-specific plural categories. Arabic singular and

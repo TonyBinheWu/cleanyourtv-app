@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">기타</string>
+    <string name="door_tcl_menus_prompt">TV에서는 어떤 메뉴가 나오나요?</string>
+    <string name="door_tcl_menus_global">영어 또는 내 언어로 된 메뉴</string>
+    <string name="door_tcl_menus_chinese">중국어 메뉴</string>
+    <string name="door_connect_failed_title">TV는 응답했지만 이 전화는 연결할 수 없습니다</string>
+    <string name="door_connect_failed_body">연결에 실패했습니다({kind}). 이 화면이 열려 있는 동안 계속 시도하겠습니다.</string>
+    <string name="door_connect_failed_hint">컴퓨터의 ADB가 작동하지만 이 앱이 TV에 연결할 수 없는 경우 휴대폰의 무언가가 방해가 될 수 있습니다: 앱별 네트워크 제한(MIUI, Samsung), VPN, 개인 DNS 또는 모바일 데이터. 잠시 동안 전원을 끄고 다시 시도해 보세요.</string>
+    <string name="door_copy_error">복사 오류</string>
+    <string name="door_error_copied">복사되었습니다. 문제에 붙여넣으세요.</string>
     <string name="door_unknown_note">우리는 이전에 이 정확한 TV를 만난 적이 없습니다. 단계는 일반적으로 동일합니다.</string>
     <string name="family_atv_step1">TV에서 설정(기어, 오른쪽 상단)을 열고 장치 환경설정 &gt; 정보를 엽니다. TV에 \"이제 개발자입니다\"라는 메시지가 나타날 때까지 \"빌드\"에서 확인을 7번 누르세요.</string>
     <string name="family_atv_step2">한 화면 뒤로 이동합니다. 개발자 옵션을 열고 USB 디버깅을 켭니다. TV에 \'네트워크 디버깅\' 또는 \'ADB 디버깅\'도 표시되면 해당 기능도 켜세요.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">TV에서 설정 &gt; 정보 &gt; 本机信息를 연 다음 리모컨의 위, 아래, 왼쪽, 오른쪽을 누르세요.</string>
     <string name="family_tcl_step2">주소와 함께 작은 \"ADB\" 창이 나타납니다. 열어두세요.</string>
     <string name="family_tcl_step3">이 화면에 TV를 남겨주세요. 휴대전화가 자동으로 연결됩니다.</string>
+    <string name="family_tcl_extra_gtv_step1">Google TV: 시스템 &gt; 정보를 선택한 다음 \'Android TV OS 빌드\'에서 확인을 7번 누르세요.</string>
+    <string name="family_tcl_extra_gtv">Google TV에서도 무선 디버깅을 켭니다.</string>
     <string name="family_unknown_step1">TV에서 설정(기어, 오른쪽 상단)을 열고 장치 환경설정 &gt; 정보를 엽니다. TV에 \"이제 개발자입니다\"라는 메시지가 나타날 때까지 \"빌드\"에서 확인을 7번 누르세요.</string>
     <string name="family_unknown_step2">한 화면 뒤로 이동합니다. 개발자 옵션을 열고 USB 디버깅을 켭니다. TV에 \'네트워크 디버깅\' 또는 \'ADB 디버깅\'도 표시되면 해당 기능도 켜세요.</string>
     <string name="family_unknown_step3">이 화면에 TV를 남겨주세요. 휴대전화가 자동으로 연결됩니다.</string>

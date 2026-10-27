@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">다시 시도</string>
     <string name="stop_probe_failed_secondary">뒤로</string>
     <string name="stop_probe_failed_tertiary">세부정보 표시</string>
+    <string name="stop_plan_refused_title">이 TV에 안전한 작업 계획을 만들 수 없습니다</string>
+    <string name="stop_plan_refused_body">TV는 응답했지만 확인된 상태에서는 안전한 작업 계획을 만들 수 없어 변경 전에 중단했습니다. TV는 변경되지 않았습니다. 문제를 신고하면 원인이 함께 전달되어 개선에 도움이 됩니다.</string>
     <string name="found_title">{count, plural, =0 {끌 것이 없습니다. 새로운 홈 화면을 원하시나요?} one {꺼야 할 것을 하나 찾았습니다} other {꺼야 할 # 항목을 찾았습니다.}}</string>
     <string name="found_headline">{count, plural, =0 {끌 것이 없습니다. 새로운 홈 화면을 원하시나요?} one {꺼야 할 것} other {꺼야 할 것}}</string>
     <string name="found_overline">찾았습니다</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">정리 시작</string>
     <string name="found_customise">맞춤 설정</string>
     <string name="found_replaces_launcher">이 TV에 이미 있는 홈 화면 앱을 대체합니다. 디자인, 앱 순서, 설정, 카드 답변이 새롭게 시작됩니다.</string>
+    <string name="found_tcl_remote_keys">TCL Google TV에서 리모컨의 설정(기어), Netflix 및 YouTube 버튼이 새 홈 화면에서 작동하지 않습니다. 다시 가져오려면 관리에서 TV 자체 홈 화면 사용을 선택하세요.</string>
     <string name="found_no_lock">이 휴대전화에는 화면 잠금이 없으므로 본인인지 다시 확인할 수 없습니다.</string>
     <string name="found_unknown_title">{count, plural, =0 {우리가 확신하는 어떤 것도 찾지 못했습니다} one {우리는 한 가지 확실한 사실을 발견했습니다} other {우리는 # 우리가 확신하는 것들을 발견했습니다}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {우리가 확신하는 어떤 것도 찾지 못했습니다} one {우리가 확신하는 것} other {우리가 확신하는 것들}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">도크: {names}, 아래 {rows, plural, one {행} other {행}}에 {count, plural, one {# 앱} other {# 앱}} 추가</string>
     <string name="customise_dock_row_empty">도크</string>
     <string name="customise_look_row">봐: {theme}</string>
+    <string name="customise_look_row_count">봐: {theme}, {count, plural, one {# 앱 연속} other {# 앱이 연속으로}}</string>
+    <string name="look_photo_after">아직 전송된 것이 없습니다. Make it clean을 탭하면 TV로 이동합니다.</string>
     <string name="customise_group_tv">TV에서</string>
     <string name="customise_show_on_tv">TV에 진행 상황을 표시합니다.</string>
     <string name="customise_show_on_tv_note">TV에 각 단계가 표시된 다음 새로운 홈 화면이 표시됩니다.</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">복사됨</string>
     <string name="customise_snackbar_kept">{name}가 유지됩니다.</string>
     <string name="customise_snackbar_off">{name}가 꺼집니다.</string>
-    <string name="theme_title">화면 모양</string>
     <string name="theme_default">기본값</string>
-    <string name="theme_default_desc">하단에 4개의 앱이 있는 검정색 배경입니다.</string>
     <string name="theme_aurora">오로라</string>
-    <string name="theme_aurora_desc">앱 뒤에 부드러운 빛이 나는 진한 파란색 배경.</string>
     <string name="theme_six_columns">6열</string>
-    <string name="theme_six_columns_desc">앱이 6개 있으므로 화면에 더 잘 맞습니다.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, 선택됨. {description}</string>
     <string name="dock_title">도크 편집</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">TV의 변경사항을 취소하시겠습니까?</string>
     <string name="confirm_undo_body">이 변경으로 인해 발생한 모든 내용을 되돌려 TV가 이전과 동일해졌습니다. 아무것도 삭제되지 않습니다.</string>
     <string name="confirm_undo_button">변경 사항을 취소합니다.</string>
-    <string name="stop_plan_refused_title">이 TV에 안전한 작업 계획을 만들 수 없습니다</string>
-    <string name="stop_plan_refused_body">TV는 응답했지만 확인된 상태에서는 안전한 작업 계획을 만들 수 없어 변경 전에 중단했습니다. TV는 변경되지 않았습니다. 문제를 신고하면 원인이 함께 전달되어 개선에 도움이 됩니다.</string>
+    <string name="candidate_overline">테스트 빌드</string>
+    <string name="candidate_title">이 TV의 목록은 새로운 것입니다</string>
+    <string name="candidate_body">동일한 모델에 대한 보고서를 바탕으로 이 TV에 대한 목록을 만들었지만 아직 아무도 테스트하지 않았습니다. 끄는 항목은 평소와 같이 계획에 나열되며 복원 지점에서 모든 것을 되돌릴 수 있습니다.</string>
+    <string name="candidate_ask_issue">시도해 보시면 며칠 후 어떻게 진행되었는지 {issue} 문제에 알려주세요.</string>
+    <string name="candidate_ask">시도해 보시면 며칠 후 어떻게 진행되었는지 문제를 통해 알려주세요.</string>
+    <string name="candidate_check_wifi">다시 시작한 후 Wi-Fi</string>
+    <string name="candidate_check_remote">리모컨의 모든 버튼, 입력 및 음성도</string>
+    <string name="candidate_check_hdmi">각 HDMI 입력</string>
+    <string name="candidate_check_live_tv">라이브 TV</string>
+    <string name="candidate_check_casting">휴대전화에서 전송</string>
+    <string name="candidate_try">테스트 목록을 사용해 보세요</string>
+    <string name="candidate_careful">0.3.4에서와 같이 조심하세요.</string>
+    <string name="candidate_careful_note">조심스럽다는 것은 버전 0.3.4와 마찬가지로 이 브랜드의 TV에 대해 우리가 확신하는 것만을 의미합니다.</string>
 </resources>

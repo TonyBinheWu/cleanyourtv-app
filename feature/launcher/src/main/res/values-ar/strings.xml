@@ -12,10 +12,11 @@
     <string name="home_row_dock">شريط التطبيقات</string>
     <string name="home_row_dock_rows">{names}، بالإضافة إلى {count, plural, one {تطبيق #} other {تطبيقات #}} أدناه</string>
     <string name="home_row_look">المظهر</string>
+    <string name="home_tcl_remote_keys">على TCL Google TV، لا تعمل إعدادات جهاز التحكم عن بعد (الترس) وأزرار Netflix وYouTube مع الشاشة الرئيسية الجديدة. لاستعادتها، اختر استخدام الشاشة الرئيسية الخاصة بالتلفزيون.</string>
     <string name="home_row_stock">استخدم الشاشة الرئيسية الخاصة بالتلفزيون</string>
     <string name="home_row_stock_note">إعادة الشاشة الرئيسية للتلفزيون. يظل نظامنا مثبتًا، لذا يمكنك التبديل مرة أخرى.</string>
     <string name="home_drift_banner">تغيرت إعدادات الشاشة الرئيسية على التلفزيون منذ أن قمت بضبطها.</string>
-    <string name="home_drift_restore">استعادة الألغام</string>
+    <string name="home_drift_restore">أرسل لي مرة أخرى</string>
     <string name="home_applying">تحديث الشاشة الرئيسية في التلفاز...</string>
     <string name="home_snackbar_done">تم.</string>
     <string name="home_not_on_tv_lead">يحتفظ {tv} بشاشته الرئيسية. ينتمي الشريط التطبيقات والمظهر إلى الشاشة الرئيسية الجديدة، وهو غير موجود على هذا التلفزيون.</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">ما من شأنه أن يغير هذا هو القائمة المعدة لهذا التلفزيون. أرسل لنا تقريرها وسنقوم بإعداده؛ قد يقدم إصدار أحدث بعد ذلك الشاشة الرئيسية الجديدة.</string>
     <string name="home_run_setup_again">قم بتشغيل برنامج الإعداد مرة أخرى</string>
     <string name="home_help_add_tv">ساعد في إضافة هذا التلفاز</string>
-    <string name="home_tv_changes_note">التغييرات التي يتم إجراؤها على التلفزيون نفسه، مثل المربعات لكل صف أو حركة، تستمر حتى تقوم بتغيير الشاشة الرئيسية هنا. لا يظهر أعلاه شريط التطبيقات تم تغييره على التلفزيون: يحافظ عليه المظهر الجديد، ويحل محله شريط التطبيقات مختلف محفوظ هنا. تظل التطبيقات التي تم إيقاف تشغيلها في الصفحة الرئيسية على التلفزيون متوقفة.</string>
+    <string name="home_tv_changes_note">يتم استبدال الإعدادات التي تم تغييرها على التلفزيون نفسه عند الإرسال من هنا.</string>
+    <string name="home_row_look_summary_picture">{style} مع {picture}</string>
+    <string name="home_row_look_summary_photo">{style} مع صورتك</string>
+    <string name="home_row_look_summary_none">{style}، لا توجد صورة</string>
+    <string name="home_row_look_columns">{count, plural, one {تطبيق # على التوالي} other {تطبيقات # على التوالي}}</string>
+    <string name="home_row_look_sending">إرسال...</string>
+    <string name="home_look_failed">لم يتم إرسال هذا المظهر إلى التلفاز.</string>
+    <string name="home_look_failed_open">نظرة مفتوحة</string>
     <string name="home_row_update">تحديث الشاشة الرئيسية</string>
     <string name="home_row_update_note">الإصدار {version} جاهز. شريط التطبيقات الخاص بك ونظرة البقاء كما هي.</string>
     <string name="home_update_preview_title">تحديث الشاشة الرئيسية؟</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">استخدم التلفاز الخاص</string>
     <string name="home_stock_working">إعادة الشاشة الرئيسية للتلفزيون إلى الخلف...</string>
     <string name="home_stock_done">عودة الشاشة الرئيسية للتلفزيون. لا يزال لدينا تثبيت.</string>
-    <string name="theme_title">المظهر</string>
     <string name="theme_default">افتراضي</string>
-    <string name="theme_default_desc">خلفية سوداء بها أربعة تطبيقات في الأسفل.</string>
-    <string name="theme_aurora">أورورا</string>
-    <string name="theme_aurora_desc">خلفية زرقاء داكنة مع توهج ناعم خلف التطبيقات.</string>
-    <string name="theme_six_columns">ستة أعمدة</string>
-    <string name="theme_six_columns_desc">ستة تطبيقات معروضة، مما يجعلها أكثر ملاءمة على الشاشة.</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}، محدد. {description}</string>
+    <string name="home_look_ended_banner">انتهى {picture}. هل تريد إعادة صورتك السابقة إلى التلفاز؟</string>
+    <string name="home_look_ended_restore">أعده</string>
     <string name="dock_title">شريط تطبيقاتك</string>
     <string name="dock_body">حتى {count, spellout} على طول الجزء السفلي. اسحب التطبيق من خلال نقاطه لتغيير الترتيب.</string>
+    <string name="dock_waiting">{count, plural, one {تطبيق # ينتظر} other {تطبيقات # تنتظر}} في الشبكة حتى تختار المزيد من التطبيقات على التوالي في Look.</string>
 </resources>

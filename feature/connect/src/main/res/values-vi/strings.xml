@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">Khác</string>
+    <string name="door_tcl_menus_prompt">Tivi hiển thị menu nào?</string>
+    <string name="door_tcl_menus_global">Menu bằng tiếng Anh hoặc ngôn ngữ của tôi</string>
+    <string name="door_tcl_menus_chinese">Thực đơn bằng tiếng Trung</string>
+    <string name="door_connect_failed_title">Tivi trả lời nhưng điện thoại này không kết nối được</string>
+    <string name="door_connect_failed_body">Kết nối không thành công ({kind}). Chúng tôi sẽ tiếp tục cố gắng trong khi màn hình này mở.</string>
+    <string name="door_connect_failed_hint">Nếu ADB từ máy tính hoạt động nhưng ứng dụng này không thể kết nối với TV thì có thể có vấn đề nào đó trên điện thoại: giới hạn mạng cho mỗi ứng dụng (MIUI, Samsung), VPN, DNS riêng hoặc dữ liệu di động. Tắt nó đi một lúc và thử lại.</string>
+    <string name="door_copy_error">Lỗi sao chép</string>
+    <string name="door_error_copied">Đã sao chép. Dán nó vào vấn đề của bạn.</string>
     <string name="door_unknown_note">Chúng tôi chưa từng gặp chiếc TV này trước đây. Các bước thường giống nhau.</string>
     <string name="family_atv_step1">Trên TV, mở Cài đặt (bánh răng, trên cùng bên phải), sau đó chọn Tùy chọn thiết bị &gt; Giới thiệu. Nhấn OK trên \"Build\" bảy lần cho đến khi TV thông báo \"Bạn hiện là nhà phát triển\".</string>
     <string name="family_atv_step2">Quay lại một màn hình. Mở tùy chọn Nhà phát triển và bật gỡ lỗi USB. Nếu TV cũng hiển thị \"Gỡ lỗi mạng\" hoặc \"Gỡ lỗi ADB\", hãy bật tính năng đó.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">Trên TV, mở Cài đặt &gt; Giới thiệu &gt; 本机信息, sau đó nhấn Lên, Xuống, Trái, Phải trên điều khiển từ xa.</string>
     <string name="family_tcl_step2">Một cửa sổ \"ADB\" nhỏ xuất hiện kèm theo địa chỉ. Để nó mở.</string>
     <string name="family_tcl_step3">Để TV ở màn hình này. Điện thoại của bạn sẽ tự kết nối.</string>
+    <string name="family_tcl_extra_gtv_step1">Trên Google TV: Hệ thống &gt; Giới thiệu, sau đó nhấn OK trên \"Bản dựng hệ điều hành Android TV\" bảy lần.</string>
+    <string name="family_tcl_extra_gtv">Trên Google TV, cũng bật Gỡ lỗi không dây.</string>
     <string name="family_unknown_step1">Trên TV, mở Cài đặt (bánh răng, trên cùng bên phải), sau đó chọn Tùy chọn thiết bị &gt; Giới thiệu. Nhấn OK trên \"Build\" bảy lần cho đến khi TV thông báo \"Bạn hiện là nhà phát triển\".</string>
     <string name="family_unknown_step2">Quay lại một màn hình. Mở tùy chọn Nhà phát triển và bật gỡ lỗi USB. Nếu TV cũng hiển thị \"Gỡ lỗi mạng\" hoặc \"Gỡ lỗi ADB\", hãy bật tính năng đó.</string>
     <string name="family_unknown_step3">Để TV ở màn hình này. Điện thoại của bạn sẽ tự kết nối.</string>

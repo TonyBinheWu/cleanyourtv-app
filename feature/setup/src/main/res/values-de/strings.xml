@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Erneut versuchen</string>
     <string name="stop_probe_failed_secondary">Zurück</string>
     <string name="stop_probe_failed_tertiary">Details anzeigen</string>
+    <string name="stop_plan_refused_title">Für diesen Fernseher konnte kein sicherer Plan erstellt werden</string>
+    <string name="stop_plan_refused_body">Der Fernseher hat geantwortet, aber sein Zustand passt zu keinem Plan, den wir sicher ausführen können. Deshalb haben wir vor jeder Änderung angehalten. Es wurde nichts geändert. Eine Problemmeldung übermittelt den Grund, damit wir das beheben können.</string>
     <string name="found_title">{count, plural, =0 {Nichts zum Ausschalten. Möchten Sie den neuen Startbildschirm?} one {Wir haben eine Sache zum Ausschalten gefunden} other {Wir haben # Dinge zum Ausschalten gefunden}}</string>
     <string name="found_headline">{count, plural, =0 {Nichts zum Ausschalten. Möchten Sie den neuen Startbildschirm?} one {Ding zum Ausschalten} other {Dinge zum Ausschalten}}</string>
     <string name="found_overline">Wir haben gefunden</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Bereinigung starten</string>
     <string name="found_customise">Anpassen</string>
     <string name="found_replaces_launcher">Ersetzt die Startbildschirm-App, die bereits auf diesem Fernseher vorhanden ist. Sein Aussehen, die App-Reihenfolge, die Einstellungen und die Kartenantworten beginnen neu.</string>
+    <string name="found_tcl_remote_keys">Auf TCL Google TV funktionieren die Tasten „Einstellungen“ (Zahnrad), „Netflix“ und „YouTube“ der Fernbedienung nicht mehr mit dem neuen Startbildschirm. Um sie wiederherzustellen, wählen Sie unter „Verwalten“ die Option „eigenen Startbildschirm des Fernsehers verwenden“ aus.</string>
     <string name="found_no_lock">Auf diesem Telefon gibt es keine Bildschirmsperre, daher können wir Ihre Identität nicht noch einmal überprüfen.</string>
     <string name="found_unknown_title">{count, plural, =0 {Wir haben nichts gefunden, worüber wir uns sicher sind} one {Wir haben eine Sache gefunden, bei der wir uns sicher sind} other {Wir haben # Dinge gefunden, bei denen wir uns sicher sind}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Wir haben nichts gefunden, worüber wir uns sicher sind} one {Sache, bei der wir uns sicher sind} other {Dinge, bei denen wir uns sicher sind}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Dock: {names}, plus {count, plural, one {# App} other {# Apps}} im {rows, plural, one {Zeile} other {Zeilen}} unten</string>
     <string name="customise_dock_row_empty">Dock</string>
     <string name="customise_look_row">Schauen Sie: {theme}</string>
+    <string name="customise_look_row_count">Siehe: {theme}, {count, plural, one {# App in Folge} other {# Apps hintereinander}}</string>
+    <string name="look_photo_after">Es wurde noch nichts gesendet. Es wird an den Fernseher weitergeleitet, wenn Sie auf „Reinigen“ tippen.</string>
     <string name="customise_group_tv">Im Fernsehen</string>
     <string name="customise_show_on_tv">Zeigt den Fortschritt auf dem Fernseher an</string>
     <string name="customise_show_on_tv_note">Der Fernseher zeigt jeden Schritt und dann den neuen Startbildschirm</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Kopiert</string>
     <string name="customise_snackbar_kept">{name} wird beibehalten.</string>
     <string name="customise_snackbar_off">{name} wird ausgeschaltet.</string>
-    <string name="theme_title">Aussehen</string>
     <string name="theme_default">Standard</string>
-    <string name="theme_default_desc">Ein schwarzer Hintergrund mit vier Apps am unteren Rand.</string>
     <string name="theme_aurora">Aurora</string>
-    <string name="theme_aurora_desc">Ein tiefblauer Hintergrund mit einem sanften Schimmer hinter den Apps.</string>
     <string name="theme_six_columns">Sechs Spalten</string>
-    <string name="theme_six_columns_desc">Sechs Apps verteilt, sodass mehr auf den Bildschirm passt.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, ausgewählt. {description}</string>
     <string name="dock_title">Dein Dock</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Änderungen am Fernseher rückgängig machen?</string>
     <string name="confirm_undo_body">Wir haben alles zurückgesetzt, was diese Änderung bewirkt hat, sodass der Fernseher wieder so ist, wie er vorher war. Es wird nichts gelöscht.</string>
     <string name="confirm_undo_button">Machen Sie die Änderungen rückgängig</string>
-    <string name="stop_plan_refused_title">Für diesen Fernseher konnte kein sicherer Plan erstellt werden</string>
-    <string name="stop_plan_refused_body">Der Fernseher hat geantwortet, aber sein Zustand passt zu keinem Plan, den wir sicher ausführen können. Deshalb haben wir vor jeder Änderung angehalten. Es wurde nichts geändert. Eine Problemmeldung übermittelt den Grund, damit wir das beheben können.</string>
+    <string name="candidate_overline">Testbuild</string>
+    <string name="candidate_title">Die Liste dieses Fernsehers ist neu</string>
+    <string name="candidate_body">Wir haben eine Liste für diesen Fernseher anhand von Berichten über dasselbe Modell erstellt, aber noch hat niemand ihn getestet. Was dadurch ausgeschaltet wird, wird wie gewohnt im Plan aufgeführt und Sie können alles vom Wiederherstellungspunkt aus wiederherstellen.</string>
+    <string name="candidate_ask_issue">Wenn Sie es versuchen, teilen Sie uns bitte in Ausgabe {issue} mit, wie es nach ein paar Tagen gelaufen ist:</string>
+    <string name="candidate_ask">Wenn Sie es versuchen, teilen Sie uns bitte in Ihrer Ausgabe mit, wie es nach ein paar Tagen gelaufen ist:</string>
+    <string name="candidate_check_wifi">WLAN nach einem Neustart</string>
+    <string name="candidate_check_remote">Jede Taste auf der Fernbedienung, Eingabe und Stimme auch</string>
+    <string name="candidate_check_hdmi">Jeder HDMI-Eingang</string>
+    <string name="candidate_check_live_tv">Live-TV</string>
+    <string name="candidate_check_casting">Casting von einem Telefon</string>
+    <string name="candidate_try">Probieren Sie die Testliste aus</string>
+    <string name="candidate_careful">Seien Sie vorsichtig, wie in 0.3.4</string>
+    <string name="candidate_careful_note">„Vorsichtig“ bedeutet bei Fernsehern dieser Marke nur das, worüber wir uns sicher sind, genau wie Version 0.3.4.</string>
 </resources>

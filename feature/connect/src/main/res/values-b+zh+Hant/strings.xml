@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">其他</string>
+    <string name="door_tcl_menus_prompt">電視顯示哪些選單？</string>
+    <string name="door_tcl_menus_global">英文或我使用的語言</string>
+    <string name="door_tcl_menus_chinese">中文選單</string>
+    <string name="door_connect_failed_title">電視已回應，但這支手機無法連線</string>
+    <string name="door_connect_failed_body">連線失敗（{kind}）。停留在這個畫面時，我們會持續重試。</string>
+    <string name="door_connect_failed_hint">若電腦上的 ADB 能連線，但此 App 無法連線，可能是手機的個別 App 網路限制（如 MIUI、Samsung）、VPN、私人 DNS 或行動數據造成的。請暫時關閉這些功能，再試一次。</string>
+    <string name="door_copy_error">複製錯誤資訊</string>
+    <string name="door_error_copied">已複製，請貼到問題回報中。</string>
     <string name="door_unknown_note">我們還沒有這個電視型號的資料，但操作步驟通常相同。</string>
     <string name="family_atv_step1">在電視上開啟「設定」（右上角齒輪）&gt;「裝置偏好設定」&gt;「關於」。在「版本」上連按七次確定，直到顯示「你現在是開發人員」。</string>
     <string name="family_atv_step2">返回上一頁，開啟「開發人員選項」中的「USB 偵錯」。若另有「網路偵錯」或「ADB 偵錯」，也請開啟。</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">在電視上開啟「設定 &gt; 關於 &gt; 本机信息」，然後依序按遙控器的上、下、左、右。</string>
     <string name="family_tcl_step2">畫面會出現帶有 IP 位址的 ADB 小視窗，請保持開啟。</string>
     <string name="family_tcl_step3">讓電視停留在這個畫面，手機會自動連線。</string>
+    <string name="family_tcl_extra_gtv_step1">在 Google TV 上：開啟「系統 &gt; 關於」，在「Android TV 作業系統版本」上連按七次確定。</string>
+    <string name="family_tcl_extra_gtv">在 Google TV 上，同時開啟無線偵錯。</string>
     <string name="family_unknown_step1">在電視上開啟「設定」（右上角齒輪）&gt;「裝置偏好設定」&gt;「關於」。在「版本」上連按七次確定，直到顯示「你現在是開發人員」。</string>
     <string name="family_unknown_step2">返回上一頁，開啟「開發人員選項」中的「USB 偵錯」。若另有「網路偵錯」或「ADB 偵錯」，也請開啟。</string>
     <string name="family_unknown_step3">讓電視停留在這個畫面，手機會自動連線。</string>

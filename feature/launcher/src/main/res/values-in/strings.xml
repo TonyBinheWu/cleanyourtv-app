@@ -12,10 +12,11 @@
     <string name="home_row_dock">Bilah aplikasi</string>
     <string name="home_row_dock_rows">{names}, ditambah {count, plural, one {aplikasi #} other {Aplikasi #}} di bawah</string>
     <string name="home_row_look">Tampilan</string>
+    <string name="home_tcl_remote_keys">Di TCL Google TV, tombol Pengaturan (roda gigi), Netflix, dan YouTube pada remote tidak berfungsi dengan layar beranda baru. Untuk mendapatkannya kembali, pilih Gunakan layar beranda TV itu sendiri.</string>
     <string name="home_row_stock">Gunakan layar beranda TV itu sendiri</string>
     <string name="home_row_stock_note">Menampilkan kembali layar utama TV. Milik kami tetap terpasang, jadi Anda dapat beralih lagi.</string>
     <string name="home_drift_banner">Pengaturan layar beranda di TV berubah sejak Anda mengaturnya.</string>
-    <string name="home_drift_restore">Kembalikan punyaku</string>
+    <string name="home_drift_restore">Kirim punyaku lagi</string>
     <string name="home_applying">Memperbarui layar beranda di TV...</string>
     <string name="home_snackbar_done">Selesai.</string>
     <string name="home_not_on_tv_lead">{tv} mempertahankan layar beranda sendiri. Dock dan tampilannya milik layar beranda baru, dan tidak ada di TV ini.</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">Apa yang akan mengubah ini adalah daftar yang dibuat untuk TV ini. Kirimkan laporannya kepada kami dan kami akan membuatkannya; versi yang lebih baru mungkin menawarkan layar beranda baru.</string>
     <string name="home_run_setup_again">Jalankan Pengaturan lagi</string>
     <string name="home_help_add_tv">Bantu tambahkan TV ini</string>
-    <string name="home_tv_changes_note">Perubahan yang dilakukan pada TV itu sendiri, seperti ubin per baris atau gerakan, akan bertahan hingga Anda mengubah layar beranda di sini. Dock yang diubah di TV tidak ditampilkan di atas: tampilan baru mempertahankannya, dock lain yang disimpan di sini menggantikannya. Aplikasi yang dihapus dari Rumah di TV tetap mati.</string>
+    <string name="home_tv_changes_note">Pengaturan yang diubah pada TV itu sendiri akan diganti saat Anda mengirim dari sini.</string>
+    <string name="home_row_look_summary_picture">{style} dengan {picture}</string>
+    <string name="home_row_look_summary_photo">{style} dengan foto Anda</string>
+    <string name="home_row_look_summary_none">{style}, tidak ada gambar</string>
+    <string name="home_row_look_columns">{count, plural, one {Aplikasi # berturut-turut} other {Aplikasi # berturut-turut}}</string>
+    <string name="home_row_look_sending">Mengirim...</string>
+    <string name="home_look_failed">Tampilan ini belum berhasil dikirim ke TV.</string>
+    <string name="home_look_failed_open">Tampilan Terbuka</string>
     <string name="home_row_update">Perbarui layar beranda</string>
     <string name="home_row_update_note">Versi {version} sudah siap. Bilah aplikasi Anda dan lihat tetap apa adanya.</string>
     <string name="home_update_preview_title">Perbarui layar beranda?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">Gunakan TV milik sendiri</string>
     <string name="home_stock_working">Mengembalikan layar utama TV...</string>
     <string name="home_stock_done">Layar beranda TV kembali. Milik kami masih terpasang.</string>
-    <string name="theme_title">Tampilan</string>
     <string name="theme_default">Bawaan</string>
-    <string name="theme_default_desc">Latar belakang hitam dengan empat aplikasi di bagian bawah.</string>
-    <string name="theme_aurora">Aurora</string>
-    <string name="theme_aurora_desc">Latar belakang biru tua dengan cahaya lembut di belakang aplikasi.</string>
-    <string name="theme_six_columns">Enam kolom</string>
-    <string name="theme_six_columns_desc">Enam aplikasi, jadi lebih pas di layar.</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}, dipilih. {description}</string>
+    <string name="home_look_ended_banner">{picture} telah berakhir. Tayangkan kembali foto Anda sebelumnya di TV?</string>
+    <string name="home_look_ended_restore">Pasang kembali</string>
     <string name="dock_title">Bilah aplikasi Anda</string>
     <string name="dock_body">Hingga {count, spellout} di sepanjang bagian bawah. Seret aplikasi berdasarkan titik-titiknya untuk mengubah urutannya.</string>
+    <string name="dock_waiting">{count, plural, one {Aplikasi # menunggu} other {Aplikasi # menunggu}} di grid hingga Anda memilih lebih banyak aplikasi berturut-turut di Tampilan.</string>
 </resources>
