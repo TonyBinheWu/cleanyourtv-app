@@ -2,7 +2,7 @@
 
 This fork publishes the signed full-flavour Android APK at
 <https://github.com/TonyBinheWu/cleanyourtv-app/releases>.
-The latest published fork version is **0.3.4.1**, version code **8**, tag **multilingual-0.3.4.1**, based on upstream 0.3.4. The first fork release was 0.3.3.1 (7).
+The latest published fork version is **0.4.0**, version code **15**, tag **multilingual-0.4.0**, based on upstream commit `e42aaf2`. Previous fork releases include 0.3.4.1 (8) and 0.3.3.1 (7).
 The source branches are now synchronized with upstream **0.4.0**, commit `e42aaf2`, and include
 1,066 translatable resource entries in all sixteen languages. A source synchronization does not
 replace an existing Release asset. Published APKs retain the version shown on their Release page.
