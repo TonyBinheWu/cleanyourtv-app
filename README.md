@@ -171,8 +171,8 @@ eaf7af3867bb29ff4bb038854842c93f42ffe4198a087e611cb18f925201cd65
 ```
 
 ```bash
-sha256sum cleanyourtv-0.2.0.apk                 # compare with the release notes
-apksigner verify --print-certs cleanyourtv-0.2.0.apk
+sha256sum cleanyourtv-multilingual-0.4.0.apk                 # compare with the release notes
+apksigner verify --print-certs cleanyourtv-multilingual-0.4.0.apk
 ```
 
 Android refuses an update signed by any other key, so after the first install every update is
