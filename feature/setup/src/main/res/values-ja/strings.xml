@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">再試行</string>
     <string name="stop_probe_failed_secondary">戻る</string>
     <string name="stop_probe_failed_tertiary">詳細を表示</string>
+    <string name="stop_plan_refused_title">このテレビに安全な操作プランを作成できませんでした</string>
+    <string name="stop_plan_refused_body">テレビは応答しましたが、確認した状態では安全な操作プランを作成できなかったため、何も変更せずに停止しました。テレビに変更はありません。「問題を報告」で理由を共有すると、改善に役立ちます。</string>
     <string name="found_title">{count, plural, =0 {オフにするものはありません。新しいホーム画面が必要ですか?} one {スイッチをオフにするものが 1 つ見つかりました} other {# のスイッチをオフにするものが見つかりました}}</string>
     <string name="found_headline">{count, plural, =0 {オフにするものはありません。新しいホーム画面が必要ですか?} one {スイッチをオフにするもの} other {オフにするもの}}</string>
     <string name="found_overline">見つけました</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">クリーンアップを開始</string>
     <string name="found_customise">カスタマイズ</string>
     <string name="found_replaces_launcher">このテレビにすでにあるホーム画面アプリを置き換えます。見た目、アプリの順序、設定、カードの答えが新しく始まります。</string>
+    <string name="found_tcl_remote_keys">TCL Google TV で、リモコンの設定 (歯車)、Netflix、および YouTube ボタンが新しいホーム画面で機能しなくなります。それらを元に戻すには、[管理] で [テレビの独自のホーム画面を使用する] を選択します。</string>
     <string name="found_no_lock">この電話には画面ロックがないため、本人であることを再確認できません。</string>
     <string name="found_unknown_title">{count, plural, =0 {確かな情報は何も見つかりませんでした} one {確信していることが 1 つ見つかりました} other {# 確信できることが見つかりました}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {確かな情報は何も見つかりませんでした} one {私たちが確信していること} other {私たちが確信していること}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">ドック: {names}、および以下の {rows, plural, one {行} other {行}} 内の {count, plural, one {# アプリ} other {# アプリ}}</string>
     <string name="customise_dock_row_empty">ドック</string>
     <string name="customise_look_row">見てください: {theme}</string>
+    <string name="customise_look_row_count">見てください: {theme}、{count, plural, one {# アプリが連続} other {# 個のアプリが連続}}</string>
+    <string name="look_photo_after">まだ何も送信されていません。 「きれいにする」をタップすると、テレビに接続されます。</string>
     <string name="customise_group_tv">テレビで</string>
     <string name="customise_show_on_tv">進行状況をテレビに表示</string>
     <string name="customise_show_on_tv_note">テレビには各ステップが表示され、その後新しいホーム画面が表示されます</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">コピーされました</string>
     <string name="customise_snackbar_kept">{name} は保持されます。</string>
     <string name="customise_snackbar_off">{name} がオフになります。</string>
-    <string name="theme_title">外観</string>
     <string name="theme_default">デフォルト</string>
-    <string name="theme_default_desc">黒い背景に下部に 4 つのアプリが表示されます。</string>
     <string name="theme_aurora">オーロラ</string>
-    <string name="theme_aurora_desc">アプリの背後にある柔らかい輝きのある深い青色の背景。</string>
     <string name="theme_six_columns">6 列</string>
-    <string name="theme_six_columns_desc">6 つのアプリがあるため、より画面にフィットします。</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}、選択されました。 {description}</string>
     <string name="dock_title">ドックの編集</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">テレビの変更を元に戻しますか?</string>
     <string name="confirm_undo_body">この変更をすべて元に戻したため、テレビは以前と同じになります。何も削除されません。</string>
     <string name="confirm_undo_button">変更を元に戻す</string>
-    <string name="stop_plan_refused_title">このテレビに安全な操作プランを作成できませんでした</string>
-    <string name="stop_plan_refused_body">テレビは応答しましたが、確認した状態では安全な操作プランを作成できなかったため、何も変更せずに停止しました。テレビに変更はありません。「問題を報告」で理由を共有すると、改善に役立ちます。</string>
+    <string name="candidate_overline">テストビルド</string>
+    <string name="candidate_title">このテレビのリストは新しいです</string>
+    <string name="candidate_body">同じモデルの報告からこのテレビのリストを作成しましたが、まだ誰もテストしていません。オフにする内容は通常どおりプランにリストされており、復元ポイントからすべてを元に戻すことができます。</string>
+    <string name="candidate_ask_issue">試してみた場合は、数日後にどうだったかを {issue} 号で教えてください。</string>
+    <string name="candidate_ask">試してみた場合は、数日後にどうだったかを問題で教えてください。</string>
+    <string name="candidate_check_wifi">再起動後の Wi-Fi</string>
+    <string name="candidate_check_remote">リモコンのすべてのボタン、入力と音声も</string>
+    <string name="candidate_check_hdmi">各HDMI入力</string>
+    <string name="candidate_check_live_tv">生放送</string>
+    <string name="candidate_check_casting">電話からのキャスト</string>
+    <string name="candidate_try">テストリストを試してください</string>
+    <string name="candidate_careful">0.3.4 と同様に注意してください</string>
+    <string name="candidate_careful_note">注意とは、バージョン 0.3.4 と同様に、このブランドのテレビに関して確信していることのみを意味します。</string>
 </resources>

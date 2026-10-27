@@ -12,10 +12,11 @@
     <string name="home_row_dock">ドック</string>
     <string name="home_row_dock_rows">{names}、および以下の {count, plural, one {# アプリ} other {# アプリ}}</string>
     <string name="home_row_look">外観</string>
+    <string name="home_tcl_remote_keys">TCL Google TV では、リモコンの設定 (歯車)、Netflix、および YouTube ボタンが新しいホーム画面で機能しません。それらを元に戻すには、[テレビの独自のホーム画面を使用する] を選択します。</string>
     <string name="home_row_stock">テレビ独自のホーム画面を使用する</string>
     <string name="home_row_stock_note">テレビ自体のホーム画面に戻します。私たちのものはインストールされたままなので、再度切り替えることができます。</string>
     <string name="home_drift_banner">テレビのホーム画面設定が、設定後に変更されました。</string>
-    <string name="home_drift_restore">鉱山を復元します</string>
+    <string name="home_drift_restore">私のものをもう一度送信してください</string>
     <string name="home_applying">テレビのホーム画面を更新しています...</string>
     <string name="home_snackbar_done">完了しました。</string>
     <string name="home_not_on_tv_lead">{tv} は独自のホーム画面を保持します。ドックと外観は新しいホーム画面に属しており、このテレビにはありません。</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">これを変えるのは、このテレビ用に作成されたリストです。レポートをお送りください。レポートを作成いたします。新しいバージョンでは、新しいホーム画面が提供される可能性があります。</string>
     <string name="home_run_setup_again">セットアップを再度実行してください</string>
     <string name="home_help_add_tv">このテレビの追加を手伝ってください</string>
-    <string name="home_tv_changes_note">テレビ自体で行われた変更 (行ごとのタイル数やモーションなど) は、ここでホーム画面を変更するまで持続します。テレビ上で変更されたドックは上には表示されていません。新しい外観がそれを保持し、ここに保存された別のドックがそれを置き換えます。ホームから削除したアプリは、テレビではオフのままになります。</string>
+    <string name="home_tv_changes_note">テレビ本体で変更した設定は、こちらから送信すると置き換えられます。</string>
+    <string name="home_row_look_summary_picture">{style} と {picture}</string>
+    <string name="home_row_look_summary_photo">{style} とあなたの写真</string>
+    <string name="home_row_look_summary_none">{style}、画像なし</string>
+    <string name="home_row_look_columns">{count, plural, one {# アプリが連続} other {# 個のアプリが連続}}</string>
+    <string name="home_row_look_sending">送信中...</string>
+    <string name="home_look_failed">この外観をテレビに送信できませんでした。</string>
+    <string name="home_look_failed_open">オープンルック</string>
     <string name="home_row_update">ホーム画面を更新します</string>
     <string name="home_row_update_note">バージョン {version} が準備できました。ドックと外観はそのまま残ります。</string>
     <string name="home_update_preview_title">ホーム画面を更新しますか?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">テレビ独自のものを使用する</string>
     <string name="home_stock_working">テレビ自体のホーム画面を元に戻します...</string>
     <string name="home_stock_done">テレビ自体のホーム画面が戻ってきました。我が家のはまだ設置されています。</string>
-    <string name="theme_title">外観</string>
     <string name="theme_default">デフォルト</string>
-    <string name="theme_default_desc">黒い背景に下部に 4 つのアプリが表示されます。</string>
-    <string name="theme_aurora">オーロラ</string>
-    <string name="theme_aurora_desc">アプリの背後にある柔らかい輝きのある深い青色の背景。</string>
-    <string name="theme_six_columns">6 列</string>
-    <string name="theme_six_columns_desc">6 つのアプリがあるため、より画面にフィットします。</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}、選択されました。 {description}</string>
+    <string name="home_look_ended_banner">{picture} が終了しました。以前の写真をテレビに戻しますか?</string>
+    <string name="home_look_ended_restore">元に戻してください</string>
     <string name="dock_title">ドックの編集</string>
     <string name="dock_body">下部に沿って {count, spellout} まで。アプリのドットをドラッグして順序を変更します。</string>
+    <string name="dock_waiting">Look でさらに多くのアプリを連続して選択するまで、グリッド内に {count, plural, one {# アプリが待機しています} other {# アプリが待機しています}} が表示されます。</string>
 </resources>

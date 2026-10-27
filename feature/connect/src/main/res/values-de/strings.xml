@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">Sonstiges</string>
+    <string name="door_tcl_menus_prompt">Welche Menüs zeigt der Fernseher?</string>
+    <string name="door_tcl_menus_global">Menüs in Englisch oder meiner Sprache</string>
+    <string name="door_tcl_menus_chinese">Menüs auf Chinesisch</string>
+    <string name="door_connect_failed_title">Der Fernseher hat geantwortet, aber dieses Telefon konnte keine Verbindung herstellen</string>
+    <string name="door_connect_failed_body">Die Verbindung ist fehlgeschlagen ({kind}). Wir werden es weiter versuchen, solange dieser Bildschirm geöffnet ist.</string>
+    <string name="door_connect_failed_hint">Wenn ADB von einem Computer aus funktioniert, diese App aber den Fernseher nicht erreichen kann, liegt möglicherweise etwas auf dem Telefon im Weg: ein Netzwerklimit pro App (MIUI, Samsung), ein VPN, privates DNS oder mobile Daten. Schalten Sie es für einen Moment aus und versuchen Sie es erneut.</string>
+    <string name="door_copy_error">Kopierfehler</string>
+    <string name="door_error_copied">Kopiert. Fügen Sie es in Ihre Ausgabe ein.</string>
     <string name="door_unknown_note">Genau diesen Fernseher haben wir noch nie getroffen. Die Schritte sind in der Regel gleich.</string>
     <string name="family_atv_step1">Öffnen Sie auf dem Fernseher die Einstellungen (das Zahnrad oben rechts) und dann Geräteeinstellungen &gt; Info. Drücken Sie bei „Erstellen“ sieben Mal auf „OK“, bis auf dem Fernseher „Sie sind jetzt Entwickler“ angezeigt wird.</string>
     <string name="family_atv_step2">Gehen Sie einen Bildschirm zurück. Öffnen Sie die Entwickleroptionen und aktivieren Sie das USB-Debugging. Wenn auf dem Fernseher auch „Netzwerk-Debugging“ oder „ADB-Debugging“ angezeigt wird, schalten Sie diese ebenfalls ein.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">Öffnen Sie auf dem Fernseher Einstellungen &gt; Info &gt; 本机信息 und drücken Sie dann auf der Fernbedienung die Tasten Oben, Unten, Links, Rechts.</string>
     <string name="family_tcl_step2">Es erscheint ein kleines „ADB“-Fenster mit einer Adresse. Lassen Sie es offen.</string>
     <string name="family_tcl_step3">Lassen Sie den Fernseher auf diesem Bildschirm. Ihr Telefon stellt automatisch eine Verbindung her.</string>
+    <string name="family_tcl_extra_gtv_step1">Auf Google TV: System &gt; Info, dann unter „Android TV OS Build“ sieben Mal auf „OK“ drücken.</string>
+    <string name="family_tcl_extra_gtv">Schalten Sie auf Google TV auch das Wireless-Debugging ein.</string>
     <string name="family_unknown_step1">Öffnen Sie auf dem Fernseher die Einstellungen (das Zahnrad oben rechts) und dann Geräteeinstellungen &gt; Info. Drücken Sie bei „Erstellen“ sieben Mal auf „OK“, bis auf dem Fernseher „Sie sind jetzt Entwickler“ angezeigt wird.</string>
     <string name="family_unknown_step2">Gehen Sie einen Bildschirm zurück. Öffnen Sie die Entwickleroptionen und aktivieren Sie das USB-Debugging. Wenn auf dem Fernseher auch „Netzwerk-Debugging“ oder „ADB-Debugging“ angezeigt wird, schalten Sie diese ebenfalls ein.</string>
     <string name="family_unknown_step3">Lassen Sie den Fernseher auf diesem Bildschirm. Ihr Telefon stellt automatisch eine Verbindung her.</string>

@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">重試</string>
     <string name="stop_probe_failed_secondary">返回</string>
     <string name="stop_probe_failed_tertiary">顯示詳細資訊</string>
+    <string name="stop_plan_refused_title">無法為這台電視建立安全的操作計畫</string>
+    <string name="stop_plan_refused_body">電視已回應，但讀取到的狀態無法套用我們能確定安全的計畫，因此在執行前已停止。電視沒有任何變更。回報問題會附上原因，協助我們修正。</string>
     <string name="found_title">{count, plural, =0 {沒有需要停用的項目。要使用新的主畫面嗎？} one {找到一個可停用的項目} other {找到 # 個可停用的項目}}</string>
     <string name="found_headline">{count, plural, =0 {沒有需要停用的項目。要使用新的主畫面嗎？} one {個可停用的項目} other {個可停用的項目}}</string>
     <string name="found_overline">找到</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">開始清理</string>
     <string name="found_customise">自訂</string>
     <string name="found_replaces_launcher">會取代電視上現有的主畫面 App，其外觀、應用程式順序、設定與卡片授權選擇都將重新設定。</string>
+    <string name="found_tcl_remote_keys">在 TCL Google TV 上，使用新主畫面時，遙控器的設定（齒輪）、Netflix 和 YouTube 按鈕將無法運作。若要恢復，請在「管理」中選擇「使用原廠主畫面」。</string>
     <string name="found_no_lock">這款手機沒有螢幕鎖定，因此我們無法再次確認是您本人。</string>
     <string name="found_unknown_title">{count, plural, =0 {沒有找到可確定安全停用的項目} one {找到一個可確定安全停用的項目} other {找到 # 個可確定安全停用的項目}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {沒有找到可確定安全停用的項目} one {個可確定安全停用的項目} other {個可確定安全停用的項目}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">快捷列：{names}，另有 {count, plural, one {# 個 App} other {# 個 App}} 位於下方的{rows, plural, one {列} other {列}}</string>
     <string name="customise_dock_row_empty">快捷列</string>
     <string name="customise_look_row">外觀：{theme}</string>
+    <string name="customise_look_row_count">外觀：{theme}，{count, plural, one {每列 # 個 App} other {每列 # 個 App}}</string>
+    <string name="look_photo_after">尚未傳送任何變更。點選「開始清理」時才會套用到電視。</string>
     <string name="customise_group_tv">在電視上</string>
     <string name="customise_show_on_tv">在電視上顯示進度</string>
     <string name="customise_show_on_tv_note">電視顯示每一步，然後是新的主畫面</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">已複製</string>
     <string name="customise_snackbar_kept">{name} 將會保留。</string>
     <string name="customise_snackbar_off">{name} 將關閉。</string>
-    <string name="theme_title">外觀</string>
     <string name="theme_default">預設</string>
-    <string name="theme_default_desc">黑色背景，底部有四個應用程式。</string>
     <string name="theme_aurora">極光</string>
-    <string name="theme_aurora_desc">深藍色背景，應用程式後面發出柔和的光芒。</string>
     <string name="theme_six_columns">六欄</string>
-    <string name="theme_six_columns_desc">每列顯示六個應用程式，讓畫面能容納更多項目。</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}，已選擇。 {description}</string>
     <string name="dock_title">你的快捷列</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">復原電視上的變更？</string>
     <string name="confirm_undo_body">會還原這次操作的所有變更，讓電視回到操作前的狀態，不會刪除任何項目。</string>
     <string name="confirm_undo_button">還原變更</string>
-    <string name="stop_plan_refused_title">無法為這台電視建立安全的操作計畫</string>
-    <string name="stop_plan_refused_body">電視已回應，但讀取到的狀態無法套用我們能確定安全的計畫，因此在執行前已停止。電視沒有任何變更。回報問題會附上原因，協助我們修正。</string>
+    <string name="candidate_overline">測試版本</string>
+    <string name="candidate_title">這台電視的清理清單尚在測試中</string>
+    <string name="candidate_body">這份清單是根據同型號電視的回報建立，但尚未經過實際測試。將停用的項目仍會列在操作計畫中，所有變更都能透過還原點復原。</string>
+    <string name="candidate_ask_issue">若你願意測試，請使用幾天後在問題 {issue} 回報以下項目：</string>
+    <string name="candidate_ask">若你願意測試，請使用幾天後在問題回報中說明以下項目：</string>
+    <string name="candidate_check_wifi">重新啟動後的 Wi-Fi 連線</string>
+    <string name="candidate_check_remote">遙控器的所有按鈕、輸入來源及語音功能</string>
+    <string name="candidate_check_hdmi">每個 HDMI 輸入來源</string>
+    <string name="candidate_check_live_tv">電視頻道</string>
+    <string name="candidate_check_casting">從手機投射</string>
+    <string name="candidate_try">試用測試清單</string>
+    <string name="candidate_careful">維持 0.3.4 的保守模式</string>
+    <string name="candidate_careful_note">「保守模式」只停用此品牌已確認安全的項目，與 0.3.4 的做法相同。</string>
 </resources>

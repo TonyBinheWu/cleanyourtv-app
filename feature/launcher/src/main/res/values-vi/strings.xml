@@ -12,10 +12,11 @@
     <string name="home_row_dock">Thanh ứng dụng</string>
     <string name="home_row_dock_rows">{names}, cộng với {count, plural, one {Ứng dụng #} other {Ứng dụng #}} bên dưới</string>
     <string name="home_row_look">Giao diện</string>
+    <string name="home_tcl_remote_keys">Trên TCL Google TV, các nút Cài đặt (bánh răng), Netflix và YouTube của điều khiển từ xa không hoạt động với màn hình chính mới. Để lấy lại chúng, hãy chọn Sử dụng màn hình chính của TV.</string>
     <string name="home_row_stock">Sử dụng màn hình chính của TV</string>
     <string name="home_row_stock_note">Đưa màn hình chính của TV trở lại. Của chúng tôi vẫn được cài đặt, vì vậy bạn có thể chuyển đổi lại.</string>
     <string name="home_drift_banner">Cài đặt màn hình chính trên TV đã thay đổi kể từ khi bạn đặt chúng.</string>
-    <string name="home_drift_restore">Khôi phục của tôi</string>
+    <string name="home_drift_restore">Gửi lại cho tôi</string>
     <string name="home_applying">Đang cập nhật màn hình chính trên TV...</string>
     <string name="home_snackbar_done">Xong.</string>
     <string name="home_not_on_tv_lead">{tv} giữ màn hình chính của riêng mình. Dock và giao diện thuộc về màn hình chính mới và không có trên TV này.</string>
@@ -37,7 +38,14 @@
     <string name="home_not_on_tv_next_list">Điều sẽ thay đổi đây là danh sách được tạo cho TV này. Gửi cho chúng tôi báo cáo của nó và chúng tôi sẽ thực hiện một báo cáo; phiên bản mới hơn có thể cung cấp màn hình chính mới.</string>
     <string name="home_run_setup_again">Chạy lại thiết lập</string>
     <string name="home_help_add_tv">Giúp thêm tivi này</string>
-    <string name="home_tv_changes_note">Các thay đổi được thực hiện trên chính TV, chẳng hạn như ô trên mỗi hàng hoặc chuyển động, sẽ kéo dài cho đến khi bạn thay đổi màn hình chính tại đây. Đế được thay đổi trên TV không được hiển thị ở trên: giao diện mới sẽ giữ nguyên đế đó, một đế khác được lưu ở đây sẽ thay thế đế đó. Các ứng dụng đã tắt Trang chủ trên TV vẫn tắt.</string>
+    <string name="home_tv_changes_note">Các cài đặt đã thay đổi trên TV sẽ được thay thế khi bạn gửi từ đây.</string>
+    <string name="home_row_look_summary_picture">{style} với {picture}</string>
+    <string name="home_row_look_summary_photo">{style} kèm theo ảnh của bạn</string>
+    <string name="home_row_look_summary_none">{style}, không có hình ảnh</string>
+    <string name="home_row_look_columns">{count, plural, one {Ứng dụng # liên tiếp} other {Ứng dụng # liên tiếp}}</string>
+    <string name="home_row_look_sending">Đang gửi...</string>
+    <string name="home_look_failed">Không thể gửi giao diện này tới TV.</string>
+    <string name="home_look_failed_open">Nhìn mở</string>
     <string name="home_row_update">Cập nhật màn hình chính</string>
     <string name="home_row_update_note">Phiên bản {version} đã sẵn sàng. Bến tàu của bạn và giao diện vẫn như cũ.</string>
     <string name="home_update_preview_title">Cập nhật màn hình chính?</string>
@@ -49,15 +57,10 @@
     <string name="home_stock_confirm">Sử dụng tivi riêng</string>
     <string name="home_stock_working">Đưa màn hình chính của TV trở lại...</string>
     <string name="home_stock_done">Màn hình chính của TV đã hoạt động trở lại. Của chúng tôi vẫn được cài đặt.</string>
-    <string name="theme_title">Giao diện</string>
     <string name="theme_default">Mặc định</string>
-    <string name="theme_default_desc">Nền đen có bốn ứng dụng dọc phía dưới.</string>
-    <string name="theme_aurora">Cực quang</string>
-    <string name="theme_aurora_desc">Nền màu xanh đậm với ánh sáng dịu nhẹ phía sau các ứng dụng.</string>
-    <string name="theme_six_columns">Sáu cột</string>
-    <string name="theme_six_columns_desc">Sáu ứng dụng trên tổng thể, để vừa khít hơn trên màn hình.</string>
-    <string name="theme_card_cd">{name}. {description}</string>
-    <string name="theme_card_selected_cd">{name}, đã chọn. {description}</string>
+    <string name="home_look_ended_banner">{picture} đã kết thúc. Đưa hình ảnh trước đó của bạn trở lại TV?</string>
+    <string name="home_look_ended_restore">Đặt lại</string>
     <string name="dock_title">Thanh ứng dụng của bạn</string>
     <string name="dock_body">Lên đến {count, spellout} dọc theo phía dưới. Kéo ứng dụng theo dấu chấm của nó để thay đổi thứ tự.</string>
+    <string name="dock_waiting">{count, plural, one {Ứng dụng # đang chờ} other {Ứng dụng # đang chờ}} trong lưới cho đến khi bạn chọn thêm ứng dụng liên tiếp trong Look.</string>
 </resources>

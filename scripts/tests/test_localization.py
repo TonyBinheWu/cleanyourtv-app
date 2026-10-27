@@ -16,7 +16,8 @@ LOCALES = {'en': 'values', 'zh-Hant': 'values-b+zh+Hant', 'ja': 'values-ja',
 
 
 def resources(path):
-    elements = list(ET.parse(path).getroot())
+    files = sorted(path.glob('*.xml')) if path.is_dir() else [path]
+    elements = [el for file in files for el in ET.parse(file).getroot() if el.tag in ('string', 'plurals')]
     names = [el.attrib['name'] for el in elements]
     if len(set(names)) != len(names):
         raise AssertionError(f'Duplicate resource names in {path}')
@@ -79,12 +80,12 @@ class LocalizationTest(unittest.TestCase):
     def test_every_module_has_complete_safe_translations(self):
         for module in MODULES:
             res = ROOT / module / 'src/main/res'
-            source = resources(res / 'values/strings.xml')
+            source = resources(res / 'values')
             expected = {name: el for name, el in source.items() if el.get('translatable') != 'false'}
             for tag, folder in LOCALES.items():
                 if tag == 'en':
                     continue
-                path = res / folder / 'strings.xml'
+                path = res / folder
                 translated = resources(path)
                 with self.subTest(module=module, locale=tag):
                     self.assertEqual(set(expected), set(translated), str(path))
@@ -134,7 +135,7 @@ class LocalizationTest(unittest.TestCase):
         for tag, folder in LOCALES.items():
             seen = {}
             for module in MODULES:
-                for name, el in resources(ROOT / module / 'src/main/res' / folder / 'strings.xml').items():
+                for name, el in resources(ROOT / module / 'src/main/res' / folder).items():
                     with self.subTest(locale=tag, name=name):
                         value = ET.tostring(el, encoding='unicode').strip()
                         if name in seen:

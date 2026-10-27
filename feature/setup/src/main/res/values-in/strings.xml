@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Coba lagi</string>
     <string name="stop_probe_failed_secondary">Kembali</string>
     <string name="stop_probe_failed_tertiary">Tampilkan detailnya</string>
+    <string name="stop_plan_refused_title">Tidak dapat membuat rencana yang aman untuk TV ini</string>
+    <string name="stop_plan_refused_body">TV merespons, tetapi kondisi yang ditemukan tidak sesuai dengan rencana yang kami yakini aman. Karena itu, kami berhenti sebelum melakukan apa pun. Tidak ada yang diubah. Laporan masalah akan mengirimkan alasannya agar kami dapat memperbaikinya.</string>
     <string name="found_title">{count, plural, =0 {Tidak ada yang perlu dimatikan. Ingin layar beranda baru?} one {Kami menemukan satu hal untuk dimatikan} other {Kami menemukan hal-hal # untuk dimatikan}}</string>
     <string name="found_headline">{count, plural, =0 {Tidak ada yang perlu dimatikan. Ingin layar beranda baru?} one {hal yang harus dimatikan} other {hal-hal yang harus dimatikan}}</string>
     <string name="found_overline">Kami menemukan</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Mulai merapikan</string>
     <string name="found_customise">Sesuaikan</string>
     <string name="found_replaces_launcher">Menggantikan aplikasi layar beranda yang sudah ada di TV ini. Tampilannya, urutan aplikasi, pengaturan, dan jawaban kartu dimulai dari awal.</string>
+    <string name="found_tcl_remote_keys">Di TCL Google TV, tombol Pengaturan (roda gigi), Netflix, dan YouTube pada remote berhenti berfungsi dengan layar beranda baru. Untuk mendapatkannya kembali, pilih Gunakan layar beranda TV di Kelola.</string>
     <string name="found_no_lock">Tidak ada kunci layar pada ponsel ini, jadi kami tidak dapat memeriksa ulang apakah itu Anda.</string>
     <string name="found_unknown_title">{count, plural, =0 {Kami tidak menemukan sesuatu yang kami yakini} one {Kami menemukan satu hal yang kami yakini} other {Kami menemukan hal-hal # yang kami yakini}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Kami tidak menemukan sesuatu yang kami yakini} one {hal yang kami yakini} other {hal-hal yang kami yakini}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Dock: {names}, ditambah {count, plural, one {aplikasi #} other {Aplikasi #}} di {rows, plural, one {baris} other {baris}} di bawah</string>
     <string name="customise_dock_row_empty">Bilah aplikasi</string>
     <string name="customise_look_row">Lihat: {theme}</string>
+    <string name="customise_look_row_count">Lihat: {theme}, {count, plural, one {Aplikasi # berturut-turut} other {Aplikasi # berturut-turut}}</string>
+    <string name="look_photo_after">Belum ada yang terkirim. Ini akan ditampilkan di TV saat Anda mengetuk Jadikan bersih.</string>
     <string name="customise_group_tv">Di TV</string>
     <string name="customise_show_on_tv">Tampilkan kemajuannya di TV</string>
     <string name="customise_show_on_tv_note">TV menampilkan setiap langkah, lalu layar beranda baru</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Disalin</string>
     <string name="customise_snackbar_kept">{name} akan disimpan.</string>
     <string name="customise_snackbar_off">{name} akan dimatikan.</string>
-    <string name="theme_title">Tampilan</string>
     <string name="theme_default">Bawaan</string>
-    <string name="theme_default_desc">Latar belakang hitam dengan empat aplikasi di bagian bawah.</string>
     <string name="theme_aurora">Aurora</string>
-    <string name="theme_aurora_desc">Latar belakang biru tua dengan cahaya lembut di belakang aplikasi.</string>
     <string name="theme_six_columns">Enam kolom</string>
-    <string name="theme_six_columns_desc">Enam aplikasi, jadi lebih pas di layar.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, dipilih. {description}</string>
     <string name="dock_title">Bilah aplikasi Anda</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Membatalkan perubahan pada TV?</string>
     <string name="confirm_undo_body">Kami mengembalikan semua perubahan yang dilakukan, sehingga TV kembali seperti semula. Tidak ada yang dihapus.</string>
     <string name="confirm_undo_button">Membatalkan perubahan</string>
-    <string name="stop_plan_refused_title">Tidak dapat membuat rencana yang aman untuk TV ini</string>
-    <string name="stop_plan_refused_body">TV merespons, tetapi kondisi yang ditemukan tidak sesuai dengan rencana yang kami yakini aman. Karena itu, kami berhenti sebelum melakukan apa pun. Tidak ada yang diubah. Laporan masalah akan mengirimkan alasannya agar kami dapat memperbaikinya.</string>
+    <string name="candidate_overline">Uji coba pembuatan</string>
+    <string name="candidate_title">Daftar TV ini baru</string>
+    <string name="candidate_body">Kami membuat daftar TV ini berdasarkan laporan model yang sama, namun belum ada yang mengujinya. Apa yang dimatikannya tercantum dalam paket seperti biasa, dan Anda dapat mengembalikan semuanya dari titik Pemulihan.</string>
+    <string name="candidate_ask_issue">Jika Anda mencobanya, beri tahu kami di edisi {issue} bagaimana hasilnya setelah beberapa hari:</string>
+    <string name="candidate_ask">Jika Anda mencobanya, beri tahu kami dalam masalah Anda bagaimana hasilnya setelah beberapa hari:</string>
+    <string name="candidate_check_wifi">Wi-Fi setelah dimulai ulang</string>
+    <string name="candidate_check_remote">Setiap tombol di remote, Input dan suara juga</string>
+    <string name="candidate_check_hdmi">Setiap masukan HDMI</string>
+    <string name="candidate_check_live_tv">TV Langsung</string>
+    <string name="candidate_check_casting">Mentransmisikan dari telepon</string>
+    <string name="candidate_try">Coba daftar tes</string>
+    <string name="candidate_careful">Tetap berhati-hati, seperti pada 0.3.4</string>
+    <string name="candidate_careful_note">Hati-hati hanya berarti apa yang kami yakini untuk TV merek ini, sama seperti versi 0.3.4.</string>
 </resources>

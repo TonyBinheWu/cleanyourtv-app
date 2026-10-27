@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Повторить</string>
     <string name="stop_probe_failed_secondary">Назад</string>
     <string name="stop_probe_failed_tertiary">Показать детали</string>
+    <string name="stop_plan_refused_title">Не удалось составить безопасный план для этого телевизора</string>
+    <string name="stop_plan_refused_body">Телевизор ответил, но его состояние не соответствует плану, который мы можем безопасно выполнить. Поэтому мы остановились до любых действий. Ничего не изменено. Сообщение о проблеме передаст нам причину, чтобы мы могли её исправить.</string>
     <string name="found_title">{count, plural, =0 {Отключать нечего. Установить новый главный экран?} one {Найден # элемент для отключения} few {Найдено # элемента для отключения} many {Найдено # элементов для отключения} other {Найдено # элемента для отключения}}</string>
     <string name="found_headline">{count, plural, =0 {Отключать нечего. Установить новый главный экран?} one {элемент для отключения} few {элемента для отключения} many {элементов для отключения} other {элемента для отключения}}</string>
     <string name="found_overline">Мы нашли</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Начать очистку</string>
     <string name="found_customise">Настроить</string>
     <string name="found_replaces_launcher">Заменяет приложение главного экрана, уже установленное на этом телевизоре. Его внешний вид, порядок приложений, настройки и ответы на карточках начинаются заново.</string>
+    <string name="found_tcl_remote_keys">На TCL Google TV кнопки «Настройки» (шестеренка) на пульте дистанционного управления, Netflix и YouTube перестают работать с новым главным экраном. Чтобы вернуть их, выберите «Использовать собственный главный экран телевизора» в разделе «Управление».</string>
     <string name="found_no_lock">На этом телефоне нет блокировки экрана, поэтому мы не можем дважды проверить, что это вы.</string>
     <string name="found_unknown_title">{count, plural, =0 {Не найдено элементов, которые точно можно безопасно отключить} one {Найден # элемент, который можно безопасно отключить} few {Найдено # элемента, которые можно безопасно отключить} many {Найдено # элементов, которые можно безопасно отключить} other {Найдено # элемента, которые можно безопасно отключить}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Не найдено элементов, которые точно можно безопасно отключить} one {элемент, который можно безопасно отключить} few {элемента, которые можно безопасно отключить} many {элементов, которые можно безопасно отключить} other {элемента, которые можно безопасно отключить}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Панель: {names}, ещё {count, plural, one {# приложение} few {# приложения} many {# приложений} other {# приложения}} {rows, plural, one {в ряду ниже} few {в рядах ниже} many {в рядах ниже} other {в рядах ниже}}</string>
     <string name="customise_dock_row_empty">Панель приложений</string>
     <string name="customise_look_row">Смотри: {theme}</string>
+    <string name="customise_look_row_count">Посмотрите: {theme}, {count, plural, one {Приложение # подряд} other {# приложения подряд}}</string>
+    <string name="look_photo_after">Пока ничего не отправлено. Он перейдет на телевизор, когда вы нажмете «Очистить».</string>
     <string name="customise_group_tv">По телевизору</string>
     <string name="customise_show_on_tv">Показать прогресс по телевизору.</string>
     <string name="customise_show_on_tv_note">Телевизор показывает каждый шаг, а затем новый главный экран.</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Скопировано</string>
     <string name="customise_snackbar_kept">{name} будет сохранен.</string>
     <string name="customise_snackbar_off">{name} будет выключен.</string>
-    <string name="theme_title">Оформление</string>
     <string name="theme_default">По умолчанию</string>
-    <string name="theme_default_desc">Черный фон с четырьмя приложениями внизу.</string>
     <string name="theme_aurora">Аврора</string>
-    <string name="theme_aurora_desc">Темно-синий фон с мягким свечением позади приложений.</string>
     <string name="theme_six_columns">Шесть столбцов</string>
-    <string name="theme_six_columns_desc">Шесть приложений, поэтому больше места на экране.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, выбрано. {description}</string>
     <string name="dock_title">Ваша панель приложений</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Отменить изменения на телевизоре?</string>
     <string name="confirm_undo_body">Мы вернули все, что было сделано в результате этого изменения, и телевизор стал таким, каким был раньше. Ничего не удаляется.</string>
     <string name="confirm_undo_button">Отменить изменения.</string>
-    <string name="stop_plan_refused_title">Не удалось составить безопасный план для этого телевизора</string>
-    <string name="stop_plan_refused_body">Телевизор ответил, но его состояние не соответствует плану, который мы можем безопасно выполнить. Поэтому мы остановились до любых действий. Ничего не изменено. Сообщение о проблеме передаст нам причину, чтобы мы могли её исправить.</string>
+    <string name="candidate_overline">Тестовая сборка</string>
+    <string name="candidate_title">Список этого телевизора новый.</string>
+    <string name="candidate_body">Мы составили список для этого телевизора на основе отчетов об одной и той же модели, но ее еще никто не тестировал. То, что он выключает, указано в плане как обычно, и из точки восстановления можно все поставить обратно.</string>
+    <string name="candidate_ask_issue">Если попробуете, расскажите, пожалуйста, в выпуске {issue}, как все прошло через несколько дней:</string>
+    <string name="candidate_ask">Если попробуете, расскажите в своем выпуске, как все прошло через несколько дней:</string>
+    <string name="candidate_check_wifi">Wi-Fi после перезагрузки</string>
+    <string name="candidate_check_remote">Каждая кнопка на пульте, ввод и голос тоже.</string>
+    <string name="candidate_check_hdmi">Каждый вход HDMI</string>
+    <string name="candidate_check_live_tv">Прямой эфир</string>
+    <string name="candidate_check_casting">Трансляция с телефона</string>
+    <string name="candidate_try">Попробуйте список тестов</string>
+    <string name="candidate_careful">Будьте осторожны, как в 0.3.4.</string>
+    <string name="candidate_careful_note">Осторожно подразумевается только то, в чем мы уверены для телевизоров этой марки, так же, как и версия 0.3.4.</string>
 </resources>

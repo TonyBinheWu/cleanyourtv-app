@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">Autre</string>
+    <string name="door_tcl_menus_prompt">Quels menus le téléviseur affiche-t-il ?</string>
+    <string name="door_tcl_menus_global">Menus en anglais ou dans ma langue</string>
+    <string name="door_tcl_menus_chinese">Menus en chinois</string>
+    <string name="door_connect_failed_title">Le téléviseur a répondu, mais ce téléphone n\'a pas pu se connecter</string>
+    <string name="door_connect_failed_body">La connexion a échoué ({kind}). Nous continuerons d\'essayer pendant que cet écran est ouvert.</string>
+    <string name="door_connect_failed_hint">Si ADB depuis un ordinateur fonctionne mais que cette application ne peut pas atteindre le téléviseur, quelque chose sur le téléphone peut gêner : une limite de réseau par application (MIUI, Samsung), un VPN, un DNS privé ou des données mobiles. Éteignez-le pendant un moment et réessayez.</string>
+    <string name="door_copy_error">Erreur de copie</string>
+    <string name="door_error_copied">Copié. Collez-le dans votre problème.</string>
     <string name="door_unknown_note">Nous n\'avons jamais rencontré ce téléviseur précis auparavant. Les étapes sont généralement les mêmes.</string>
     <string name="family_atv_step1">Sur le téléviseur, ouvrez Paramètres (l\'engrenage, en haut à droite), puis Préférences de l\'appareil &gt; À propos. Appuyez sept fois sur OK sur « Construire » jusqu\'à ce que le téléviseur dise « Vous êtes maintenant un développeur ».</string>
     <string name="family_atv_step2">Revenir en arrière d’un écran. Ouvrez les options du développeur et activez le débogage USB. Si le téléviseur affiche également « Débogage réseau » ou « Débogage ADB », activez-le également.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">Sur le téléviseur, ouvrez Paramètres &gt; À propos de &gt; 本机信息, puis appuyez sur Haut, Bas, Gauche, Droite sur la télécommande.</string>
     <string name="family_tcl_step2">Une petite fenêtre \"ADB\" apparaît avec une adresse. Laissez-le ouvert.</string>
     <string name="family_tcl_step3">Laissez le téléviseur sur cet écran. Votre téléphone se connectera tout seul.</string>
+    <string name="family_tcl_extra_gtv_step1">Sur Google TV : Système &gt; À propos, puis appuyez sept fois sur OK sur « Build du système d\'exploitation Android TV ».</string>
+    <string name="family_tcl_extra_gtv">sur Google TV, activez également le débogage sans fil.</string>
     <string name="family_unknown_step1">Sur le téléviseur, ouvrez Paramètres (l\'engrenage, en haut à droite), puis Préférences de l\'appareil &gt; À propos. Appuyez sept fois sur OK sur « Construire » jusqu\'à ce que le téléviseur dise « Vous êtes maintenant un développeur ».</string>
     <string name="family_unknown_step2">Revenir en arrière d’un écran. Ouvrez les options du développeur et activez le débogage USB. Si le téléviseur affiche également « Débogage réseau » ou « Débogage ADB », activez-le également.</string>
     <string name="family_unknown_step3">Laissez le téléviseur sur cet écran. Votre téléphone se connectera tout seul.</string>

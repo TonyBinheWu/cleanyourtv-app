@@ -55,34 +55,44 @@ class LocalizationTest {
 
     @Test fun allCompiledTranslationsResolveAndFormatWithoutLosingArguments() {
         val root = File(System.getProperty("cleanyourtv.repoRoot") ?: error("no repo root"))
+        val english = localized("en")
         for ((tag, folder) in locales) {
             val language = localized(tag)
             for (module in modules) {
-                val file = File(root, "$module/src/main/res/$folder/strings.xml")
-                val entries = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-                    .parse(file).getElementsByTagName("string")
-                for (i in 0 until entries.length) {
-                    val el = entries.item(i) as Element
-                    if (el.getAttribute("translatable") == "false") continue
-                    val name = el.getAttribute("name")
-                    val text = language.getString(id(name))
-                    val expected = el.textContent.replace("\\'", "'").replace("\\\"", "\"")
-                    assertEquals(expected, text, "$tag/$module/$name did not load its own resource")
-                    if ('{' !in text) continue
-                    val source = localized("en").getString(id(name))
-                    val format = MessageFormat(text, Locale.forLanguageTag(tag))
-                    val names = argumentNames(source)
-                    assertEquals(names, argumentNames(text),
-                        "$tag/$name changed an argument name")
-                    for (count in listOf(0, 1, 2, 3, 5, 11, 21, 101, 102, 1_000_000)) {
-                        val args = names.associateWith<String, Any> { "Sample" }.toMutableMap()
-                        // The source determines numeric argument types, including nested plural groups.
-                        Regex("\\{(\\w+),\\s*(?:plural|selectordinal|spellout|number)").findAll(source).forEach {
-                            args[it.groupValues[1]] = count
+                val sourceFolder = File(root, "$module/src/main/res/values")
+                val sourceFiles = sourceFolder.listFiles().orEmpty().filter { it.name.endsWith(".xml") }
+                for (sourceFile in sourceFiles) {
+                    val sourceEntries = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+                        .parse(sourceFile).getElementsByTagName("string")
+                    if ((0 until sourceEntries.length).none {
+                            (sourceEntries.item(it) as Element).getAttribute("translatable") != "false"
+                        }) continue
+                    val file = File(root, "$module/src/main/res/$folder/${sourceFile.name}")
+                    val entries = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+                        .parse(file).getElementsByTagName("string")
+                    for (i in 0 until entries.length) {
+                        val el = entries.item(i) as Element
+                        if (el.getAttribute("translatable") == "false") continue
+                        val name = el.getAttribute("name")
+                        val text = language.getString(id(name))
+                        val expected = el.textContent.replace("\\'", "'").replace("\\\"", "\"")
+                        assertEquals(expected, text, "$tag/$module/$name did not load its own resource")
+                        if ('{' !in text) continue
+                        val source = english.getString(id(name))
+                        val format = MessageFormat(text, Locale.forLanguageTag(tag))
+                        val names = argumentNames(source)
+                        assertEquals(names, argumentNames(text),
+                            "$tag/$name changed an argument name")
+                        for (count in listOf(0, 1, 2, 3, 5, 11, 21, 101, 102, 1_000_000)) {
+                            val args = names.associateWith<String, Any> { "Sample" }.toMutableMap()
+                            // The source determines numeric argument types, including nested plural groups.
+                            Regex("\\{(\\w+),\\s*(?:plural|selectordinal|spellout|number)").findAll(source).forEach {
+                                args[it.groupValues[1]] = count
+                            }
+                            val rendered = format.format(args)
+                            assertTrue(rendered.isNotBlank(), "$tag/$name is blank")
+                            assertFalse('{' in rendered, "$tag/$name left a placeholder: $rendered")
                         }
-                        val rendered = format.format(args)
-                        assertTrue(rendered.isNotBlank(), "$tag/$name is blank")
-                        assertFalse('{' in rendered, "$tag/$name left a placeholder: $rendered")
                     }
                 }
             }

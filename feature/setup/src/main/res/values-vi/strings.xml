@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Thử lại</string>
     <string name="stop_probe_failed_secondary">Quay lại</string>
     <string name="stop_probe_failed_tertiary">Hiển thị chi tiết</string>
+    <string name="stop_plan_refused_title">Không thể lập kế hoạch thao tác an toàn cho TV này</string>
+    <string name="stop_plan_refused_body">TV đã phản hồi, nhưng trạng thái được ghi nhận không phù hợp với kế hoạch mà chúng tôi chắc chắn an toàn nên đã dừng trước khi thao tác. Không có gì bị thay đổi. Báo cáo sự cố sẽ gửi nguyên nhân để chúng tôi khắc phục.</string>
     <string name="found_title">{count, plural, =0 {Không có gì để tắt. Muốn có màn hình chính mới?} one {Chúng tôi tìm thấy một thứ cần tắt} other {Chúng tôi đã tìm thấy những thứ # cần tắt}}</string>
     <string name="found_headline">{count, plural, =0 {Không có gì để tắt. Muốn có màn hình chính mới?} one {thứ cần tắt} other {những thứ cần tắt}}</string>
     <string name="found_overline">Chúng tôi đã tìm thấy</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Bắt đầu dọn dẹp</string>
     <string name="found_customise">Tùy chỉnh</string>
     <string name="found_replaces_launcher">Thay thế ứng dụng màn hình chính đã có trên TV này. Giao diện, thứ tự ứng dụng, cài đặt và câu trả lời thẻ bắt đầu mới.</string>
+    <string name="found_tcl_remote_keys">Trên TCL Google TV, các nút Cài đặt (bánh răng), Netflix và YouTube của điều khiển từ xa ngừng hoạt động với màn hình chính mới. Để lấy lại chúng, hãy chọn Sử dụng màn hình chính của TV trong Quản lý.</string>
     <string name="found_no_lock">Không có khóa màn hình trên điện thoại này nên chúng tôi không thể kiểm tra kỹ xem đó có phải là bạn không.</string>
     <string name="found_unknown_title">{count, plural, =0 {Chúng tôi không tìm thấy điều gì chắc chắn cả} one {Chúng tôi đã tìm thấy một điều mà chúng tôi chắc chắn} other {Chúng tôi đã tìm thấy # những điều chúng tôi chắc chắn về}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {Chúng tôi không tìm thấy điều gì chắc chắn cả} one {điều chúng tôi chắc chắn} other {những điều chúng ta chắc chắn}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Dock: {names}, cộng với {count, plural, one {Ứng dụng #} other {Ứng dụng #}} trong {rows, plural, one {hàng} other {hàng}} bên dưới</string>
     <string name="customise_dock_row_empty">Thanh ứng dụng</string>
     <string name="customise_look_row">Nhìn: {theme}</string>
+    <string name="customise_look_row_count">Nhìn: {theme}, {count, plural, one {Ứng dụng # liên tiếp} other {Ứng dụng # liên tiếp}}</string>
+    <string name="look_photo_after">Chưa có gì được gửi. Nó sẽ chuyển sang TV khi bạn nhấn vào Làm sạch.</string>
     <string name="customise_group_tv">Trên tivi</string>
     <string name="customise_show_on_tv">Hiển thị tiến trình trên tivi</string>
     <string name="customise_show_on_tv_note">Tivi hiện từng bước, sau đó là màn hình chính mới</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Sao chép</string>
     <string name="customise_snackbar_kept">{name} sẽ được giữ lại.</string>
     <string name="customise_snackbar_off">{name} sẽ bị tắt.</string>
-    <string name="theme_title">Giao diện</string>
     <string name="theme_default">Mặc định</string>
-    <string name="theme_default_desc">Nền đen có bốn ứng dụng dọc phía dưới.</string>
     <string name="theme_aurora">Cực quang</string>
-    <string name="theme_aurora_desc">Nền màu xanh đậm với ánh sáng dịu nhẹ phía sau các ứng dụng.</string>
     <string name="theme_six_columns">Sáu cột</string>
-    <string name="theme_six_columns_desc">Sáu ứng dụng trên tổng thể, để vừa khít hơn trên màn hình.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, đã chọn. {description}</string>
     <string name="dock_title">Thanh ứng dụng của bạn</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">Hoàn tác các thay đổi trên TV?</string>
     <string name="confirm_undo_body">Chúng tôi đã đặt lại mọi thứ mà thay đổi này đã thực hiện để TV vẫn như cũ. Không có gì bị xóa.</string>
     <string name="confirm_undo_button">Hoàn tác các thay đổi</string>
-    <string name="stop_plan_refused_title">Không thể lập kế hoạch thao tác an toàn cho TV này</string>
-    <string name="stop_plan_refused_body">TV đã phản hồi, nhưng trạng thái được ghi nhận không phù hợp với kế hoạch mà chúng tôi chắc chắn an toàn nên đã dừng trước khi thao tác. Không có gì bị thay đổi. Báo cáo sự cố sẽ gửi nguyên nhân để chúng tôi khắc phục.</string>
+    <string name="candidate_overline">Bản dựng thử nghiệm</string>
+    <string name="candidate_title">Danh sách TV này mới</string>
+    <string name="candidate_body">Chúng tôi đã lập danh sách cho chiếc TV này từ các báo cáo về cùng một mẫu máy, nhưng chưa có ai thử nghiệm nó. Những gì nó tắt sẽ được liệt kê trong kế hoạch như thường lệ và bạn có thể đặt lại mọi thứ từ Điểm khôi phục.</string>
+    <string name="candidate_ask_issue">Nếu bạn dùng thử, vui lòng cho chúng tôi biết về vấn đề {issue} nó diễn ra như thế nào sau vài ngày:</string>
+    <string name="candidate_ask">Nếu bạn dùng thử, vui lòng cho chúng tôi biết vấn đề của bạn diễn ra như thế nào sau vài ngày:</string>
+    <string name="candidate_check_wifi">Wi-Fi sau khi khởi động lại</string>
+    <string name="candidate_check_remote">Mọi nút trên remote, cả đầu vào và giọng nói</string>
+    <string name="candidate_check_hdmi">Mỗi đầu vào HDMI</string>
+    <string name="candidate_check_live_tv">Truyền hình trực tiếp</string>
+    <string name="candidate_check_casting">Truyền từ điện thoại</string>
+    <string name="candidate_try">Thử danh sách kiểm tra</string>
+    <string name="candidate_careful">Hãy cẩn thận, như trong 0.3.4</string>
+    <string name="candidate_careful_note">Cẩn thận chỉ có nghĩa là những gì chúng tôi chắc chắn đối với TV của thương hiệu này, giống như phiên bản 0.3.4.</string>
 </resources>

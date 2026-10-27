@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">ลองอีกครั้ง</string>
     <string name="stop_probe_failed_secondary">ย้อนกลับ</string>
     <string name="stop_probe_failed_tertiary">แสดงรายละเอียด</string>
+    <string name="stop_plan_refused_title">ไม่สามารถสร้างแผนการทำงานที่ปลอดภัยสำหรับทีวีเครื่องนี้ได้</string>
+    <string name="stop_plan_refused_body">ทีวีตอบกลับแล้ว แต่สถานะที่พบไม่ตรงกับแผนที่เรามั่นใจว่าปลอดภัย จึงหยุดก่อนดำเนินการใด ๆ ไม่มีการเปลี่ยนแปลงบนทีวี การรายงานปัญหาจะส่งเหตุผลมาให้เราเพื่อช่วยแก้ไข</string>
     <string name="found_title">{count, plural, =0 {ไม่มีอะไรให้ปิด ต้องการหน้าจอหลักใหม่หรือไม่?} one {เราพบสิ่งหนึ่งที่ต้องปิด} other {เราพบสิ่งที่ต้องปิด #}}</string>
     <string name="found_headline">{count, plural, =0 {ไม่มีอะไรให้ปิด ต้องการหน้าจอหลักใหม่หรือไม่?} one {สิ่งที่ต้องปิด} other {สิ่งที่ต้องปิด}}</string>
     <string name="found_overline">เราพบแล้ว</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">เริ่มจัดระเบียบ</string>
     <string name="found_customise">ปรับแต่ง</string>
     <string name="found_replaces_launcher">แทนที่แอปหน้าจอหลักที่มีอยู่แล้วบนทีวีเครื่องนี้ รูปลักษณ์ ลำดับแอป การตั้งค่า และคำตอบของการ์ดเริ่มต้นใหม่</string>
+    <string name="found_tcl_remote_keys">บน TCL Google TV ปุ่มการตั้งค่า (เกียร์), Netflix และ YouTube ของรีโมทจะหยุดทำงานกับหน้าจอหลักใหม่ หากต้องการนำกลับมา ให้เลือกใช้หน้าจอหลักของทีวีเองในการจัดการ</string>
     <string name="found_no_lock">ไม่มีการล็อกหน้าจอในโทรศัพท์เครื่องนี้ ดังนั้นเราจึงตรวจสอบไม่ได้ว่าเป็นคุณอีกครั้ง</string>
     <string name="found_unknown_title">{count, plural, =0 {เราไม่พบสิ่งที่เราแน่ใจ} one {เราพบสิ่งหนึ่งที่เราแน่ใจ} other {เราพบ # สิ่งที่เราแน่ใจ}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {เราไม่พบสิ่งที่เราแน่ใจ} one {สิ่งที่เราแน่ใจ} other {สิ่งที่เราแน่ใจ}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">แถบแอป: {names} บวก {count, plural, one {แอป #} other {แอป #}} ใน {rows, plural, one {แถว} other {แถว}} ด้านล่าง</string>
     <string name="customise_dock_row_empty">แถบแอป</string>
     <string name="customise_look_row">ดู: {theme}</string>
+    <string name="customise_look_row_count">ดู: {theme}, {count, plural, one {แอป # ติดกัน} other {แอป # ติดกัน}}</string>
+    <string name="look_photo_after">ยังไม่มีการส่งอะไรเลย มันจะไปที่ทีวีเมื่อคุณแตะทำให้สะอาด</string>
     <string name="customise_group_tv">บนทีวี</string>
     <string name="customise_show_on_tv">แสดงความคืบหน้าบนทีวี</string>
     <string name="customise_show_on_tv_note">ทีวีจะแสดงแต่ละขั้นตอน จากนั้นจึงแสดงหน้าจอหลักใหม่</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">คัดลอกแล้ว</string>
     <string name="customise_snackbar_kept">{name} จะถูกเก็บไว้</string>
     <string name="customise_snackbar_off">{name} จะถูกปิด</string>
-    <string name="theme_title">รูปแบบหน้าจอ</string>
     <string name="theme_default">ค่าเริ่มต้น</string>
-    <string name="theme_default_desc">พื้นหลังสีดำมีสี่แอปอยู่ด้านล่าง</string>
     <string name="theme_aurora">ออโรร่า</string>
-    <string name="theme_aurora_desc">พื้นหลังสีน้ำเงินเข้มพร้อมแสงนุ่มนวลด้านหลังแอป</string>
     <string name="theme_six_columns">หกคอลัมน์</string>
-    <string name="theme_six_columns_desc">หกแอพ พอดีกับหน้าจอมากขึ้น</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name} เลือกอยู่ {description}</string>
     <string name="dock_title">แถบแอปของคุณ</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">เลิกทำการเปลี่ยนแปลงบนทีวีหรือไม่</string>
     <string name="confirm_undo_body">เรานำทุกสิ่งที่การเปลี่ยนแปลงนี้ทำกลับคืนมา เพื่อให้ทีวีเหมือนเดิม ไม่มีอะไรถูกลบ</string>
     <string name="confirm_undo_button">เลิกทำการเปลี่ยนแปลง</string>
-    <string name="stop_plan_refused_title">ไม่สามารถสร้างแผนการทำงานที่ปลอดภัยสำหรับทีวีเครื่องนี้ได้</string>
-    <string name="stop_plan_refused_body">ทีวีตอบกลับแล้ว แต่สถานะที่พบไม่ตรงกับแผนที่เรามั่นใจว่าปลอดภัย จึงหยุดก่อนดำเนินการใด ๆ ไม่มีการเปลี่ยนแปลงบนทีวี การรายงานปัญหาจะส่งเหตุผลมาให้เราเพื่อช่วยแก้ไข</string>
+    <string name="candidate_overline">ทดสอบการสร้าง</string>
+    <string name="candidate_title">รายการทีวีนี้เป็นรายการใหม่</string>
+    <string name="candidate_body">เราได้จัดทำรายการสำหรับทีวีเครื่องนี้จากรายงานรุ่นเดียวกัน แต่ยังไม่มีใครทดสอบเลย สิ่งที่ปิดจะแสดงอยู่ในแผนตามปกติ และคุณสามารถนำทุกอย่างกลับมาจากจุดคืนค่าได้</string>
+    <string name="candidate_ask_issue">หากคุณลอง โปรดบอกเราในประเด็น {issue} ว่ามันเป็นยังไงหลังจากผ่านไปสองสามวัน:</string>
+    <string name="candidate_ask">หากคุณลอง โปรดแจ้งให้เราทราบในปัญหาของคุณว่ามันเป็นอย่างไรหลังจากผ่านไปสองสามวัน:</string>
+    <string name="candidate_check_wifi">Wi-Fi หลังจากรีสตาร์ท</string>
+    <string name="candidate_check_remote">ทุกปุ่มบนรีโมท มีอินพุตและเสียงด้วย</string>
+    <string name="candidate_check_hdmi">อินพุต HDMI แต่ละตัว</string>
+    <string name="candidate_check_live_tv">รายการสดทางทีวี</string>
+    <string name="candidate_check_casting">กำลังส่งจากโทรศัพท์</string>
+    <string name="candidate_try">ลองทำรายการทดสอบ</string>
+    <string name="candidate_careful">ระมัดระวัง เช่นเดียวกับใน 0.3.4</string>
+    <string name="candidate_careful_note">ระวังหมายถึงเฉพาะสิ่งที่เราแน่ใจสำหรับทีวีของแบรนด์นี้ เช่นเดียวกับเวอร์ชัน 0.3.4</string>
 </resources>

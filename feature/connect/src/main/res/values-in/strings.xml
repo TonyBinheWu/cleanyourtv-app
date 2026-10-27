@@ -51,6 +51,14 @@
     <string name="door_brand_google">Google</string>
     <string name="door_brand_amazon">Amazon</string>
     <string name="door_brand_other">Lainnya</string>
+    <string name="door_tcl_menus_prompt">Menu apa yang ditampilkan di acara TV?</string>
+    <string name="door_tcl_menus_global">Menu dalam bahasa Inggris atau bahasa saya</string>
+    <string name="door_tcl_menus_chinese">Menu dalam bahasa Cina</string>
+    <string name="door_connect_failed_title">TV menjawab, tetapi telepon ini tidak dapat tersambung</string>
+    <string name="door_connect_failed_body">Koneksi gagal ({kind}). Kami akan terus mencoba selagi layar ini terbuka.</string>
+    <string name="door_connect_failed_hint">Jika ADB dari komputer berfungsi namun aplikasi ini tidak dapat menjangkau TV, mungkin ada sesuatu di ponsel yang menghalangi: batas jaringan per aplikasi (MIUI, Samsung), VPN, DNS Pribadi, atau data seluler. Matikan sebentar dan coba lagi.</string>
+    <string name="door_copy_error">Kesalahan penyalinan</string>
+    <string name="door_error_copied">Disalin. Tempelkan ke dalam masalah Anda.</string>
     <string name="door_unknown_note">Kami belum pernah bertemu TV persis seperti ini sebelumnya. Langkah-langkahnya biasanya sama.</string>
     <string name="family_atv_step1">Di TV, buka Pengaturan (roda gigi, kanan atas), lalu Preferensi Perangkat &gt; Tentang. Tekan OK pada \"Build\" tujuh kali hingga TV menampilkan \"Anda sekarang adalah pengembang\".</string>
     <string name="family_atv_step2">Kembali satu layar. Buka opsi Pengembang dan aktifkan USB debugging. Jika TV juga menampilkan \"Network debugging\" atau \"ADB debugging\", aktifkan juga.</string>
@@ -65,6 +73,8 @@
     <string name="family_tcl_step1">Di TV, buka Pengaturan &gt; Tentang &gt; 本机信息, lalu tekan Atas, Bawah, Kiri, Kanan pada remote.</string>
     <string name="family_tcl_step2">Jendela \"ADB\" kecil muncul dengan alamat. Biarkan terbuka.</string>
     <string name="family_tcl_step3">Biarkan TV di layar ini. Ponsel Anda akan terhubung dengan sendirinya.</string>
+    <string name="family_tcl_extra_gtv_step1">Di Google TV: Sistem &gt; Tentang, lalu tekan OK pada \"Android TV OS build\" tujuh kali.</string>
+    <string name="family_tcl_extra_gtv">Di Google TV, aktifkan juga Wireless debugging.</string>
     <string name="family_unknown_step1">Di TV, buka Pengaturan (roda gigi, kanan atas), lalu Preferensi Perangkat &gt; Tentang. Tekan OK pada \"Build\" tujuh kali hingga TV menampilkan \"Anda sekarang adalah pengembang\".</string>
     <string name="family_unknown_step2">Kembali satu layar. Buka opsi Pengembang dan aktifkan USB debugging. Jika TV juga menampilkan \"Network debugging\" atau \"ADB debugging\", aktifkan juga.</string>
     <string name="family_unknown_step3">Biarkan TV di layar ini. Ponsel Anda akan terhubung dengan sendirinya.</string>

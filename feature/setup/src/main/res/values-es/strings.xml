@@ -23,6 +23,8 @@
     <string name="stop_probe_failed_primary">Reintentar</string>
     <string name="stop_probe_failed_secondary">Atrás</string>
     <string name="stop_probe_failed_tertiary">Mostrar detalles</string>
+    <string name="stop_plan_refused_title">No pudimos crear un plan seguro para este televisor</string>
+    <string name="stop_plan_refused_body">El televisor respondió, pero su estado no encaja en un plan que podamos ejecutar con seguridad, así que nos detuvimos antes de hacer nada. No se ha cambiado nada. Al informar del problema se nos enviará el motivo para que podamos corregirlo.</string>
     <string name="found_title">{count, plural, =0 {Nada que apagar. ¿Quieres la nueva pantalla de inicio?} one {Encontramos una cosa para apagar} other {Encontramos cosas # para apagar}}</string>
     <string name="found_headline">{count, plural, =0 {Nada que apagar. ¿Quieres la nueva pantalla de inicio?} one {cosa para apagar} other {cosas para apagar}}</string>
     <string name="found_overline">Encontramos</string>
@@ -48,6 +50,7 @@
     <string name="found_make_clean">Iniciar limpieza</string>
     <string name="found_customise">Personalizar</string>
     <string name="found_replaces_launcher">Reemplaza la aplicación de pantalla de inicio que ya está en este televisor. Su apariencia, orden de aplicaciones, configuraciones y respuestas de tarjetas comienzan de nuevo.</string>
+    <string name="found_tcl_remote_keys">En TCL Google TV, los botones de Configuración (engranaje), Netflix y YouTube del control remoto dejan de funcionar con la nueva pantalla de inicio. Para recuperarlos, elija Usar la pantalla de inicio del televisor en Administrar.</string>
     <string name="found_no_lock">No hay bloqueo de pantalla en este teléfono, por lo que no podemos verificar que eres tú.</string>
     <string name="found_unknown_title">{count, plural, =0 {No encontramos nada de lo que estemos seguros} one {Encontramos una cosa de la que estamos seguros} other {Encontramos cosas de # de las que estamos seguros}}</string>
     <string name="found_unknown_headline">{count, plural, =0 {No encontramos nada de lo que estemos seguros} one {algo de lo que estamos seguros} other {cosas de las que estamos seguros}}</string>
@@ -85,6 +88,8 @@
     <string name="customise_dock_row_rows">Barra de aplicaciones: {names}, más {count, plural, one {aplicación #} other {aplicaciones #}} en el {rows, plural, one {fila} other {filas}} a continuación</string>
     <string name="customise_dock_row_empty">Barra de aplicaciones</string>
     <string name="customise_look_row">Mira: {theme}</string>
+    <string name="customise_look_row_count">Mira: {theme}, {count, plural, one {Aplicación # seguida} other {Aplicaciones # seguidas}}</string>
+    <string name="look_photo_after">Aún no se ha enviado nada. Va al televisor cuando tocas Hacerlo limpio.</string>
     <string name="customise_group_tv">En la televisión</string>
     <string name="customise_show_on_tv">Muestra el progreso en la TV.</string>
     <string name="customise_show_on_tv_note">El televisor muestra cada paso, luego la nueva pantalla de inicio</string>
@@ -97,13 +102,9 @@
     <string name="customise_commands_copied">Copiado</string>
     <string name="customise_snackbar_kept">Se mantendrá {name}.</string>
     <string name="customise_snackbar_off">{name} se apagará.</string>
-    <string name="theme_title">Aspecto</string>
     <string name="theme_default">predeterminado</string>
-    <string name="theme_default_desc">Un fondo negro con cuatro aplicaciones en la parte inferior.</string>
     <string name="theme_aurora">aurora</string>
-    <string name="theme_aurora_desc">Un fondo azul intenso con un suave brillo detrás de las aplicaciones.</string>
     <string name="theme_six_columns">Seis columnas</string>
-    <string name="theme_six_columns_desc">Seis aplicaciones en total, por lo que caben más en la pantalla.</string>
     <string name="theme_card_cd">{name}. {description}</string>
     <string name="theme_card_selected_cd">{name}, seleccionado. {description}</string>
     <string name="dock_title">Tu barra de aplicaciones</string>
@@ -258,6 +259,17 @@
     <string name="confirm_undo_title">¿Deshacer los cambios en el televisor?</string>
     <string name="confirm_undo_body">Recuperamos todo lo que hizo este cambio, para que el televisor quede como antes. No se elimina nada.</string>
     <string name="confirm_undo_button">Deshacer los cambios</string>
-    <string name="stop_plan_refused_title">No pudimos crear un plan seguro para este televisor</string>
-    <string name="stop_plan_refused_body">El televisor respondió, pero su estado no encaja en un plan que podamos ejecutar con seguridad, así que nos detuvimos antes de hacer nada. No se ha cambiado nada. Al informar del problema se nos enviará el motivo para que podamos corregirlo.</string>
+    <string name="candidate_overline">compilación de prueba</string>
+    <string name="candidate_title">La lista de este televisor es nueva</string>
+    <string name="candidate_body">Hicimos una lista para este televisor a partir de informes del mismo modelo, pero nadie lo ha probado todavía. Lo que apaga aparece en el plan como de costumbre, y puedes volver a colocar todo desde el punto de restauración.</string>
+    <string name="candidate_ask_issue">Si lo intentas, cuéntanos en el número {issue} cómo te fue después de unos días:</string>
+    <string name="candidate_ask">Si lo intentas, cuéntanos en tu problema cómo te fue después de unos días:</string>
+    <string name="candidate_check_wifi">Wi-Fi después de un reinicio</string>
+    <string name="candidate_check_remote">Todos los botones del control remoto, entrada y voz también</string>
+    <string name="candidate_check_hdmi">Cada entrada HDMI</string>
+    <string name="candidate_check_live_tv">TV en vivo</string>
+    <string name="candidate_check_casting">Transmitir desde un teléfono</string>
+    <string name="candidate_try">Pruebe la lista de pruebas</string>
+    <string name="candidate_careful">Tenga cuidado, como en 0.3.4</string>
+    <string name="candidate_careful_note">Cuidadoso significa sólo lo que estamos seguros para los televisores de esta marca, igual que la versión 0.3.4.</string>
 </resources>
