@@ -31,12 +31,12 @@
 此分支由 TonyBinheWu 加入多國語言支援；[PR #271](https://github.com/udhaykumarbala/cleanyourtv-app/pull/271)
 已提交原作者，目前尚未合併。
 
-**[直接下載多國語言版 APK 0.3.4.1（約 5.9 MB）](https://github.com/TonyBinheWu/cleanyourtv-app/releases/download/multilingual-0.3.4.1/cleanyourtv-multilingual-0.3.4.1.apk)**
+**[直接下載多國語言版 APK 0.4.0](https://github.com/TonyBinheWu/cleanyourtv-app/releases/download/multilingual-0.4.0/cleanyourtv-multilingual-0.4.0.apk)**
 
 [最新版本、更新與安裝說明 / Latest releases and installation notes](https://github.com/TonyBinheWu/cleanyourtv-app/releases/latest)
 
 由 TonyBinheWu 發布的社群多國語言版本，支援下列 16 種語言，適用於 Android 9 以上。
-已安裝本 Fork 的 0.3.3.1 多國語言版可直接更新；原作者版或不同簽章的 Debug 版無法直接覆蓋，
+已安裝本 Fork 的多國語言版可直接更新；原作者版或不同簽章的 Debug 版無法直接覆蓋，
 切換前請先閱讀 Release 的簽章與還原點備份說明。
 
 Community multilingual build published by TonyBinheWu, supporting the 16 languages below on
